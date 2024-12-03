@@ -6,5 +6,6 @@
                 "savePath": "/styles/css",
             }
     ],
-    "liveSassCompile.settings.generateMap": true
+    "liveSassCompile.settings.generateMap": true,
+    "window.autoDetectColorScheme": false,
 }

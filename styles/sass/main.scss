@@ -1,13 +1,4 @@
-@use "typography";
+@import 'typography';
+@import 'layout';
+@import 'variables';
 
-h1 {
-    color: red;
-}
-
-p {
-    color:green; 
-}
-
-h2 {
-    color: yellow;
-}

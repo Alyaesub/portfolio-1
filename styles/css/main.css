@@ -1,15 +1,21 @@
+@charset "UTF-8";
 body {
   font: 19px/23px Montserrat, sans-serif;
 }
 
-h1 {
-  color: red;
+/*couleur primaire, bouton, touche actions...*/
+/*couleur secondaire, petit liens, logo secondaire*/
+/* couleur du background général*/
+/*Blanc général*/
+/*Violet leger pour animation*/
+/*Gris leger*/
+body {
+  background-color: #171c28;
 }
 
-p {
-  color: green;
-}
-
-h2 {
-  color: yellow;
-}/*# sourceMappingURL=main.css.map */
+/*couleur primaire, bouton, touche actions...*/
+/*couleur secondaire, petit liens, logo secondaire*/
+/* couleur du background général*/
+/*Blanc général*/
+/*Violet leger pour animation*/
+/*Gris leger*//*# sourceMappingURL=main.css.map */
