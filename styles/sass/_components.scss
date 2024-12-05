@@ -1,11 +1,28 @@
 .section-display {
     display: flex;
+    justify-content: space-between;
     .text-content {
-
+        h1 {
+            font-size: 70px;
+            line-height: 1.1;
+            font-weight: 700;
+            /*font-size: 28px;*/
+        }
+        p {
+            font-size: 30px;
+            line-height: 40px;
+        }
     }
 
     .action-div {
 
+    }
+
+    .illustration {
+        width: 40%;
+        img {
+            max-width: 100%;
+        }
     }
 
 }

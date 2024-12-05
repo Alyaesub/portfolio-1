@@ -2,6 +2,10 @@ body {
   font: 19px/23px Montserrat, sans-serif;
 }
 
+main {
+  margin: 30px;
+}
+
 header .header-website {
   height: 75px;
   margin-bottom: 15px;
@@ -10,8 +14,26 @@ header .header-website {
 body {
   background-color: #171c28;
   color: #ffffff;
+  margin: 0 30px;
 }
 
 .section-display {
   display: flex;
+  justify-content: space-between;
+}
+.section-display .text-content h1 {
+  font-size: 70px;
+  line-height: 1.1;
+  font-weight: 700;
+  /*font-size: 28px;*/
+}
+.section-display .text-content p {
+  font-size: 30px;
+  line-height: 40px;
+}
+.section-display .illustration {
+  width: 40%;
+}
+.section-display .illustration img {
+  max-width: 100%;
 }/*# sourceMappingURL=main.css.map */
