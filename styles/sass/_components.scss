@@ -1,12 +1,14 @@
 .section-display {
     display: flex;
-    justify-content: space-between;
+    
+
     .text-content {
+        flex: 1;
         h1 {
             font-size: 70px;
             line-height: 1.1;
             font-weight: 700;
-            /*font-size: 28px;*/
+            /*font-size: 28px; responsive*/
         }
         p {
             font-size: 30px;
@@ -14,14 +16,12 @@
         }
     }
 
-    .action-div {
-
-    }
-
     .illustration {
-        width: 40%;
+        flex:1;
         img {
-            max-width: 100%;
+            max-width: 70%;
+            display: block;
+            margin: auto;
         }
     }
 

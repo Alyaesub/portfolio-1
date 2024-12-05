@@ -19,21 +19,38 @@ body {
 
 .section-display {
   display: flex;
-  justify-content: space-between;
+}
+.section-display .text-content {
+  flex: 1;
 }
 .section-display .text-content h1 {
   font-size: 70px;
   line-height: 1.1;
   font-weight: 700;
-  /*font-size: 28px;*/
+  /*font-size: 28px; responsive*/
 }
 .section-display .text-content p {
   font-size: 30px;
   line-height: 40px;
 }
 .section-display .illustration {
-  width: 40%;
+  flex: 1;
 }
 .section-display .illustration img {
-  max-width: 100%;
+  max-width: 70%;
+  display: block;
+  margin: auto;
+}
+
+.btn {
+  padding: 15px 30px;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn.btn-primary {
+  background-color: #55198b;
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
