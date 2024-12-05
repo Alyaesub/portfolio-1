@@ -2,7 +2,16 @@ body {
   font: 19px/23px Montserrat, sans-serif;
 }
 
+header .header-website {
+  height: 75px;
+  margin-bottom: 15px;
+}
+
 body {
   background-color: #171c28;
   color: #ffffff;
+}
+
+.section-display {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
