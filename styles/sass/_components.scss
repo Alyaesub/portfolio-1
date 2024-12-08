@@ -1,5 +1,20 @@
 .section-display {
     display: flex;
+    margin-bottom: 10rem;
+
+    &.right-text-content {
+        flex-direction: row-reverse;
+        .illustration {
+            padding-right: 5rem;
+        }
+    }
+
+    &.left-text-content {
+        flex-direction: row;
+        .illustration {
+            padding-left: 5rem;
+        }
+    }
     
 
     .text-content {
@@ -25,4 +40,16 @@
         }
     }
 
+}
+
+.competences-icones {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 3rem;
+    color: $gray;
+    i:hover {
+        cursor: pointer;
+        color: $secondary;
+    }
 }

@@ -19,6 +19,19 @@ body {
 
 .section-display {
   display: flex;
+  margin-bottom: 10rem;
+}
+.section-display.right-text-content {
+  flex-direction: row-reverse;
+}
+.section-display.right-text-content .illustration {
+  padding-right: 5rem;
+}
+.section-display.left-text-content {
+  flex-direction: row;
+}
+.section-display.left-text-content .illustration {
+  padding-left: 5rem;
 }
 .section-display .text-content {
   flex: 1;
@@ -42,15 +55,45 @@ body {
   margin: auto;
 }
 
+.competences-icones {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 3rem;
+  color: #868e96;
+}
+.competences-icones i:hover {
+  cursor: pointer;
+  color: #aaa5ff;
+}
+
 .btn {
   padding: 15px 30px;
   font-weight: bold;
   font-size: 18px;
-  border: none;
+  border: solid 1px;
   border-radius: 5px;
   cursor: pointer;
+  transition: all ease 0.3s;
+}
+.btn:hover {
+  transform: translateY(-10px);
 }
 .btn.btn-primary {
   background-color: #55198b;
+  border-color: #200935;
   color: #ffffff;
+}
+.btn.btn-primary:hover {
+  background-color: #ffffff;
+  color: #55198b;
+}
+.btn.btn-secondary {
+  background-color: #aaa5ff;
+  border-color: #4a3fff;
+  color: #ffffff;
+}
+.btn.btn-secondary:hover {
+  background-color: #ffffff;
+  color: #55198b;
 }/*# sourceMappingURL=main.css.map */

@@ -1,6 +1,17 @@
 $primary : #55198b; //couleur primaire, bouton, touche actions...//
-$secondary : #868e96; //couleur secondaire, petit liens, logo secondaire//
+$secondary : #aaa5ff; //couleur secondaire, petit liens, logo secondaire//
+$accent:#66ffb3; //couleur en rapport avec les images//
 $dark: #171c28; // couleur du background général//
 $white: #ffffff; //Blanc général//
-$purple: #aaa5ff; //Violet leger pour animation//
-$lightgray: #f3efef; //Gris leger//
+$gray:#868e96; //gris leger pour animation//
+$lightgray: #f3efef; //Gris leger//    
+
+$color: (
+    'primary':$primary,
+    'secondary':$secondary,
+    'accent':$accent,
+    'dark':$dark,
+    'white':$white,
+    'gray':$gray,
+    'lightgray':$lightgray,
+);
