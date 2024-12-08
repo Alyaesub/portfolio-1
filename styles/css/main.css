@@ -62,9 +62,19 @@ body {
   font-size: 3rem;
   color: #868e96;
 }
+.competences-icones i i {
+  transition: all 0.3s ease;
+}
 .competences-icones i:hover {
   cursor: pointer;
   color: #aaa5ff;
+  transform: scale(1.2);
+}
+
+.liste-competences {
+  margin-top: 3rem;
+  font-size: 1em;
+  line-height: 40px;
 }
 
 .btn {

@@ -48,8 +48,20 @@
     gap: 2rem;
     font-size: 3rem;
     color: $gray;
-    i:hover {
-        cursor: pointer;
-        color: $secondary;
+    i {
+        i{
+            transition: all 0.3s ease;
+        }
+        &:hover {
+            cursor: pointer;
+            color: $secondary;
+            transform: scale(1.2);
+        }
+        
     }
+}
+.liste-competences {
+    margin-top: 3rem;
+    font-size: 1em;
+    line-height: 40px;
 }
