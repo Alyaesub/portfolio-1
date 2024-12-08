@@ -71,12 +71,6 @@ body {
   transform: scale(1.2);
 }
 
-.liste-competences {
-  margin-top: 3rem;
-  font-size: 1em;
-  line-height: 40px;
-}
-
 .btn {
   padding: 15px 30px;
   font-weight: bold;
