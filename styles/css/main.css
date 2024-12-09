@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font: 19px/23px Montserrat, sans-serif;
 }
@@ -121,4 +122,33 @@ body {
 .btn.btn-secondary:hover {
   background-color: #ffffff;
   color: #55198b;
+}
+
+.animate-fusée {
+  transition: all 1s ease;
+  display: inline-block;
+}
+.animate-fusée:hover {
+  animation: movefusee 2s ease;
+}
+
+@keyframes movefusee {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translate(-2px, 2px);
+  }
+  20% {
+    transform: translate(2px, -2px);
+  }
+  30% {
+    transform: translate(-1px, 1px);
+  }
+  72% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(-550px);
+  }
 }/*# sourceMappingURL=main.css.map */
