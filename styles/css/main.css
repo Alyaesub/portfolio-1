@@ -16,6 +16,11 @@ header .header-website {
   margin-top: 5rem;
 }
 
+picture.emoji-gif img {
+  width: 1em;
+  height: 1em;
+}
+
 body {
   background-color: #171c28;
   color: #ffffff;
