@@ -11,6 +11,10 @@ header .header-website {
   margin-bottom: 15px;
 }
 
+.liste-competences {
+  margin-top: 5rem;
+}
+
 body {
   background-color: #171c28;
   color: #ffffff;
@@ -20,34 +24,50 @@ body {
 .section-display {
   display: flex;
   margin-bottom: 10rem;
+  flex-direction: column;
 }
-.section-display.right-text-content {
-  flex-direction: row-reverse;
-}
-.section-display.right-text-content .illustration {
-  padding-right: 5rem;
-}
-.section-display.left-text-content {
-  flex-direction: row;
-}
-.section-display.left-text-content .illustration {
-  padding-left: 5rem;
+@media screen and (min-width: 768px) {
+  .section-display.right-text-content {
+    flex-direction: row-reverse;
+  }
+  .section-display.right-text-content .illustration {
+    padding-right: 5rem;
+  }
+  .section-display.left-text-content {
+    flex-direction: row;
+  }
+  .section-display.left-text-content .illustration {
+    padding-left: 5rem;
+  }
 }
 .section-display .text-content {
   flex: 1;
 }
 .section-display .text-content h1 {
-  font-size: 70px;
-  line-height: 1.1;
+  font-size: 30px;
+  line-height: normal;
   font-weight: 700;
-  /*font-size: 28px; responsive*/
+}
+@media screen and (min-width: 768px) {
+  .section-display .text-content h1 {
+    font-size: 70px;
+    line-height: 1.1;
+    font-weight: 700;
+  }
 }
 .section-display .text-content p {
-  font-size: 30px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: normal;
+}
+@media screen and (min-width: 768px) {
+  .section-display .text-content p {
+    font-size: 30px;
+    line-height: 40px;
+  }
 }
 .section-display .illustration {
   flex: 1;
+  margin-top: 50px;
 }
 .section-display .illustration img {
   max-width: 70%;
@@ -59,6 +79,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 2rem;
+  margin-top: 6rem;
   font-size: 3rem;
   color: #868e96;
 }
