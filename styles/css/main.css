@@ -21,6 +21,10 @@ picture.emoji-gif img {
   height: 1em;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #171c28;
   color: #ffffff;
