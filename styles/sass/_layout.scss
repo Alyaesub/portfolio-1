@@ -1,6 +1,8 @@
 
 main {
-    margin: 30px;
+    @media screen and (min-width: 768px) {
+        margin: 0 30px
+    }
 }
 
 
@@ -17,5 +19,18 @@ picture.emoji-gif {
     img {
         width: 1em;
         height: 1em;
+    }
+}
+
+.header-website {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+
+        .nav-link {
+            display: none;
+        }
     }
 }
