@@ -29,6 +29,14 @@ picture.emoji-gif img {
   align-items: center;
   padding-top: 20px;
 }
+.header-website .navbar img {
+  max-width: 30%;
+}
+@media screen and (min-width: 768px) {
+  .header-website .navbar img {
+    max-width: 50%;
+  }
+}
 .header-website .navbar .nav-link {
   display: none;
 }

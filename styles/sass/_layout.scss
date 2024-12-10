@@ -29,6 +29,13 @@ picture.emoji-gif {
         align-items: center;
         padding-top: 20px;
 
+        
+        img {
+            max-width: 30%;
+            @media screen and (min-width: 768px) {
+                max-width: 50%;
+            }
+        }
         .nav-link {
             display: none;
         }
