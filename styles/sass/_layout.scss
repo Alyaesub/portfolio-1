@@ -29,6 +29,14 @@ picture.emoji-gif {
         align-items: center;
         padding-top: 20px;
 
+        .menu {
+            .menu-input {
+                display: none;
+                &:checked ~ .nav-link {
+                    display: block;
+                }
+            }
+        }
         
         img {
             max-width: 30%;
@@ -36,6 +44,7 @@ picture.emoji-gif {
                 max-width: 50%;
             }
         }
+
         .nav-link {
             display: none;
         }

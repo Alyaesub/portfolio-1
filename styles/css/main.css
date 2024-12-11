@@ -29,6 +29,12 @@ picture.emoji-gif img {
   align-items: center;
   padding-top: 20px;
 }
+.header-website .navbar .menu .menu-input {
+  display: none;
+}
+.header-website .navbar .menu .menu-input:checked ~ .nav-link {
+  display: block;
+}
 .header-website .navbar img {
   max-width: 30%;
 }
