@@ -28,12 +28,17 @@ picture.emoji-gif {
     top: 0;
     left: 0;
     background-color: $dark;
+    height: 120px;
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: 10px;
         padding-bottom: 5px;
+        
+        @media screen and (min-width: 768px){
+            height: 150px;
+        }
     }
 
     .menu { 
@@ -87,11 +92,14 @@ picture.emoji-gif {
     }
 
     .logo {
-        max-width: 20%;
+        max-width: 40%;
+        @media screen and (min-width: 768px) {
+            max-width: 20%;
+        }
         img {
-            max-width: 30%;
+            max-width: 100%;
             @media screen and (min-width: 768px) {
-                max-width: 100%;
+                max-width: 90%;
             }
         }     
     }

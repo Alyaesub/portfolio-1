@@ -28,6 +28,7 @@ picture.emoji-gif img {
   top: 0;
   left: 0;
   background-color: #171c28;
+  height: 120px;
 }
 .header-website .navbar {
   display: flex;
@@ -35,6 +36,11 @@ picture.emoji-gif img {
   align-items: center;
   padding-top: 10px;
   padding-bottom: 5px;
+}
+@media screen and (min-width: 768px) {
+  .header-website .navbar {
+    height: 150px;
+  }
 }
 .header-website .menu .menu-input {
   display: none;
@@ -85,14 +91,19 @@ picture.emoji-gif img {
   list-style-type: none;
 }
 .header-website .logo {
-  max-width: 20%;
+  max-width: 40%;
+}
+@media screen and (min-width: 768px) {
+  .header-website .logo {
+    max-width: 20%;
+  }
 }
 .header-website .logo img {
-  max-width: 30%;
+  max-width: 100%;
 }
 @media screen and (min-width: 768px) {
   .header-website .logo img {
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 
