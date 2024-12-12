@@ -1,3 +1,4 @@
+@import "variables";
 
 main {
     @media screen and (min-width: 768px) {
@@ -40,6 +41,19 @@ picture.emoji-gif {
 
         .nav-links {
             display: none;
+            position: absolute;
+            left: 0;
+            width: 100%;
+            background-color: $secondary;
+            padding: 10px;
+            .nav-link {
+                display: block;
+                padding: 10px;
+                a {
+                    color: $white;
+                    text-decoration: none;
+                }
+            }
         }
     }
     

@@ -37,6 +37,19 @@ picture.emoji-gif img {
 }
 .header-website .menu .nav-links {
   display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-color: #aaa5ff;
+  padding: 10px;
+}
+.header-website .menu .nav-links .nav-link {
+  display: block;
+  padding: 10px;
+}
+.header-website .menu .nav-links .nav-link a {
+  color: #ffffff;
+  text-decoration: none;
 }
 .header-website img {
   max-width: 30%;
