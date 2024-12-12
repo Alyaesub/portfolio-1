@@ -30,16 +30,19 @@ picture.emoji-gif img {
   background-color: #171c28;
   height: 120px;
 }
+@media screen and (min-width: 768px) {
+  .header-website {
+    height: 200px;
+  }
+}
 .header-website .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 10px;
-  padding-bottom: 5px;
 }
 @media screen and (min-width: 768px) {
   .header-website .navbar {
-    height: 150px;
+    height: 200px;
   }
 }
 .header-website .menu .menu-input {
@@ -81,7 +84,7 @@ picture.emoji-gif img {
   padding: 15px;
 }
 .header-website .menu .dropdown-menu .nav-links .nav-link {
-  padding: 10px;
+  padding: 30px;
 }
 .header-website .menu .dropdown-menu .nav-links .nav-link a {
   color: #ffffff;

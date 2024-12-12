@@ -29,15 +29,16 @@ picture.emoji-gif {
     left: 0;
     background-color: $dark;
     height: 120px;
+    @media screen and (min-width: 768px) {
+        height: 200px;
+    }
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 10px;
-        padding-bottom: 5px;
         
         @media screen and (min-width: 768px){
-            height: 150px;
+            height: 200px;
         }
     }
 
@@ -78,7 +79,7 @@ picture.emoji-gif {
                     .nav-links {  
                         padding: 15px;
                         .nav-link {
-                            padding: 10px;
+                            padding: 30px;
                             a {
                             color: $white;
                             text-decoration: none;
