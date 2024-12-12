@@ -63,7 +63,12 @@ picture.emoji-gif {
                 @media screen and (min-width: 768px) {
                     max-height: 100vh;
                     position: relative;
-                    display: block;
+                    display: flex;
+                        .nav-links {
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 15px;
+                        }
                 }
                     .nav-links {  
                         padding: 15px;
@@ -77,11 +82,18 @@ picture.emoji-gif {
                     }
         }
     }
+    ul {
+        list-style-type: none;
+    }
+
+    .logo {
+        max-width: 20%;
+        img {
+            max-width: 30%;
+            @media screen and (min-width: 768px) {
+                max-width: 100%;
+            }
+        }     
+    }
     
-    img {
-        max-width: 30%;
-        @media screen and (min-width: 768px) {
-            max-width: 50%;
-        }
-    }     
 }                      

@@ -63,7 +63,12 @@ picture.emoji-gif img {
   .header-website .menu .dropdown-menu {
     max-height: 100vh;
     position: relative;
-    display: block;
+    display: flex;
+  }
+  .header-website .menu .dropdown-menu .nav-links {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
   }
 }
 .header-website .menu .dropdown-menu .nav-links {
@@ -76,12 +81,18 @@ picture.emoji-gif img {
   color: #ffffff;
   text-decoration: none;
 }
-.header-website img {
+.header-website ul {
+  list-style-type: none;
+}
+.header-website .logo {
+  max-width: 20%;
+}
+.header-website .logo img {
   max-width: 30%;
 }
 @media screen and (min-width: 768px) {
-  .header-website img {
-    max-width: 50%;
+  .header-website .logo img {
+    max-width: 100%;
   }
 }
 
