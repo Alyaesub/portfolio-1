@@ -23,31 +23,56 @@ picture.emoji-gif img {
   height: 1em;
 }
 
+.header-website {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: #171c28;
+}
 .header-website .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 .header-website .menu .menu-input {
   display: none;
 }
-.header-website .menu .menu-input:checked ~ .nav-links {
+.header-website .menu .menu-input:checked ~ .dropdown-menu {
   display: block;
+  max-height: 100vh;
 }
-.header-website .menu .nav-links {
+@media screen and (min-width: 768px) {
+  .header-website .menu .menu-input-label {
+    display: none;
+  }
+}
+.header-website .menu .dropdown-menu {
+  transition: max-height ease 0.5s;
+  max-height: 0px;
+  overflow: hidden;
   display: none;
   position: absolute;
   left: 0;
   width: 100%;
-  background-color: #aaa5ff;
+  background-color: #171c28;
+  top: 100%;
+}
+@media screen and (min-width: 768px) {
+  .header-website .menu .dropdown-menu {
+    max-height: 100vh;
+    position: relative;
+    display: block;
+  }
+}
+.header-website .menu .dropdown-menu .nav-links {
+  padding: 15px;
+}
+.header-website .menu .dropdown-menu .nav-links .nav-link {
   padding: 10px;
 }
-.header-website .menu .nav-links .nav-link {
-  display: block;
-  padding: 10px;
-}
-.header-website .menu .nav-links .nav-link a {
+.header-website .menu .dropdown-menu .nav-links .nav-link a {
   color: #ffffff;
   text-decoration: none;
 }
@@ -172,6 +197,7 @@ body {
   border-radius: 5px;
   cursor: pointer;
   transition: all ease 0.3s;
+  display: inline-block;
 }
 @media screen and (min-width: 768px) {
   .btn {

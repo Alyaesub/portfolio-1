@@ -15,6 +15,7 @@
     border-radius: 5px;
     cursor: pointer;
     transition: all ease 0.3s;
+    display: inline-block;
 
     &:hover {
         transform: translateY(-10px);

@@ -24,36 +24,57 @@ picture.emoji-gif {
 }
 
 .header-website {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: $dark;
     .navbar {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding-top: 20px;
+        padding-top: 10px;
+        padding-bottom: 5px;
     }
 
     .menu { 
         .menu-input { 
             display: none;
-            &:checked ~ .nav-links { 
+            &:checked ~ .dropdown-menu { 
                 display: block;
+                max-height: 100vh;
             }
         }
-
-        .nav-links {
-            display: none;
-            position: absolute;
-            left: 0;
-            width: 100%;
-            background-color: $secondary;
-            padding: 10px;
-            .nav-link {
-                display: block;
-                padding: 10px;
-                a {
-                    color: $white;
-                    text-decoration: none;
+        @media screen and (min-width: 768px) {
+            .menu-input-label {
+                display: none;
+            }   
+        }
+        
+        .dropdown-menu {
+                transition: max-height ease 0.5s;
+                max-height: 0px;
+                overflow: hidden;
+                display: none;
+                position: absolute;
+                left: 0;
+                width: 100%;
+                background-color: $dark;
+                top: 100%;
+                @media screen and (min-width: 768px) {
+                    max-height: 100vh;
+                    position: relative;
+                    display: block;
                 }
-            }
+                    .nav-links {  
+                        padding: 15px;
+                        .nav-link {
+                            padding: 10px;
+                            a {
+                            color: $white;
+                            text-decoration: none;
+                            }
+                        }
+                    }
         }
     }
     
