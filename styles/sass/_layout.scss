@@ -28,25 +28,25 @@ picture.emoji-gif {
         justify-content: space-between;
         align-items: center;
         padding-top: 20px;
+    }
 
-        .menu {
-            .menu-input {
-                display: none;
-                &:checked ~ .nav-link {
-                    display: block;
-                }
-            }
-        }
-        
-        img {
-            max-width: 30%;
-            @media screen and (min-width: 768px) {
-                max-width: 50%;
+    .menu { 
+        .menu-input { 
+            display: none;
+            &:checked ~ .nav-links { 
+                display: block;
             }
         }
 
-        .nav-link {
+        .nav-links {
             display: none;
         }
     }
-}
+    
+    img {
+        max-width: 30%;
+        @media screen and (min-width: 768px) {
+            max-width: 50%;
+        }
+    }     
+}                      
