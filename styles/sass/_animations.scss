@@ -1,3 +1,5 @@
+//animations de la fusée
+
 .animate-fusée {
     transition: all 1s ease;
     display: inline-block;
@@ -24,5 +26,25 @@
     }
     100% {
         transform: translateY(-550px);
+    }
+}
+
+//animations du loader
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-hide {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
     }
 }

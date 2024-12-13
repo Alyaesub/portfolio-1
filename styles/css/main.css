@@ -229,6 +229,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  animation: loader-hide 1s forwards;
 }
 #loader .loader {
   width: 120px;
@@ -236,7 +237,7 @@ body {
   border: 16px solid #f3f3f3;
   border-top: 16px solid #3498db;
   border-radius: 50%;
-  animation: spin 2s linear infinite;
+  animation: loader 1s linear infinite;
 }
 
 .btn {
@@ -302,5 +303,21 @@ body {
   }
   100% {
     transform: translateY(-550px);
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }/*# sourceMappingURL=main.css.map */
