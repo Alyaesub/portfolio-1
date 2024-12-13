@@ -39,6 +39,9 @@ picture.emoji-gif img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /*display: flex;
+  justify-content: space-between;
+  align-items: center;*/
 }
 @media screen and (min-width: 768px) {
   .header-website .navbar {
@@ -213,6 +216,27 @@ body {
     color: #aaa5ff;
     transform: scale(1.2);
   }
+}
+
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+#loader .loader {
+  width: 120px;
+  height: 120px;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
 }
 
 .btn {
