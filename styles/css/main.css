@@ -224,11 +224,22 @@ body {
   gap: 32px;
   margin-top: 60px;
 }
+.liste-blog a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .liste-blog .blog {
   box-shadow: 1px 0 20px #fff;
   padding: 15px 30px;
   border-radius: 5px;
   position: relative;
+}
+.liste-blog .blog h4, .liste-blog .blog p {
+  z-index: 6;
+  background-color: transparent;
+  position: relative;
+  text-decoration: none;
+  color: #ffffff;
 }
 .liste-blog .blog:hover {
   cursor: pointer;
@@ -253,6 +264,7 @@ body {
   width: 15px;
   height: 20px;
   transition: all 0.45s ease-out;
+  z-index: 5;
 }
 
 #loader {

@@ -1,3 +1,7 @@
+@import "variables";
+@import "Mixins/mixins";
+
+
 .section-display {
     display: flex;
     margin-bottom: 10rem;
@@ -101,12 +105,22 @@
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     gap: 32px;
     margin-top: 60px;
+    a {
+        @include text-as-link;
+    }
         .blog {
             box-shadow: 1px 0 20px #fff;
             padding: 15px 30px;
             border-radius: 5px;
             position: relative;
-
+            
+            h4, p {
+                z-index: 6;
+                background-color: transparent;
+                position: relative;
+                @include text-as-link;
+            }
+            
             &:hover {
                 cursor: pointer;
                 .link-blog {
@@ -118,8 +132,7 @@
             }
 
             .link-blog {
-                text-decoration: none;
-                color: $white;
+                @include text-as-link;
                 display: block;
                 text-align: right;
                 background-color: $primary;
@@ -131,6 +144,7 @@
                 width: 15px;
                 height: 20px;
                 transition: all .45s ease-out;
+                z-index: 5;
             }
         }
 }
