@@ -96,6 +96,45 @@
     }    
 }
 
+.liste-blog {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 32px;
+    margin-top: 60px;
+        .blog {
+            box-shadow: 1px 0 20px #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            position: relative;
+
+            &:hover {
+                cursor: pointer;
+                .link-blog {
+                    height: 100%;
+                    width: 100%;
+                    padding: 0;
+                    border-radius: 5px;
+                }
+            }
+
+            .link-blog {
+                text-decoration: none;
+                color: $white;
+                display: block;
+                text-align: right;
+                background-color: $primary;
+                position: absolute;
+                top: 0;
+                right: 0;
+                padding: 10px 10px 15px 15px;
+                border-bottom-left-radius:100%;
+                width: 15px;
+                height: 20px;
+                transition: all .45s ease-out;
+            }
+        }
+}
+
 #loader {
     position: fixed;
     top: 0;
