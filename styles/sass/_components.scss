@@ -274,7 +274,65 @@
         }
 
         .diplome-description {
+            margin-top: 10px;
+        }
+    }
+}
 
+.experiences {
+    display: flex;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+    gap: 30px;
+    .experience {
+    margin-top: 40px;
+    border: 1px solid $white;
+    border-radius: $border-radius;
+    box-shadow: 1px 0 20px #fff;
+        @media screen and (min-width: 1024px) {
+            max-width: 33%;
+            padding: 15px;
+        }
+    }
+
+    .experience-header {
+        position: relative;
+        padding: 50px;
+        background-color: $primary;
+        margin-bottom: 50px;
+        padding-top: 25px;
+        border-radius: $border-radius;
+            .experience-title {
+                text-align: center;
+            }
+            .experience-logo {
+                position: absolute;
+                border-radius: 50%;
+                bottom: -50px;
+                left: 50%;
+                transform: translateX(-50%);
+                max-width: 100px;
+            }
+    }
+
+    .experience-content{
+        padding: 15px;
+        padding-top: 40px;
+        border-radius: $border-radius;
+        &:hover {
+            box-shadow: 1px 0 20px $primary;
+            transition: all ease 0.3s;
+        }
+        
+        .experience-subtitle {
+            font-weight: bold;
+        }
+        .experience-date {
+            font-style: italic;
+        }
+        .experience-description {
+            margin-top: 10px;
         }
     }
 }

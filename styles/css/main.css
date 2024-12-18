@@ -395,6 +395,69 @@ body {
 .diplomes .diplome-content .diplome-date {
   font-style: italic;
 }
+.diplomes .diplome-content .diplome-description {
+  margin-top: 10px;
+}
+
+.experiences {
+  display: flex;
+  gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .experiences {
+    flex-direction: column;
+  }
+}
+.experiences .experience {
+  margin-top: 40px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  box-shadow: 1px 0 20px #fff;
+}
+@media screen and (min-width: 1024px) {
+  .experiences .experience {
+    max-width: 33%;
+    padding: 15px;
+  }
+}
+.experiences .experience-header {
+  position: relative;
+  padding: 50px;
+  background-color: #55198b;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  border-radius: 5px;
+}
+.experiences .experience-header .experience-title {
+  text-align: center;
+}
+.experiences .experience-header .experience-logo {
+  position: absolute;
+  border-radius: 50%;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100px;
+}
+.experiences .experience-content {
+  padding: 15px;
+  padding-top: 40px;
+  border-radius: 5px;
+}
+.experiences .experience-content:hover {
+  box-shadow: 1px 0 20px #55198b;
+  transition: all ease 0.3s;
+}
+.experiences .experience-content .experience-subtitle {
+  font-weight: bold;
+}
+.experiences .experience-content .experience-date {
+  font-style: italic;
+}
+.experiences .experience-content .experience-description {
+  margin-top: 10px;
+}
+
 .btn {
   padding: 10px 15px;
   font-weight: bold;
