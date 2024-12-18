@@ -123,6 +123,7 @@ picture.emoji-gif img {
   color: #ffffff;
   text-decoration: none;
   padding: 5px;
+  z-index: 500;
 }
 
 html {
@@ -232,9 +233,19 @@ body {
 
 .liste-blog {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   gap: 32px;
   margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .liste-blog {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 1440px) {
+  .liste-blog {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 .liste-blog a {
   text-decoration: none;
