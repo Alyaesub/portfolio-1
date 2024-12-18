@@ -49,3 +49,14 @@
         opacity: 0;
     }
 }
+
+//animation des barres de compétences
+
+@keyframes showgrowth {
+    from {
+        padding-right: 0px;
+    }
+    to {
+        padding-right: 2%;
+    }
+}

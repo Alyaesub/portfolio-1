@@ -184,13 +184,14 @@
                 width: 100%;
                 height: 20px;
                 border-radius: 10px;
+                border: 1px solid;
                 
                 .competence-bar-bar-fill-Front-end-Design {
                     background-color: $primary;
                     width: 45%;
                     height: 20px;
                     border-radius: 10px;
-                    margin-left: 0;
+                    animation: showgrowth 1.5s ease infinite alternate;
                 }
 
                 .competence-bar-bar-fill-Back-end {
@@ -198,6 +199,7 @@
                     width: 20%;
                     height: 20px;
                     border-radius: 10px;
+                    animation: showgrowth 1.5s ease infinite alternate;
                 }
 
                 .competence-bar-bar-fill-Programmation {
@@ -205,6 +207,7 @@
                     width: 10%;
                     height: 20px;
                     border-radius: 10px;
+                    animation: showgrowth 1.5s ease infinite alternate;
                 }
             }
         }
