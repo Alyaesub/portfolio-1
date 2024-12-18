@@ -108,3 +108,15 @@ picture.emoji-gif {
     }
     
 }                      
+
+#gototop {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    display: block;
+    background-color: $primary;
+    border-radius: 5px;
+    color: $white;
+    text-decoration: none;
+    padding: 5px;
+}
