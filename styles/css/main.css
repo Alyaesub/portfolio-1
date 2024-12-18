@@ -29,6 +29,7 @@ picture.emoji-gif img {
   left: 0;
   background-color: #171c28;
   height: 120px;
+  z-index: 10;
 }
 @media screen and (min-width: 768px) {
   .header-website {
@@ -185,6 +186,9 @@ body {
     line-height: 40px;
   }
 }
+.section-display .text-content h2 {
+  font-size: 2em;
+}
 .section-display .illustration {
   flex: 1;
   margin-top: 50px;
@@ -283,6 +287,7 @@ body {
   top: 0;
   right: 0;
   padding: 10px 10px 15px 15px;
+  border-radius: 5px;
   border-bottom-left-radius: 100%;
   width: 15px;
   height: 20px;
@@ -353,11 +358,30 @@ body {
   display: flex;
   gap: 30px;
   margin-top: 20px;
+  position: relative;
+  padding-bottom: 45px;
+  align-items: center;
+}
+.diplomes:hover::after {
+  width: 100%;
+  background-color: #55198b;
+}
+.diplomes::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background-color: #868e96;
+  position: absolute;
+  bottom: 0;
+  transition: all 0.5s ease;
 }
 .diplomes .diplome-logo {
   max-width: 100px;
   height: fit-content;
-  border-radius: 10px;
+  border-radius: 30px;
+}
+.diplomes .diplome-content {
+  padding-top: 15px;
 }
 .diplomes .diplome-content .diplome-title {
   margin: 0;

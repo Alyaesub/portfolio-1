@@ -30,6 +30,7 @@ picture.emoji-gif {
     left: 0;
     background-color: $dark;
     height: 120px;
+    z-index: 10;
     @media screen and (min-width: 768px) {
         height: 200px;
     }

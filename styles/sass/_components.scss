@@ -45,6 +45,10 @@
                     line-height: 40px;
                 }
         }
+
+        h2 {
+            font-size: 2em;
+        }
     }
 
     .illustration {
@@ -146,6 +150,7 @@
                 top: 0;
                 right: 0;
                 padding: 10px 10px 15px 15px;
+                border-radius: $border-radius;
                 border-bottom-left-radius:100%;
                 width: 15px;
                 height: 20px;
@@ -223,15 +228,35 @@
     display: flex;
     gap: 30px;
     margin-top: 20px;
+    position: relative;
+    padding-bottom: 45px;
+    align-items: center;
+
+    &:hover {
+        &::after {
+            width: 100%;
+            background-color: $primary;
+        }
+    }
+
+    &::after {
+        content: "";
+        width: 60%;
+        height: 3px;
+        background-color: $gray;
+        position: absolute;
+        bottom: 0;
+        transition: all 0.5s ease;
+    }
 
     .diplome-logo {
         max-width: 100px;
         height: fit-content;
-        border-radius: $border-radius2;
+        border-radius: $border-radius-logo;
     }
 
     .diplome-content {
-        
+        padding-top: 15px;
 
         .diplome-title {
             margin: 0;
