@@ -12,3 +12,7 @@ Dans le fichier variable ce trouves a coter en commentaires les utilité de cell
 
 plusieur push et commit éfféctuer
 
+Structure final fini
+sections et autres faites et stables
+contenue a remplire et images a adapter
+remplire les champs laisser vide avec les infos mise a jours

@@ -115,7 +115,7 @@ picture.emoji-gif {
     right: 15px;
     display: block;
     background-color: $primary;
-    border-radius: 5px;
+    border-radius: $border-radius;
     color: $white;
     text-decoration: none;
     padding: 5px;

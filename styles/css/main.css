@@ -349,6 +349,28 @@ body {
   animation: showgrowth 1.5s ease infinite alternate;
 }
 
+.diplomes {
+  display: flex;
+  gap: 30px;
+  margin-top: 20px;
+}
+.diplomes .diplome-logo {
+  max-width: 100px;
+  height: fit-content;
+  border-radius: 10px;
+}
+.diplomes .diplome-content .diplome-title {
+  margin: 0;
+  margin: 0 0 10px 0;
+  font-size: 1.5rem;
+}
+.diplomes .diplome-content .diplome-subtitle {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.diplomes .diplome-content .diplome-date {
+  font-style: italic;
+}
 .btn {
   padding: 10px 15px;
   font-weight: bold;
