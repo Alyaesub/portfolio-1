@@ -458,6 +458,18 @@ body {
   margin-top: 10px;
 }
 
+.liste-contact {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 40px;
+}
+.liste-contact img {
+  width: 150px;
+  height: 150px;
+}
+
 .btn {
   padding: 10px 15px;
   font-weight: bold;

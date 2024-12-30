@@ -336,3 +336,16 @@
         }
     }
 }
+
+.liste-contact {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 40px;
+
+    img {
+        width: 150px;
+        height: 150px;
+    }
+}
