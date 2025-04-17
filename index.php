@@ -117,7 +117,7 @@
                         <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48e/512.gif" alt="💎" width="32" height="32">
                     </picture>
                 </h2>
-                <p>Voici mes compétences:</p>
+                <p>Niveaux de compétences</p>
                 <div class="competences-bars">
                     <div class="competence-bar">
                         <div class="competence-bar-title">Front-end/Design</div>
@@ -152,7 +152,7 @@
 
         <section class="section-display full-text-content" id="diplome">
             <div class="text-content">
-                <h2 class="title">Diplomes
+                <h2 class="title">Diplômes
                     <picture class="emoji-gif">
                         <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f393/512.webp" type="image/webp">
                         <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f393/512.gif" alt="🎓" width="32" height="32">
@@ -162,7 +162,7 @@
             <article class="diplomes">
                 <img class="diplome-logo" src="asset/studi-2.png" alt="logo studi">
                 <div class="diplome-content">
-                    <h3 class="diplome-title">Dévellopeur web et mobiles</h3>
+                    <h3 class="diplome-title">Développeur applications web et mobiles</h3>
                     <div class="diplome-subtitle">Studi</div>
                     <div class="diplome-date">2024-2026</div>
                     <div class="diplome-description">
@@ -173,7 +173,7 @@
             <article class="diplomes">
                 <img class="diplome-logo" src="asset/logo_digital-campus.webp" alt="logo studi">
                 <div class="diplome-content">
-                    <h3 class="diplome-title">Dévellopeur web et mobiles</h3>
+                    <h3 class="diplome-title">Développeur applications web et mobiles</h3>
                     <div class="diplome-subtitle">Digital Campus</div>
                     <div class="diplome-date">2024-2026</div>
                     <div class="diplome-description">
@@ -279,13 +279,13 @@
 
         <section class="section-display full-text-content" id="contact">
             <div class="text-content">
-                <h2 class="title">Mes contacts et reseaux
+                <h2 class="title">Mes contacts et réseaux
                     <picture class="emoji-gif">
                         <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6ce_fe0f/512.webp" type="image/webp">
                         <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6ce_fe0f/512.gif" alt="🛎" width="32" height="32">
                     </picture>
                 </h2>
-                <p>Réseaux Proféssionnel</p>
+                <p>Réseaux Professionnels</p>
                 <section class="listes-contacts">
                     <div class="liste-contact">
                         <a target="_blank" href="https://github.com/Alyaesub">
@@ -307,13 +307,13 @@
 
         <section class="section-display full-text-content" id="blog">
             <div class="text-content">
-                <h2 class="title">Blogs
+                <h2 class="title">Blog
                     <picture class="emoji-gif">
                         <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f195/512.webp" type="image/webp">
                         <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f195/512.gif" alt="🆕" width="32" height="32">
                     </picture>
                 </h2>
-                <p>Continuer à apprendre, Continuer à decouvire, Rester en veille</p>
+                <p>Continuer à apprendre, Continuer à decouvrir, Rester en veille</p>
                 <section class="liste-blog">
                     <a href="https://www.google.com/">
                         <article class="blog">
