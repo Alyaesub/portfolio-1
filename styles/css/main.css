@@ -40,9 +40,6 @@ picture.emoji-gif img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*display: flex;
-  justify-content: space-between;
-  align-items: center;*/
 }
 @media screen and (min-width: 768px) {
   .header-website .navbar {
@@ -88,7 +85,7 @@ picture.emoji-gif img {
   padding: 15px;
 }
 .header-website .menu .dropdown-menu .nav-links .nav-link {
-  padding: 30px;
+  padding: 20px;
 }
 .header-website .menu .dropdown-menu .nav-links .nav-link a {
   color: #ffffff;
@@ -97,20 +94,22 @@ picture.emoji-gif img {
 .header-website ul {
   list-style-type: none;
 }
-.header-website .logo {
-  max-width: 40%;
+.header-website .logo img {
+  max-width: 100%;
+  border-radius: 22px;
 }
 @media screen and (min-width: 768px) {
   .header-website .logo {
-    max-width: 20%;
+    width: 150px;
+    height: 150px;
   }
 }
-.header-website .logo img {
-  max-width: 100%;
-}
-@media screen and (min-width: 768px) {
-  .header-website .logo img {
-    max-width: 90%;
+@media screen and (max-width: 768px) {
+  .header-website .logo {
+    width: 80px;
+    height: 80px;
+    margin-top: 10px;
+    /* display: none; */
   }
 }
 
@@ -334,21 +333,28 @@ body {
 }
 .competences-bars .competence-bar .competence-bar-bar .competence-bar-bar-fill-Front-end-Design {
   background-color: #55198b;
-  width: 45%;
+  width: 60%;
   height: 20px;
   border-radius: 10px;
   animation: showgrowth 1.5s ease infinite alternate;
 }
 .competences-bars .competence-bar .competence-bar-bar .competence-bar-bar-fill-Back-end {
   background-color: #55198b;
-  width: 20%;
+  width: 55%;
   height: 20px;
   border-radius: 10px;
   animation: showgrowth 1.5s ease infinite alternate;
 }
 .competences-bars .competence-bar .competence-bar-bar .competence-bar-bar-fill-Programmation {
   background-color: #55198b;
-  width: 10%;
+  width: 40%;
+  height: 20px;
+  border-radius: 10px;
+  animation: showgrowth 1.5s ease infinite alternate;
+}
+.competences-bars .competence-bar .competence-bar-bar .competence-bar-bar-fill-Web3 {
+  background-color: #55198b;
+  width: 20%;
   height: 20px;
   border-radius: 10px;
   animation: showgrowth 1.5s ease infinite alternate;
@@ -468,6 +474,26 @@ body {
 .liste-contact img {
   width: 150px;
   height: 150px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.liste-contact img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+@media screen and (max-width: 768px) {
+  .liste-contact {
+    flex-direction: column;
+    align-items: center;
+  }
+  .liste-contact img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .liste-contact img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
 }
 
 .btn {

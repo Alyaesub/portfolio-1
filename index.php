@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +13,10 @@
     <header class="header-website">
         <nav class="navbar">
             <div class="logo">
-                <img src="asset/logo 2 sans bg.png" alt="logo">
+                <img src="asset/logoPr.png" alt="logo">
             </div>
             <div class="menu">
-                <input type="checkbox" id="menu-toggle" class="menu-input"/>
+                <input type="checkbox" id="menu-toggle" class="menu-input" />
                 <label class="btn btn-primary menu-input-label" for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
                 <div class="dropdown-menu">
                     <ul class="nav-links">
@@ -43,31 +44,27 @@
                         <li class="nav-link">
                             <a href="#blog">Blogs</a>
                         </li>
-                        
+
                     </ul>
-                </div>               
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <section class="section-display left-text-content" id="accueil">
             <div class="text-content">
-                <h1 class="title">Hello, je suis Pascal 
-                    <picture class="emoji-gif">
-                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/26a1/512.webp" type="image/webp">
-                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/26a1/512.gif" alt="⚡">
-                    </picture>
-                </h1>
-                <p class="paragraphe">Presentations a mettre développeur web et logiciels passionné <span class="animate-fusée">🚀</span> <br> consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                <h1 class="title">Bonjour et bienvenue sur mon portfolio.</h1>
+                <p class="paragraphe">Passionné par le code et la création, je développe des applications web et mobile pensées pour les utilisateurs, avec rigueur et simplicité.<br> Je vous accompagne de l’idée au déploiement de votre application web. <br> Développeur web passionné, j’ai à cœur de concevoir des applications à la fois fonctionnelles, intuitives et durables.<br>
+                    Formé aux technologies du web comme HTML, CSS (SCSS), JavaScript, PHP et SQL, je suis également à l’aise avec les architectures modernes et les bases de données SQL, NoSQL, MongoDB et MySQL et Docker.<br>
+                    Mon approche est centrée sur la qualité du code, la clarté de la structure, et l’expérience utilisateur. Curieux et autonome, je suis toujours en veille pour apprendre de nouveaux outils ou langages, comme Python et Solidity, afin de rester à la pointe et proposer des solutions adaptées aux besoins et de m'ouvrire sur d'autres horizons.<br>
+                    Je développe des projets complets mêlant front-end, back-end, API, et hébergement, tout en documentant rigoureusement chaque étape pour garantir leur maintenabilité. </p>
                 <div class="action-div">
                     <a href="#contact">
                         <button class="btn btn-primary">Contact</button>
                     </a>
-                    <a href="asset/cv-pascal-2023.png" download="cv-pascal-2023.png">
+                    <a href="asset/cv-pascal-2023.png" download="cv-pascal-2023.png"><!-- mettre ajour le cv -->
                         <button class="btn btn-primary">Mon CV</button>
                     </a>
-                    
-                    
                 </div>
             </div>
             <div class="illustration">
@@ -83,7 +80,7 @@
                         <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/270f_fe0f/512.gif" alt="✏" width="32" height="32">
                     </picture>
                 </h2>
-                <p class="paragraphe">Dévellopeur et programmeur qui veut explorer chaques brides technologique</p>
+                <p class="paragraphe">Dévellopeur et programmeur qui veut explorer chaques brides technologique.</p>
                 <div class="competences-icones">
                     <i class="fa-brands fa-html5"></i>
                     <i class="fa-brands fa-css3"></i>
@@ -92,14 +89,19 @@
                     <i class="fa-solid fa-database"></i>
                     <i class="fa-brands fa-php"></i>
                     <i class="fa-brands fa-symfony"></i>
+                    <i class="fa-solid fa-code-branch"></i>
+                    <i class="fa-solid fa-server"></i>
                     <i class="fa-brands fa-docker"></i>
+                    <i class="fa-brands fa-python"></i>
+                    <i class="fa-brands fa-ethereum"></i>
+
                 </div>
                 <div class="liste-competences">
-                    <p>⚡Développez des interfaces utilisateur/front-end<br>interactives pour vos applications Web et mobiles</p>
-                    <p>⚡Applications Web progressives et responsive</p>
-                    <p>⚡consectetur adipiscing elit</p>
-                    <p>⚡consectetur adipiscing elit</p>
-                    <p>⚡consectetur adipiscing elit</p>
+                    <p>⚡Développez des interfaces utilisateur/front-end<br>interactives et dynamique pour vos applications Web et mobiles.</p>
+                    <p>⚡Applications Web progressives et responsive.</p>
+                    <p>⚡Créations et Gestions de base de données.</p>
+                    <p>⚡Dépoiment et maintenance web.</p>
+                    <p>⚡Programmation et bases Web 3.</p>
                 </div>
             </div>
             <div class="illustration">
@@ -111,8 +113,8 @@
             <div class="text-content">
                 <h2 class="title">Compétences
                     <picture class="emoji-gif">
-                            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48e/512.webp" type="image/webp">
-                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48e/512.gif" alt="💎" width="32" height="32">
+                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48e/512.webp" type="image/webp">
+                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48e/512.gif" alt="💎" width="32" height="32">
                     </picture>
                 </h2>
                 <p>Voici mes compétences:</p>
@@ -133,6 +135,12 @@
                         <div class="competence-bar-title">Programmation</div>
                         <div class="competence-bar-bar">
                             <div class="competence-bar-bar-fill-Programmation"></div>
+                        </div>
+                    </div>
+                    <div class="competence-bar">
+                        <div class="competence-bar-title">Web 3</div>
+                        <div class="competence-bar-bar">
+                            <div class="competence-bar-bar-fill-Web3"></div>
                         </div>
                     </div>
                 </div>
@@ -158,7 +166,7 @@
                     <div class="diplome-subtitle">Studi</div>
                     <div class="diplome-date">2024-2026</div>
                     <div class="diplome-description">
-                        description du diplome Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur,a. Ipsum unde sequi maxime dolores. sit amet consectetur adipisicing elit.
+                        En cours de formation. 1er semestre validé.
                     </div>
                 </div>
             </article>
@@ -167,9 +175,9 @@
                 <div class="diplome-content">
                     <h3 class="diplome-title">Dévellopeur web et mobiles</h3>
                     <div class="diplome-subtitle">Digital Campus</div>
-                    <div class="diplome-date">2025-2026</div>
+                    <div class="diplome-date">2024-2026</div>
                     <div class="diplome-description">
-                        description du diplome Lorem ipsum dolor, Lorem ipsum dolor sit amet consectetur,a. Ipsum unde sequi maxime dolores. sit amet consectetur adipisicing elit.
+                        En cours de formation. 1er semestre validé.
                     </div>
                 </div>
             </article>
@@ -178,9 +186,9 @@
         <section class="section-display full-text-content" id="experiences">
             <div class="text-content">
                 <h2 class="title">Expériences
-                    <picture class="emoji-gif">  
-                            <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.webp" type="image/webp">
-                            <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="32" height="32">
+                    <picture class="emoji-gif">
+                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.webp" type="image/webp">
+                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="32" height="32">
                     </picture>
                 </h2>
             </div>
@@ -237,20 +245,34 @@
                 </h2>
                 <p>Présentations de mes dernier projets</p>
                 <section class="liste-blog">
-                        <a href="https://www.google.com/">
-                            <article class="blog">
-                                <h4>Titre et nom du projet</h4>
-                                <p>Presentation du projet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                                <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                            </article>
-                        </a>
-                        <a href="https://www.google.com/">
-                            <article class="blog">
-                                <h4>Titre et nom du projet</h4>
-                                <p>Presentation du projet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                                <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                            </article>
-                        </a>
+                    <a href="https://www.google.com/">
+                        <article class="blog">
+                            <h4>Titre et nom du projet</h4>
+                            <p>Presentation du projet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                        </article>
+                    </a>
+                    <a href="https://www.google.com/">
+                        <article class="blog">
+                            <h4>Titre et nom du projet</h4>
+                            <p>Presentation du projet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                        </article>
+                    </a>
+                    <a href="https://www.google.com/">
+                        <article class="blog">
+                            <h4>Titre et nom du projet</h4>
+                            <p>Presentation du projet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                        </article>
+                    </a>
+                    <a href="https://www.google.com/">
+                        <article class="blog">
+                            <h4>Titre et nom du projet</h4>
+                            <p>Presentation du projet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                        </article>
+                    </a>
                 </section>
             </div>
         </section>
@@ -266,12 +288,18 @@
                 <p>Réseaux Proféssionnel</p>
                 <section class="listes-contacts">
                     <div class="liste-contact">
-                            <a target="_blank" href="https://github.com/Alyaesub">
-                                <img src="asset/github-square.256x256.png" alt="logo git hub">
-                            </a>
-                            <a target="_blank" href="www.linkedin.com/in/pascal-reynier-75a11b326">
-                                <img src="asset/social-linkedin.256x256.png" alt="logo linkedin">
-                            </a>
+                        <a target="_blank" href="https://github.com/Alyaesub">
+                            <img src="asset/github.svg" alt="logo git hub">
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/pascal-reynier-75a11b326/">
+                            <img src="asset/linkedin.svg" alt="logo linkedin">
+                        </a>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61574938434923">
+                            <img src="asset/facebook.svg" alt="logo facebook">
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/code_co_solutions/">
+                            <img src="asset/instagram.svg" alt="logo instagramme">
+                        </a>
                     </div>
                 </section>
             </div>
@@ -287,20 +315,20 @@
                 </h2>
                 <p>Continuer à apprendre, Continuer à decouvire, Rester en veille</p>
                 <section class="liste-blog">
-                        <a href="https://www.google.com/">
-                            <article class="blog">
-                                <h4>Lorem ipsum dolor sit amet</h4>
-                                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                                <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                            </article>
-                        </a>
-                        <a href="https://www.google.com/">
-                            <article class="blog">
-                                <h4>Lorem ipsum dolor sit amet</h4>
-                                <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                                <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                            </article>
-                        </a>
+                    <a href="https://www.google.com/">
+                        <article class="blog">
+                            <h4>Lorem ipsum dolor sit amet</h4>
+                            <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                        </article>
+                    </a>
+                    <a href="https://www.google.com/">
+                        <article class="blog">
+                            <h4>Lorem ipsum dolor sit amet</h4>
+                            <p>consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
+                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                        </article>
+                    </a>
                 </section>
             </div>
         </section>
@@ -308,8 +336,8 @@
     <footer>
         <div class="credits">
             <span>Made with enjoy <picture>
-                <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1fae1/512.webp" type="image/webp">
-                <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1fae1/512.gif" alt="🫡" width="32" height="32">
+                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1fae1/512.webp" type="image/webp">
+                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1fae1/512.gif" alt="🫡" width="32" height="32">
                 </picture></span>
             <span>© 2024 Reynier Pascal</span>
         </div>
@@ -321,7 +349,8 @@
         <picture>
             <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_fe0f/512.webp" type="image/webp">
             <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_fe0f/512.gif" alt="☝" width="32" height="32">
-            </picture>
+        </picture>
     </a>
 </body>
+
 </html>
