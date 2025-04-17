@@ -56,7 +56,7 @@
                 <h1 class="title">Bonjour et bienvenue sur mon portfolio.</h1>
                 <p class="paragraphe">Passionné par le code et la création, je développe des applications web et mobile pensées pour les utilisateurs, avec rigueur et simplicité.<br> Je vous accompagne de l’idée au déploiement de votre application web. <br> Développeur web passionné, j’ai à cœur de concevoir des applications à la fois fonctionnelles, intuitives et durables.<br>
                     Formé aux technologies du web comme HTML, CSS (SCSS), JavaScript, PHP et SQL, je suis également à l’aise avec les architectures modernes et les bases de données SQL, NoSQL, MongoDB et MySQL et Docker.<br>
-                    Mon approche est centrée sur la qualité du code, la clarté de la structure, et l’expérience utilisateur. Curieux et autonome, je suis toujours en veille pour apprendre de nouveaux outils ou langages, comme Python et Solidity, afin de rester à la pointe et proposer des solutions adaptées aux besoins et de m'ouvrire sur d'autres horizons.<br>
+                    Mon approche est centrée sur la qualité du code, la clarté de la structure, et l’expérience utilisateur. Curieux et autonome, je suis toujours en veille pour apprendre de nouveaux outils ou langages, comme Python et Solidity, afin de rester à la pointe et proposer des solutions adaptées aux besoins et de m'ouvrir sur d'autres horizons.<br>
                     Je développe des projets complets mêlant front-end, back-end, API, et hébergement, tout en documentant rigoureusement chaque étape pour garantir leur maintenabilité. </p>
                 <div class="action-div">
                     <a href="#contact">
@@ -80,7 +80,7 @@
                         <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/270f_fe0f/512.gif" alt="✏" width="32" height="32">
                     </picture>
                 </h2>
-                <p class="paragraphe">Dévellopeur et programmeur qui veut explorer chaques brides technologique.</p>
+                <p class="paragraphe">Développeur et programmeur qui veut explorer chaque bribe technologique.</p>
                 <div class="competences-icones">
                     <i class="fa-brands fa-html5"></i>
                     <i class="fa-brands fa-css3"></i>
@@ -97,11 +97,11 @@
 
                 </div>
                 <div class="liste-competences">
-                    <p>⚡Développez des interfaces utilisateur/front-end<br>interactives et dynamique pour vos applications Web et mobiles.</p>
-                    <p>⚡Applications Web progressives et responsive.</p>
-                    <p>⚡Créations et Gestions de base de données.</p>
-                    <p>⚡Dépoiment et maintenance web.</p>
+                    <p>⚡Développement des interfaces utilisateur/front-end<br>interactives et dynamiques pour vos applications Web et mobiles.</p>
+                    <p>⚡Création d'applications Web progressives et responsives.</p>
+                    <p>⚡Déploiement et maintenance web.</p>
                     <p>⚡Programmation et bases Web 3.</p>
+                    <p>⚡Création et gestion de base de données.</p>
                 </div>
             </div>
             <div class="illustration">
