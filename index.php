@@ -314,7 +314,7 @@ require_once "controllers/routeur.php"
                         </div>
                     </div>
                 </article>
-                <article class="experience">
+                <!-- <article class="experience">
                     <div class="experience-header">
                         <h3 class="experience-title">Coming soon</h3>
                         <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet blog">
@@ -322,12 +322,10 @@ require_once "controllers/routeur.php"
                     <div class="experience-content">
                         <div class="experience-subtitle">....</div>
                         <div class="experience-date">...</div>
-                        <div class="experience-description">
-
-                        </div>
+                        <div class="experience-description"></div>
                     </div>
-                </article>
-                <article class="experience">
+                </article> -->
+                <!-- <article class="experience">
                     <div class="experience-header">
                         <h3 class="experience-title">Coming soon</h3>
                         <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet blog">
@@ -335,11 +333,9 @@ require_once "controllers/routeur.php"
                     <div class="experience-content">
                         <div class="experience-subtitle">...</div>
                         <div class="experience-date">...</div>
-                        <div class="experience-description">
-
-                        </div>
+                        <div class="experience-description"></div>
                     </div>
-                </article>
+                </article> -->
             </div>
         </section>
 
@@ -381,20 +377,20 @@ require_once "controllers/routeur.php"
                             <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
                         </article>
                     </a>
-                    <a href="https://www.google.com/">
+                    <!--  <a href="https://www.google.com/">
                         <article class="blog">
                             <h4>Titre et nom du projet</h4>
                             <p>Presentation du projet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
                         </article>
-                    </a>
-                    <a href="https://www.google.com/">
+                    </a> -->
+                    <!--  <a href="https://www.google.com/">
                         <article class="blog">
                             <h4>Titre et nom du projet</h4>
                             <p>Presentation du projet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
                             <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
                         </article>
-                    </a>
+                    </a> -->
                 </section>
             </div>
         </section>
