@@ -408,6 +408,8 @@ body {
 .experiences {
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
   .experiences {
@@ -415,6 +417,7 @@ body {
   }
 }
 .experiences .experience {
+  flex: 1 1 calc(33.333% - 20px);
   margin-top: 40px;
   border: 1px solid #ffffff;
   border-radius: 5px;

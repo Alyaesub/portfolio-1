@@ -293,7 +293,10 @@
             flex-direction: column;
         }
     gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-around;
     .experience {
+    flex: 1 1 calc(33.333% - 20px);
     margin-top: 40px;
     border: 1px solid $white;
     border-radius: $border-radius;

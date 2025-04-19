@@ -1,0 +1,9 @@
+RewriteEngine On
+
+# Si c’est un fichier ou un dossier existant → ne pas réécrire
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Sinon → rediriger vers index.php
+RewriteRule ^([^/]+)/?$ index.php?page=$1 [QSA,L]
