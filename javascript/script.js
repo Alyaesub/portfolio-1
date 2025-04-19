@@ -34,3 +34,17 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	}
 });
+
+/////////// code JS qui gére le menu burger
+
+document.addEventListener("DOMContentLoaded", function () {
+	const menuToggle = document.getElementById("menu-toggle");
+	const navLinks = document.querySelectorAll(".nav-link a");
+
+	navLinks.forEach((link) => {
+		link.addEventListener("click", () => {
+			// Fermer le menu en décochant le checkbox
+			menuToggle.checked = false;
+		});
+	});
+});

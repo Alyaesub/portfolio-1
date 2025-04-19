@@ -64,7 +64,6 @@ require_once "controllers/routeur.php"
                         <li class="nav-link">
                             <a href="/blog">Blogs</a>
                         </li>
-
                     </ul>
                 </div>
             </div>
@@ -92,7 +91,7 @@ require_once "controllers/routeur.php"
                 </div>
             </div>
             <div class="illustration">
-                <img src="asset/presentation.png" alt="image de presentations">
+                <img src="asset/michael-baccin-XopauR-Nagk-unsplash.jpg" alt="image de presentations">
             </div>
         </section>
 
@@ -129,7 +128,7 @@ require_once "controllers/routeur.php"
                 </div>
             </div>
             <div class="illustration">
-                <img src="asset/a-propos.png" alt="image de img-compétences">
+                <img src="asset/safar-safarov-koOdUvfGr4c-unsplash.jpg" alt="image de img-compétences">
             </div>
         </section>
 
@@ -144,7 +143,7 @@ require_once "controllers/routeur.php"
                 <p>Niveaux de compétences</p>
                 <div class="competences-bars">
                     <div class="competence-bar">
-                        <div class="competence-bar-title">Front-end/Design</div>
+                        <div class="competence-bar-title">Front-end</div>
                         <div class="competence-bar-bar">
                             <div class="competence-bar-bar-fill-Front-end-Design"></div>
                         </div>
@@ -170,7 +169,7 @@ require_once "controllers/routeur.php"
                 </div>
             </div>
             <div class="illustration">
-                <img src="asset/a-propos.png" alt="image de presentations">
+                <img src="asset/kevin-canlas-cFFEeHNZEqw-unsplash.jpg" alt="image de presentations">
             </div>
         </section>
 
