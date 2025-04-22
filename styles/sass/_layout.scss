@@ -74,23 +74,31 @@ picture.emoji-gif {
                         .nav-links {
                             display: flex;
                             justify-content: space-between;
-                            /* padding: 15px; */
                         }
-                }
-                    .nav-links {  
-                        padding: 15px;
-                        .nav-link {
-                            a {
+                        a {
                             color: $white;
                             text-decoration: none;
                             padding: 10px;
                             }
-                        }
-                    }
+                }
+
+                            
         }
     }
     ul {
         list-style-type: none;
+        @media screen and (max-width: 768px) {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+
+            a {
+                color: $white;
+                text-decoration: none;
+                padding: 10px;
+                }
+        }
+        
     }
 
     .logo {

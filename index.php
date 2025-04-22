@@ -76,7 +76,7 @@ require_once "controllers/routeur.php"
                 <p class="paragraphe">
                     Passionné par le code et la création, je développe des applications web et mobiles pensées pour les utilisateurs, avec rigueur et simplicité.<br>
                     Je vous accompagne de l’idée au déploiement de votre application web.<br>
-                    Développeur web passionné, j’ai à cœur de concevoir des applications à la fois fonctionnelles, intuitives et durables.<br>
+                    J’ai à cœur de concevoir des applications à la fois fonctionnelles, intuitives et durables.<br>
                     Formé aux technologies du web telles que HTML, CSS (SCSS), JavaScript, PHP et SQL, je suis également à l’aise avec les architectures modernes et les bases de données SQL, NoSQL, MongoDB et MySQL, ainsi qu'avec Docker.<br>
                     Mon approche est centrée sur la qualité du code, la clarté de la structure et l’expérience utilisateur. Curieux et autonome, je suis toujours en veille pour apprendre de nouveaux outils ou langages, comme Python et Solidity, afin de rester à la pointe et de proposer des solutions adaptées aux besoins, tout en m’ouvrant à d’autres horizons.<br>
                     Je développe des projets complets mêlant front-end, back-end, API et hébergement, tout en m’intéressant fortement au Web3 et à la blockchain.
@@ -91,7 +91,7 @@ require_once "controllers/routeur.php"
                 </div>
             </div>
             <div class="illustration">
-                <img src="asset/michael-baccin-XopauR-Nagk-unsplash.jpg" alt="image de presentations">
+                <img src="asset/michael-baccin-XopauR-Nagk-unsplash.avif" alt="image de presentations">
             </div>
         </section>
 
@@ -128,7 +128,7 @@ require_once "controllers/routeur.php"
                 </div>
             </div>
             <div class="illustration">
-                <img src="asset/safar-safarov-koOdUvfGr4c-unsplash.jpg" alt="image de img-compétences">
+                <img src="asset/safar-safarov-koOdUvfGr4c-unsplash.avif" alt="image de img-compétences">
             </div>
         </section>
 
@@ -169,7 +169,7 @@ require_once "controllers/routeur.php"
                 </div>
             </div>
             <div class="illustration">
-                <img src="asset/kevin-canlas-cFFEeHNZEqw-unsplash.jpg" alt="image de presentations">
+                <img src="asset/kevin-canlas-cFFEeHNZEqw-unsplash.avif" alt="image de presentations">
             </div>
         </section>
 
