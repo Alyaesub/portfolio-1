@@ -340,13 +340,6 @@ require_once "controllers/routeur.php"
 
         <section class="section-display full-text-content" id="projets">
             <div class="text-content">
-                <h2 class="title">Mes Projets
-                    <picture class="emoji-gif">
-                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.webp" type="image/webp">
-                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f525/512.gif" alt="🔥" width="32" height="32">
-                    </picture>
-                </h2>
-                <p>Présentations de mes dernier projets</p>
                 <section class="liste-blog">
                     <a href="https://jeux-de-des.sites-alya.fr/">
                         <article class="blog">

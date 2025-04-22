@@ -27,27 +27,29 @@
         flex: 1;
         h1 {
             font-size: 30px;
-            line-height: normal;
+            line-height: 1.5;
             font-weight: 700;
 
                 @media screen and (min-width: 768px) {
                     font-size: 60px;
-                    line-height: 1.1;
+                    line-height: 1.5;
                     font-weight: 700;
                 }
         }
+
+        h2 {
+            font-size: 2em;
+            line-height: 1.5;
+        }
+
         p {
             font-size: 20px;
             line-height: normal;
 
                 @media screen and (min-width: 768px) {
                     font-size: 24px;
-                    line-height: 40px;
+                    line-height: 1.5;
                 }
-        }
-
-        h2 {
-            font-size: 2em;
         }
     }
 
@@ -172,6 +174,7 @@
     justify-content: center;
     align-items: center;
     z-index: 1000;
+    pointer-events: none;
     animation: loader-hide 1s forwards;
     .loader {
         width: 120px;

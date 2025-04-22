@@ -29,6 +29,7 @@ picture.emoji-gif img {
   left: 0;
   background-color: #171c28;
   height: 120px;
+  width: auto;
   z-index: 10;
 }
 @media screen and (min-width: 768px) {
@@ -40,6 +41,7 @@ picture.emoji-gif img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  white-space: nowrap;
 }
 @media screen and (min-width: 768px) {
   .header-website .navbar {
@@ -78,18 +80,16 @@ picture.emoji-gif img {
   .header-website .menu .dropdown-menu .nav-links {
     display: flex;
     justify-content: space-between;
-    padding: 15px;
+    /* padding: 15px; */
   }
 }
 .header-website .menu .dropdown-menu .nav-links {
   padding: 15px;
 }
-.header-website .menu .dropdown-menu .nav-links .nav-link {
-  padding: 20px;
-}
 .header-website .menu .dropdown-menu .nav-links .nav-link a {
   color: #ffffff;
   text-decoration: none;
+  padding: 10px;
 }
 .header-website ul {
   list-style-type: none;
@@ -165,15 +165,19 @@ body {
 }
 .section-display .text-content h1 {
   font-size: 30px;
-  line-height: normal;
+  line-height: 1.5;
   font-weight: 700;
 }
 @media screen and (min-width: 768px) {
   .section-display .text-content h1 {
     font-size: 60px;
-    line-height: 1.1;
+    line-height: 1.5;
     font-weight: 700;
   }
+}
+.section-display .text-content h2 {
+  font-size: 2em;
+  line-height: 1.5;
 }
 .section-display .text-content p {
   font-size: 20px;
@@ -182,11 +186,8 @@ body {
 @media screen and (min-width: 768px) {
   .section-display .text-content p {
     font-size: 24px;
-    line-height: 40px;
+    line-height: 1.5;
   }
-}
-.section-display .text-content h2 {
-  font-size: 2em;
 }
 .section-display .illustration {
   flex: 1;
@@ -306,6 +307,7 @@ body {
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  pointer-events: none;
   animation: loader-hide 1s forwards;
 }
 #loader .loader {
