@@ -168,9 +168,6 @@ require_once "controllers/routeur.php"
                     </div>
                 </div>
             </div>
-            <div class="illustration">
-                <img src="asset/kevin-canlas-cFFEeHNZEqw-unsplash.avif" alt="image de presentations">
-            </div>
         </section>
 
         <section class="section-display full-text-content" id="diplomes">
@@ -194,7 +191,7 @@ require_once "controllers/routeur.php"
                 </div>
             </article>
             <article class="diplomes">
-                <img class="diplome-logo" src="asset/logo_digital-campus.webp" alt="logo studi">
+                <img class="diplome-logo" src="asset/digital-campus.png" alt="logo studi">
                 <div class="diplome-content">
                     <h3 class="diplome-title">Développeur applications web et mobiles</h3>
                     <div class="diplome-subtitle">Digital Campus</div>
@@ -205,7 +202,6 @@ require_once "controllers/routeur.php"
                 </div>
             </article>
         </section>
-
         <section class="section-display full-text-content" id="experiences">
             <div class="text-content">
                 <h2 class="title">Expériences, projets, créations
