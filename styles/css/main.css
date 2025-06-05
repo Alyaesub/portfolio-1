@@ -80,19 +80,27 @@ picture.emoji-gif img {
   .header-website .menu .dropdown-menu .nav-links {
     display: flex;
     justify-content: space-between;
-    /* padding: 15px; */
   }
-}
-.header-website .menu .dropdown-menu .nav-links {
-  padding: 15px;
-}
-.header-website .menu .dropdown-menu .nav-links .nav-link a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 10px;
+  .header-website .menu .dropdown-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+  }
 }
 .header-website ul {
   list-style-type: none;
+}
+@media screen and (max-width: 768px) {
+  .header-website ul {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+  }
+  .header-website ul a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+  }
 }
 .header-website .logo img {
   max-width: 100%;
