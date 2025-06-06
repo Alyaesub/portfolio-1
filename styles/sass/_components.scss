@@ -65,7 +65,7 @@
     }
 
 }
-
+//icone des competence
 .competences-icones {
     display: flex;
     justify-content: space-around;
@@ -83,7 +83,6 @@
             color: $secondary;
             transform: scale(1.2);
         }
-        
     }
 
     @media screen and (min-width: 768px) {
@@ -105,6 +104,52 @@
             
         }
     }    
+}
+
+//Competence
+.stack-group {
+    margin-bottom: 3rem;
+
+
+.stack-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.2rem;
+    padding: 0;
+    list-style: none;
+
+    li {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    padding: 1rem;
+    background: linear-gradient(145deg, #f3f4f6, #e5e7eb);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.06);
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    color: #1e293b;
+    position: relative;
+
+    i {
+        font-size: 1.3rem;
+        color: #3b82f6;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+        background: linear-gradient(145deg, #e0f2fe, #bae6fd);
+        color: #0f172a;
+
+        i {
+            transform: rotate(10deg) scale(1.2);
+            color: #2563eb;
+        }
+    }
+    }
+    }
 }
 
 .liste-blog {
@@ -186,55 +231,7 @@
     }
 }
 
-.competences-bars {
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-        .competence-bar {
-            .competence-bar-title {
-                margin-bottom: 15px;
-            }
-            .competence-bar-bar {
-                background-color: $white;
-                width: 100%;
-                height: 20px;
-                border-radius: $border-radius2;
-                border: 1px solid;
-                
-                .competence-bar-bar-fill-Front-end-Design {
-                    background-color: $primary;
-                    width: 60%;
-                    height: 20px;
-                    border-radius: $border-radius2;
-                    animation: showgrowth 1.5s ease infinite alternate;
-                }
 
-                .competence-bar-bar-fill-Back-end {
-                    background-color: $primary;
-                    width: 55%;
-                    height: 20px;
-                    border-radius: $border-radius2;
-                    animation: showgrowth 1.5s ease infinite alternate;
-                }
-
-                .competence-bar-bar-fill-Programmation {
-                    background-color: $primary;
-                    width: 40%;
-                    height: 20px;
-                    border-radius: $border-radius2 ;
-                    animation: showgrowth 1.5s ease infinite alternate;
-                }
-
-                .competence-bar-bar-fill-Web3 {
-                    background-color: $primary;
-                    width: 20%;
-                    height: 20px;
-                    border-radius: $border-radius2 ;
-                    animation: showgrowth 1.5s ease infinite alternate;
-                }    
-            }
-        }
-}
 
 .diplomes {
     display: flex;
