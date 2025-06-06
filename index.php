@@ -74,12 +74,9 @@ require_once "controllers/routeur.php"
             <div class="text-content">
                 <h1 class="title">Bonjour et bienvenue sur mon portfolio.</h1>
                 <p class="paragraphe">
-                    Passionné par le code et la création, je développe des applications web et mobiles pensées pour les utilisateurs, avec rigueur et simplicité.<br>
-                    Je vous accompagne de l’idée au déploiement de votre application web.<br>
-                    J’ai à cœur de concevoir des applications à la fois fonctionnelles, intuitives et durables.<br>
-                    Formé aux technologies du web telles que HTML, CSS (SCSS), JavaScript, PHP et SQL, je suis également à l’aise avec les architectures modernes et les bases de données SQL, NoSQL, MongoDB et MySQL, ainsi qu'avec Docker.<br>
-                    Mon approche est centrée sur la qualité du code, la clarté de la structure et l’expérience utilisateur. Curieux et autonome, je suis toujours en veille pour apprendre de nouveaux outils ou langages, comme Python et Solidity, afin de rester à la pointe et de proposer des solutions adaptées aux besoins, tout en m’ouvrant à d’autres horizons.<br>
-                    Je développe des projets complets mêlant front-end, back-end, API et hébergement, tout en m’intéressant fortement au Web3 et à la blockchain.
+                    Artisan du code, je conçois des applications utiles, stables et pensées pour les utilisateurs.
+                    Front, back, base de données, API — je construis des projets de A à Z avec rigueur et plaisir.
+                    En veille constante et passionné par le Web3, je m’ouvre aux nouvelles technologies comme Solidity et tout ce qui tourne autour de la blockchain.
                 </p>
                 <div class="action-div">
                     <a href="#contact">
@@ -94,7 +91,6 @@ require_once "controllers/routeur.php"
                 <img src="asset/michael-baccin-XopauR-Nagk-unsplash.avif" alt="image de presentations">
             </div>
         </section>
-
         <section class="section-display right-text-content" id="a-propos">
             <div class="text-content">
                 <h2 class="title">Ce que je fais
@@ -117,21 +113,19 @@ require_once "controllers/routeur.php"
                     <i class="fa-brands fa-docker"></i>
                     <i class="fa-brands fa-python"></i>
                     <i class="fa-brands fa-ethereum"></i>
-
                 </div>
                 <div class="liste-competences">
-                    <p>⚡Développement des interfaces utilisateur/front-end<br>interactives et dynamiques pour vos applications Web et mobiles.</p>
-                    <p>⚡Création d'applications Web progressives et responsives.</p>
-                    <p>⚡Déploiement et maintenance web.</p>
-                    <p>⚡Programmation et bases Web 3.</p>
-                    <p>⚡Création et gestion de base de données.</p>
+                    <p>⚡ Interfaces web modernes, responsives et interactives.</p>
+                    <p>⚡ Développement full-stack (front-end & back-end).</p>
+                    <p>⚡ Intégration d'API et gestion de bases de données.</p>
+                    <p>⚡ Déploiement, maintenance et optimisation.</p>
+                    <p>⚡ Initiation au Web3, blockchain et smart contracts.</p>
                 </div>
             </div>
             <div class="illustration">
                 <img src="asset/safar-safarov-koOdUvfGr4c-unsplash.avif" alt="image de img-compétences">
             </div>
         </section>
-
         <section class="section-display left-text-content" id="competences">
             <div class="text-content">
                 <h2 class="title">Compétences
@@ -140,36 +134,26 @@ require_once "controllers/routeur.php"
                         <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48e/512.gif" alt="💎" width="32" height="32">
                     </picture>
                 </h2>
-                <p>Niveaux de compétences</p>
-                <div class="competences-bars">
-                    <div class="competence-bar">
-                        <div class="competence-bar-title">Front-end</div>
-                        <div class="competence-bar-bar">
-                            <div class="competence-bar-bar-fill-Front-end-Design"></div>
-                        </div>
-                    </div>
-                    <div class="competence-bar">
-                        <div class="competence-bar-title">Back-end</div>
-                        <div class="competence-bar-bar">
-                            <div class="competence-bar-bar-fill-Back-end"></div>
-                        </div>
-                    </div>
-                    <div class="competence-bar">
-                        <div class="competence-bar-title">Programmation</div>
-                        <div class="competence-bar-bar">
-                            <div class="competence-bar-bar-fill-Programmation"></div>
-                        </div>
-                    </div>
-                    <div class="competence-bar">
-                        <div class="competence-bar-title">Web 3</div>
-                        <div class="competence-bar-bar">
-                            <div class="competence-bar-bar-fill-Web3"></div>
-                        </div>
-                    </div>
+                <div class="stack-group">
+                    <h3>Technologies solides & explorations en cours</h3>
+                    <ul class="stack-list">
+                        <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                        <li><i class="fa-brands fa-css3-alt"></i> CSS3 / SCSS</li>
+                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                        <li><i class="fa-brands fa-php"></i> PHP</li>
+                        <li><i class="fa-solid fa-database"></i> MySQL / SQL</li>
+                        <li><i class="fa-solid fa-network-wired"></i> MVC & Routage personnalisé</li>
+                        <li><i class="fa-brands fa-git-alt"></i> Git / GitHub</li>
+                        <li><i class="fa-brands fa-react"></i> React / Next.js</li>
+                        <li><i class="fa-brands fa-docker"></i> Docker</li>
+                        <li><i class="fa-brands fa-python"></i> Python</li>
+                        <li><i class="fa-brands fa-ethereum"></i> Solidity / Web3</li>
+                        <li><i class="fa-solid fa-file-code"></i> API REST / JSON</li>
+                        <li><i class="fa-solid fa-leaf"></i> MongoDB / NoSQL</li>
+                    </ul>
                 </div>
             </div>
         </section>
-
         <section class="section-display full-text-content" id="diplomes">
             <div class="text-content">
                 <h2 class="title">Diplômes
@@ -214,23 +198,24 @@ require_once "controllers/routeur.php"
             <div class="experiences">
                 <article class="experience">
                     <div class="experience-header">
-                        <h3 class="experience-title">Jeux de dés</h3>
-                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo du projet ou de l'entreprise">
+                        <h3 class="experience-title">TrackBuild</h3>
+                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo du projet TrackBuild">
                     </div>
                     <div class="experience-content">
-                        <div class="experience-subtitle">Dans le cadre de ma formation</div>
+                        <div class="experience-subtitle">Timer de suivi multi-projets</div>
                         <div class="experience-date">2024</div>
                         <div class="experience-description">
-                            • Objectif : Créer un jeu dynamique interactif manipulant le DOM en JS<br>
-                            • Stack : HTML / CSS / JavaScript Vanilla<br>
-                            - Réalisations :<br>
-                            • Logique du jeu à 2 joueurs avec gestion des scores<br>
-                            • Affichage des dés via Math.random()<br>
-                            • Animations des éléments et mise en page responsive<br>
+                            • Objectif : Créer un outil de suivi de temps multi-projets<br>
+                            • Stack : HTML, SCSS, JavaScript (DOM), LocalStorage<br>
+                            - Fonctions principales :<br>
+                            • Démarrage/arrêt des sessions avec historique dynamique<br>
+                            • Sélecteur de projets + récapitulatif global hebdo<br>
+                            • Graphiques de suivi du temps (canvas)<br>
+                            • Export des données au format CSV<br>
                             - Compétences acquises :<br>
-                            • Logique conditionnelle et événements<br>
-                            • Manipulation dynamique du DOM<br>
-                            • Déploiement d’un mini-jeu en ligne sur hébergement mutualisé (o2switch)<br>
+                            • Manipulation du DOM et du LocalStorage<br>
+                            • Génération de graphiques et formats d’export<br>
+                            • Architecture JS modulaire et évolutive
                         </div>
                     </div>
                 </article>
@@ -254,7 +239,7 @@ require_once "controllers/routeur.php"
                             • Architecture back-end<br>
                             • Communication JS/PHP/SQL<br>
                             • Bonne pratique de séparation des responsabilités<br>
-                            • Déploiement sur hébergement mutualisé (o2switch).<br>
+                            • Déploiement sur hébergement mutualisé.<br>
                         </div>
                     </div>
                 </article>
@@ -279,7 +264,7 @@ require_once "controllers/routeur.php"
                             • Développement full-stack orienté projet<br>
                             • Utilisation de concepts avancés PHP<br>
                             • Expérience utilisateur et accessibilité<br>
-                            • Déploiement sur hébergement mutualisé (o2switch)<br>
+                            • Déploiement sur hébergement mutualisé<br>
                         </div>
                     </div>
                 </article>
@@ -289,59 +274,33 @@ require_once "controllers/routeur.php"
                         <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet blog">
                     </div>
                     <div class="experience-content">
-                        <div class="experience-subtitle">Site Web et mobile de covoiturage</div>
+                        <div class="experience-subtitle">Plateforme de covoiturage écoresponsable</div>
                         <div class="experience-date">2025</div>
                         <div class="experience-description">
-                            • Contexte : Projet personnel de fin de formation validant toutes les compétences techniques attendues<br>
-                            • Objectif : Créer une application web de covoiturage éco-responsable<br>
-                            • Stack : HTML, SCSS, JavaScript (Fetch), PHP, MySQL, JSON (NoSQL)<br>
-                            - Éléments déjà réalisés :<br>
-                            • Formulaire dynamique de recherche et d’ajout de trajets<br>
-                            • Connexion à une base de données relationnelle (MySQL)<br>
-                            • Requêtes asynchrones Fetch pour charger les trajets<br>
-                            • Premières intégrations graphiques responsives<br>
-                            • Projet actuellement en cours de développement.<br>
-                            - Compétences mobilisées :<br>
-                            • Structuration de base de données SQL et logique back-end en PHP<br>
-                            • Manipulation de données JSON (NoSQL)<br>
-                            • Déploiement sur hébergement mutualisé (o2switch)<br>
-                            • Respect des bonnes pratiques de documentation<br>
+                            • Projet de fin de formation validant l’ensemble des compétences back et front<br>
+                            • Stack : HTML, SCSS, JavaScript (Fetch), PHP, MySQL, JSON<br>
+                            - Réalisations clés :<br>
+                            • Recherche et ajout de covoiturages avec requêtes asynchrones<br>
+                            • Dashboard utilisateur + interface admin/employé<br>
+                            • Gestion des crédits, avis (NoSQL) et rôles utilisateurs<br>
+                            - Compétences acquises :<br>
+                            • Développement full-stack structuré (MVC, PDO, JS)<br>
+                            • Interaction SQL/NoSQL<br>
+                            • Déploiement complet sur hébergeur mutualisé
                         </div>
                     </div>
                 </article>
-                <!-- <article class="experience">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Coming soon</h3>
-                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet blog">
-                    </div>
-                    <div class="experience-content">
-                        <div class="experience-subtitle">....</div>
-                        <div class="experience-date">...</div>
-                        <div class="experience-description"></div>
-                    </div>
-                </article> -->
-                <!-- <article class="experience">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Coming soon</h3>
-                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet blog">
-                    </div>
-                    <div class="experience-content">
-                        <div class="experience-subtitle">...</div>
-                        <div class="experience-date">...</div>
-                        <div class="experience-description"></div>
-                    </div>
-                </article> -->
             </div>
         </section>
 
         <section class="section-display full-text-content" id="projets">
             <div class="text-content">
                 <section class="liste-blog">
-                    <a href="https://jeux-de-des.sites-alya.fr/">
+                    <a href="">
                         <article class="blog">
-                            <h4>Jeux de dés</h4>
-                            <p>Jeux de dés dynamique fait au cours de ma formation</p>
-                            <div href="https://jeux-de-des.sites-alya.fr/" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                            <h4>TrackBuild</h4>
+                            <p>Gestionnaire de tache et de temps (Déploiement prévue été 2025)</p>
+                            <div href="" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
                         </article>
                     </a>
                     <a href="http://messagerie.sites-alya.fr/">
@@ -351,34 +310,38 @@ require_once "controllers/routeur.php"
                             <div href="http://messagerie.sites-alya.fr/" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
                         </article>
                     </a>
-                    <a href="https://www.google.com/">
+                    <a href="http://blogweb3.sites-alya.fr/">
                         <article class="blog">
                             <h4>Blog Web3</h4>
                             <p>Création d'un blog spécialisé dans le Web3</p>
-                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                            <div href="http://blogweb3.sites-alya.fr/" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
                         </article>
                     </a>
                     <a href="https://www.google.com/">
                         <article class="blog">
                             <h4>Ecoride</h4>
-                            <p>Réalisation full-stack d'une apllication de covoiturage</p>
+                            <p>Réalisation full-stack d'une apllication de covoiturage (Déploiement prévue été 2025)</p>
                             <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
                         </article>
                     </a>
-                    <!--  <a href="https://www.google.com/">
+                </section>
+            </div>
+        </section>
+
+        <section class="section-display full-text-content" id="archives">
+            <div class="text-content">
+                <h2 class="title">Archives & premiers projets 📁</h2>
+                <p>Des projets plus anciens, simples mais formateurs. 👨‍💻</p>
+
+                <section class="liste-blog">
+                    <a href="https://jeux-de-des.sites-alya.fr/">
                         <article class="blog">
-                            <h4>Titre et nom du projet</h4>
-                            <p>Presentation du projet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                            <h4>🎲 Jeu de dés</h4>
+                            <p>Petit jeu 2 joueurs pour manipuler le DOM en JS pur. Projet d'exercice lors de l'apprentissage JavaScript.</p>
+                            <div class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
                         </article>
-                    </a> -->
-                    <!--  <a href="https://www.google.com/">
-                        <article class="blog">
-                            <h4>Titre et nom du projet</h4>
-                            <p>Presentation du projet consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore</p>
-                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                        </article>
-                    </a> -->
+                    </a>
+                    <!-- Tu peux en rajouter d'autres ici -->
                 </section>
             </div>
         </section>
