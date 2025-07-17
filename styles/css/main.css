@@ -389,7 +389,8 @@ body {
 }
 .diplomes .diplome-logo {
   max-width: 100px;
-  height: fit-content;
+  height: auto;
+  display: block;
   border-radius: 30px;
 }
 .diplomes .diplome-content {

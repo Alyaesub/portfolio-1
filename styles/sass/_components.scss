@@ -260,7 +260,8 @@
 
     .diplome-logo {
         max-width: 100px;
-        height: fit-content;
+        height: auto;
+        display: block;
         border-radius: $border-radius-logo;
     }
 

@@ -22,7 +22,7 @@ require_once "controllers/routeur.php"
     <meta name="twitter:title" content="Pascal Reynier – Développeur Web Full Stack">
     <meta name="twitter:description" content="Développement web et mobile, projets PHP, JS, Web3.">
     <meta name="twitter:image" content="https://ton-site.fr/asset/preview.png">
-    <title>Pascal Reynier – Développeur Web Full Stack | Portfolio 2024</title>
+    <title>Portfolio Pascal Reynier – Développeur Web Full Stack</title>
     <link rel="canonical" href="https://sites-alya.fr">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/css/main.css">
@@ -74,15 +74,15 @@ require_once "controllers/routeur.php"
             <div class="text-content">
                 <h1 class="title">Bonjour et bienvenue sur mon portfolio.</h1>
                 <p class="paragraphe">
-                    Artisan du code, je conçois des applications utiles, stables et pensées pour les utilisateurs.
-                    Front, back, base de données, API — je construis des projets de A à Z avec rigueur et plaisir.
-                    En veille constante et passionné par le Web3, je m’ouvre aux nouvelles technologies comme Solidity et tout ce qui tourne autour de la blockchain.
+                    Développeur fullstack, je conçois des applications web complètes, stables et utiles — du front au back, en passant par les bases de données et les API.
+                    Passionné par le Web3 et la cybersécurité, je me forme en continu pour maîtriser les technologies de demain : Solidity, blockchain, sécurité des applications…
+                    Mon objectif : créer des outils fiables, modernes et pensés pour les utilisateurs comme pour les développeurs.
                 </p>
                 <div class="action-div">
                     <a href="#contact">
                         <button class="btn btn-primary">Contact</button>
                     </a>
-                    <a href="asset/cv-dev.png" download="cv-dev.png"><!-- mettre ajour le cv -->
+                    <a href="asset/cv-dev.pdf" download="cv-dev.pdf"><!-- mettre ajour le cv -->
                         <button class="btn btn-primary">Mon CV</button>
                     </a>
                 </div>
@@ -100,26 +100,12 @@ require_once "controllers/routeur.php"
                     </picture>
                 </h2>
                 <p class="paragraphe">Développeur et programmeur qui veut explorer chaque bribe technologique.</p>
-                <div class="competences-icones">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-css3"></i>
-                    <i class="fa-brands fa-sass"></i>
-                    <i class="fa-brands fa-js"></i>
-                    <i class="fa-solid fa-database"></i>
-                    <i class="fa-brands fa-php"></i>
-                    <i class="fa-brands fa-symfony"></i>
-                    <i class="fa-solid fa-code-branch"></i>
-                    <i class="fa-solid fa-server"></i>
-                    <i class="fa-brands fa-docker"></i>
-                    <i class="fa-brands fa-python"></i>
-                    <i class="fa-brands fa-ethereum"></i>
-                </div>
                 <div class="liste-competences">
                     <p>⚡ Interfaces web modernes, responsives et interactives.</p>
                     <p>⚡ Développement full-stack (front-end & back-end).</p>
                     <p>⚡ Intégration d'API et gestion de bases de données.</p>
                     <p>⚡ Déploiement, maintenance et optimisation.</p>
-                    <p>⚡ Initiation au Web3, blockchain et smart contracts.</p>
+                    <p>⚡ Initiation au Web3, blockchain et cyber sécurité.</p>
                 </div>
             </div>
             <div class="illustration">
@@ -140,16 +126,17 @@ require_once "controllers/routeur.php"
                         <li><i class="fa-brands fa-html5"></i> HTML5</li>
                         <li><i class="fa-brands fa-css3-alt"></i> CSS3 / SCSS</li>
                         <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                        <li><i class="fa-brands fa-react"></i> React / Next.js</li>
+                        <li><i class="fa-brands fa-node-js"></i> Node.js</li>
                         <li><i class="fa-brands fa-php"></i> PHP</li>
+                        <li><i class="fa-brands fa-ethereum"></i> Solidity / Web3</li>
+                        <li><i class="fa-solid fa-shield"></i> Cyber sécurité</li>
+                        <li><i class="fa-solid fa-file-code"></i> API REST / JSON</li>
                         <li><i class="fa-solid fa-database"></i> MySQL / SQL</li>
+                        <li><i class="fa-solid fa-leaf"></i> MongoDB / NoSQL</li>
                         <li><i class="fa-solid fa-network-wired"></i> MVC & Routage personnalisé</li>
                         <li><i class="fa-brands fa-git-alt"></i> Git / GitHub</li>
-                        <li><i class="fa-brands fa-react"></i> React / Next.js</li>
                         <li><i class="fa-brands fa-docker"></i> Docker</li>
-                        <li><i class="fa-brands fa-python"></i> Python</li>
-                        <li><i class="fa-brands fa-ethereum"></i> Solidity / Web3</li>
-                        <li><i class="fa-solid fa-file-code"></i> API REST / JSON</li>
-                        <li><i class="fa-solid fa-leaf"></i> MongoDB / NoSQL</li>
                     </ul>
                 </div>
             </div>
@@ -296,11 +283,11 @@ require_once "controllers/routeur.php"
         <section class="section-display full-text-content" id="projets">
             <div class="text-content">
                 <section class="liste-blog">
-                    <a href="">
+                    <a href="https://trackbuild.sites-alya.fr/">
                         <article class="blog">
                             <h4>TrackBuild</h4>
-                            <p>Gestionnaire de tache et de temps (Déploiement prévue été 2025)</p>
-                            <div href="" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                            <p>Gestionnaire de tache et de temps</p>
+                            <div href="https://trackbuild.sites-alya.fr/" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
                         </article>
                     </a>
                     <a href="http://messagerie.sites-alya.fr/">
@@ -320,7 +307,7 @@ require_once "controllers/routeur.php"
                     <a href="https://www.google.com/">
                         <article class="blog">
                             <h4>Ecoride</h4>
-                            <p>Réalisation full-stack d'une apllication de covoiturage (Déploiement prévue été 2025)</p>
+                            <p>Réalisation full-stack d'une apllication de covoiturage (Déploiement prévue fin 2025)</p>
                             <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
                         </article>
                     </a>
@@ -341,7 +328,7 @@ require_once "controllers/routeur.php"
                             <div class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
                         </article>
                     </a>
-                    <!-- Tu peux en rajouter d'autres ici -->
+                    <!--  en rajouter d'autres ici -->
                 </section>
             </div>
         </section>
@@ -360,14 +347,11 @@ require_once "controllers/routeur.php"
                         <a target="_blank" href="https://github.com/Alyaesub">
                             <img src="asset/github.svg" alt="logo git hub">
                         </a>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61574938434923">
+                            <img src="asset/Malt_logo_pink.svg" alt="logo malt">
+                        </a>
                         <a target="_blank" href="https://www.linkedin.com/in/pascal-reynier-75a11b326/">
                             <img src="asset/linkedin.svg" alt="logo linkedin">
-                        </a>
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61574938434923">
-                            <img src="asset/facebook.svg" alt="logo facebook">
-                        </a>
-                        <a target="_blank" href="https://www.instagram.com/code_co_solutions/">
-                            <img src="asset/instagram.svg" alt="logo instagramme">
                         </a>
                     </div>
                 </section>
@@ -405,10 +389,6 @@ require_once "controllers/routeur.php"
     </main>
     <footer>
         <div class="credits">
-            <span>Made with enjoy <picture>
-                    <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1fae1/512.webp" type="image/webp">
-                    <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1fae1/512.gif" alt="🫡" width="32" height="32">
-                </picture></span>
             <span>© 2024 Reynier Pascal</span>
         </div>
     </footer>
