@@ -123,11 +123,11 @@ require_once "controllers/routeur.php"
                 <div class="stack-group">
                     <h3>Technologies solides & explorations en cours</h3>
                     <ul class="stack-list">
-                        <li><i class="fa-brands fa-html5"></i> HTML5</li>
-                        <li><i class="fa-brands fa-css3-alt"></i> CSS3 / SCSS</li>
                         <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" style="width: 1em; vertical-align: middle;"> TypeScript</li>
                         <li><i class="fa-brands fa-react"></i> React / Next.js</li>
                         <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+                        <li><i class="fa-solid fa-gears"></i> Express.js</li>
                         <li><i class="fa-brands fa-php"></i> PHP</li>
                         <li><i class="fa-brands fa-ethereum"></i> Solidity / Web3</li>
                         <li><i class="fa-solid fa-shield"></i> Cyber sécurité</li>
@@ -157,7 +157,7 @@ require_once "controllers/routeur.php"
                     <div class="diplome-subtitle">Studi</div>
                     <div class="diplome-date">2024-2026</div>
                     <div class="diplome-description">
-                        En cours de formation. 1er semestre validé.
+                        En cours de formation. second semestre validé.
                     </div>
                 </div>
             </article>
@@ -168,7 +168,7 @@ require_once "controllers/routeur.php"
                     <div class="diplome-subtitle">Digital Campus</div>
                     <div class="diplome-date">2024-2026</div>
                     <div class="diplome-description">
-                        En cours de formation. 1er semestre validé.
+                        En cours de formation. second semestre validé.
                     </div>
                 </div>
             </article>
@@ -347,7 +347,7 @@ require_once "controllers/routeur.php"
                         <a target="_blank" href="https://github.com/Alyaesub">
                             <img src="asset/github.svg" alt="logo git hub">
                         </a>
-                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61574938434923">
+                        <a target="_blank" href="https://www.malt.fr/profile/pascalreynier">
                             <img src="asset/Malt_logo_pink.svg" alt="logo malt">
                         </a>
                         <a target="_blank" href="https://www.linkedin.com/in/pascal-reynier-75a11b326/">
