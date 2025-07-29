@@ -41,17 +41,4 @@
         }
     }
 
-    //@each $name, $color in color {
-    //&.btn-#{name} {
-    //background-color: color ;
-    //border-color:darkenborder($secondary);
-    //color: $dark;
-    //&:hover {
-    //background-color: $white;
-    //color: $primary;//
-
-//code qui permet de géneré des button avec les mémes propriéters que celui du dessus //
-//il ce sert d'un tableau dans les variables qui les appel directement en les mentionnant//
-//direct dans le méme code en changeant les "name" par le nom de la variable de la couleur DANS LE HTML//
-//a regarder dans le tableau des variables//
 }
