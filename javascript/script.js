@@ -48,3 +48,18 @@ document.addEventListener("DOMContentLoaded", function () {
 		});
 	});
 });
+
+//dynamism imges
+const observer = new IntersectionObserver((entries) => {
+	entries.forEach((entry) => {
+		if (entry.isIntersecting) {
+			entry.target.classList.add("visible");
+		} else {
+			entry.target.classList.remove("visible");
+		}
+	});
+});
+
+document
+	.querySelectorAll(".fade-in-right, .fade-in-left")
+	.forEach((el) => observer.observe(el));

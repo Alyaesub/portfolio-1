@@ -206,6 +206,32 @@ body {
   max-width: 70%;
   display: block;
   margin: auto;
+  transition: transform 0, 2s ease-out;
+}
+.section-display .zoom-scroll {
+  transition: transform 1s ease-out;
+  transform: scale(1);
+}
+.section-display .zoom-scroll.visible {
+  transform: scale(1.1);
+}
+.section-display .fade-in-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 1s ease-out;
+}
+.section-display .fade-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+.section-display .fade-in-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 1s ease-out;
+}
+.section-display .fade-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .competences-icones {
@@ -526,7 +552,7 @@ body {
 }
 .btn.btn-primary {
   background-color: #55198b;
-  border-color: #200935;
+  border-color: rgb(32.1341463415, 9.4512195122, 52.5487804878);
   color: #ffffff;
 }
 .btn.btn-primary:hover {
@@ -535,7 +561,7 @@ body {
 }
 .btn.btn-secondary {
   background-color: #aaa5ff;
-  border-color: #4a3fff;
+  border-color: rgb(73.6666666667, 63, 255);
   color: #ffffff;
 }
 .btn.btn-secondary:hover {

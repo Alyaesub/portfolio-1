@@ -88,7 +88,7 @@ require_once "controllers/routeur.php"
                 </div>
             </div>
             <div class="illustration">
-                <img src="asset/michael-baccin-XopauR-Nagk-unsplash.avif" alt="image de presentations">
+                <img class="fade-in-right zoom-scroll" src="asset/michael-baccin-XopauR-Nagk-unsplash.avif" alt="image de presentations">
             </div>
         </section>
         <section class="section-display right-text-content" id="a-propos">
@@ -109,7 +109,7 @@ require_once "controllers/routeur.php"
                 </div>
             </div>
             <div class="illustration">
-                <img src="asset/safar-safarov-koOdUvfGr4c-unsplash.avif" alt="image de img-compétences">
+                <img class="fade-in-left zoom-scroll" src="asset/safar-safarov-koOdUvfGr4c-unsplash.avif" alt="image de img-compétences">
             </div>
         </section>
         <section class="section-display left-text-content" id="competences">
@@ -122,7 +122,7 @@ require_once "controllers/routeur.php"
                 </h2>
                 <div class="stack-group">
                     <h3>Technologies solides & explorations en cours</h3>
-                    <ul class="stack-list">
+                    <ul class="stack-list fade-in-right">
                         <li><i class="fa-brands fa-js"></i> JavaScript</li>
                         <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" style="width: 1em; vertical-align: middle;"> TypeScript</li>
                         <li><i class="fa-brands fa-react"></i> React / Next.js</li>
@@ -150,9 +150,9 @@ require_once "controllers/routeur.php"
                     </picture>
                 </h2>
             </div>
-            <article class="diplomes">
+            <article class="diplomes fade-in-left">
                 <img class="diplome-logo" src="asset/studi-2.png" alt="logo studi">
-                <div class="diplome-content">
+                <div class="diplome-content ">
                     <h3 class="diplome-title">Développeur applications web et mobiles</h3>
                     <div class="diplome-subtitle">Studi</div>
                     <div class="diplome-date">2024-2026</div>
@@ -161,9 +161,9 @@ require_once "controllers/routeur.php"
                     </div>
                 </div>
             </article>
-            <article class="diplomes">
+            <article class="diplomes fade-in-right">
                 <img class="diplome-logo" src="asset/digital-campus.png" alt="logo studi">
-                <div class="diplome-content">
+                <div class="diplome-content ">
                     <h3 class="diplome-title">Développeur applications web et mobiles</h3>
                     <div class="diplome-subtitle">Digital Campus</div>
                     <div class="diplome-date">2024-2026</div>
@@ -343,7 +343,7 @@ require_once "controllers/routeur.php"
                 </h2>
                 <p>Réseaux Professionnels</p>
                 <section class="listes-contacts">
-                    <div class="liste-contact">
+                    <div class="liste-contact fade-in-left">
                         <a target="_blank" href="https://github.com/Alyaesub">
                             <img src="asset/github.svg" alt="logo git hub">
                         </a>
