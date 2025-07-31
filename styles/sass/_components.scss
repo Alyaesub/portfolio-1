@@ -52,7 +52,7 @@
                 }
         }
     }
-
+//code pour le dynamisme des images
     .illustration {
         flex:1;
         margin-top: 50px;
@@ -61,9 +61,34 @@
             max-width: 70%;
             display: block;
             margin: auto;
+            transition: transform 0,2s ease-out;
         }
     }
-
+    .zoom-scroll {
+        transition: transform 1s ease-out;
+        transform: scale(1);
+        &.visible {
+            transform: scale(1.1);
+        }
+    }
+    .fade-in-right {
+        opacity: 0;
+        transform: translateX(30px);
+        transition: all 1s ease-out;
+        &.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    .fade-in-left {
+        opacity: 0;
+        transform: translateX(-30px);
+        transition: all 1s ease-out;
+        &.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
 }
 //icone des competence
 .competences-icones {
