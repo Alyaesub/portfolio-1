@@ -63,6 +63,27 @@
             margin: auto;
             transition: transform 0,2s ease-out;
         }
+
+        @media screen and (min-width: 768px) {
+            .img0 {
+            margin-top: 10rem;
+        }
+        .img1 {
+            margin-top: 3rem;
+            margin-bottom: 4rem;
+        }
+        .img2 {
+            margin-top: 3rem;
+        }
+        }
+        
+
+        .img1 {
+            margin-top: 3rem;
+        }
+        .img2 {
+            margin-top: 3rem;
+        }
     }
     .zoom-scroll {
         transition: transform 1s ease-out;
