@@ -208,6 +208,24 @@ body {
   margin: auto;
   transition: transform 0, 2s ease-out;
 }
+@media screen and (min-width: 768px) {
+  .section-display .illustration .img0 {
+    margin-top: 10rem;
+  }
+  .section-display .illustration .img1 {
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+  }
+  .section-display .illustration .img2 {
+    margin-top: 3rem;
+  }
+}
+.section-display .illustration .img1 {
+  margin-top: 3rem;
+}
+.section-display .illustration .img2 {
+  margin-top: 3rem;
+}
 .section-display .zoom-scroll {
   transition: transform 1s ease-out;
   transform: scale(1);

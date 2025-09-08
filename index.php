@@ -33,7 +33,7 @@ require_once "controllers/routeur.php"
     <header class="header-website">
         <nav class="navbar">
             <div class="logo">
-                <img src="asset/logoPr.png" alt="logo">
+                <img src="asset/ProfilePic.jpg" alt="photo de profile">
             </div>
             <div class="menu">
                 <input type="checkbox" id="menu-toggle" class="menu-input" />
@@ -47,10 +47,10 @@ require_once "controllers/routeur.php"
                             <a href="/a-propos">A propos</a>
                         </li>
                         <li class="nav-link">
-                            <a href="/competences">Compétences</a>
+                            <a href="/contact">Contacts</a>
                         </li>
                         <li class="nav-link">
-                            <a href="/diplomes">Diplomes</a>
+                            <a href="/competences">Compétences</a>
                         </li>
                         <li class="nav-link">
                             <a href="/experiences">Experiences</a>
@@ -59,7 +59,7 @@ require_once "controllers/routeur.php"
                             <a href="/projets">Projets</a>
                         </li>
                         <li class="nav-link">
-                            <a href="/contact">Contacts</a>
+                            <a href="/diplomes">Diplomes</a>
                         </li>
                         <li class="nav-link">
                             <a href="/blog">Blogs</a>
@@ -72,11 +72,15 @@ require_once "controllers/routeur.php"
     <main>
         <section class="section-display left-text-content" id="accueil">
             <div class="text-content">
-                <h1 class="title">Bonjour et bienvenue sur mon portfolio.</h1>
+                <h1 class="title">Développeur Web & Web3</h1>
                 <p class="paragraphe">
-                    Développeur fullstack, je conçois des applications web complètes, stables et utiles — du front au back, en passant par les bases de données et les API.
-                    Passionné par le Web3 et la cybersécurité, je me forme en continu pour maîtriser les technologies de demain : Solidity, blockchain, sécurité des applications…
-                    Mon objectif : créer des outils fiables, modernes et pensés pour les utilisateurs comme pour les développeurs.
+                    Du concept à la mise en production : votre application web et web3.
+                    Je développe des solutions sur mesure en <strong>JavaScript</strong> et <strong>TypeScript</strong> pour startups et entreprises en croissance.
+                    Avec <strong>React.js</strong> et <strong>Next.js</strong> pour le front, et <strong>Node.js (Express)</strong> ou <strong>PHP</strong> pour le backend,
+                    je conçois des plateformes stables, performantes et scalables qui accélèrent vos projets digitaux et réduisent votre time-to-market.
+                </p>
+                <p class="paragraphe">
+                    J’accompagne les entreprises dans la réalisation de leurs projets web et web3 en développant des solutions fiables, évolutives et maintenables.
                 </p>
                 <div class="action-div">
                     <a href="#contact">
@@ -88,38 +92,30 @@ require_once "controllers/routeur.php"
                 </div>
             </div>
             <div class="illustration">
-                <img class="fade-in-right zoom-scroll" src="asset/michael-baccin-XopauR-Nagk-unsplash.avif" alt="image de presentations">
+                <img class=" img0 fade-in-right zoom-scroll" src="asset/imgPremiereDiv.avif" alt="image de presentations">
             </div>
         </section>
         <section class="section-display right-text-content" id="a-propos">
             <div class="text-content">
-                <h2 class="title">Ce que je fais
-                    <picture class="emoji-gif">
-                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/270f_fe0f/512.webp" type="image/webp">
-                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/270f_fe0f/512.gif" alt="✏" width="32" height="32">
-                    </picture>
-                </h2>
-                <p class="paragraphe">Développeur et programmeur qui veut explorer chaque bribe technologique.</p>
-                <div class="liste-competences">
-                    <p>⚡ Interfaces web modernes, responsives et interactives.</p>
-                    <p>⚡ Développement full-stack (front-end & back-end).</p>
-                    <p>⚡ Intégration d'API et gestion de bases de données.</p>
-                    <p>⚡ Déploiement, maintenance et optimisation.</p>
-                    <p>⚡ Initiation au Web3, blockchain et cyber sécurité.</p>
+                <h2 class="title fade-in-left">Ce que je fais</h2>
+                <p class="paragraphe fade-in-left"> Développeur web & web3 freelance, spécialisé en <strong>JavaScript</strong> et <strong>TypeScript</strong>, je conçois des applications modernes et évolutives.
+                </p>
+                <div class="liste-competences fade-in-right">
+                    <p>⚡ Développement front-end avec <strong>React.js</strong> et <strong>Next.js</strong> (interfaces rapides, responsives et SEO-friendly).</p>
+                    <p>⚡ Back-end robuste avec <strong>Node.js (Express)</strong> et <strong>PHP</strong> (APIs, authentification, bases de données).</p>
+                    <p>⚡ Intégration d’API tierces et gestion de bases de données <strong>SQL</strong> & <strong>NoSQL</strong>.</p>
+                    <p>⚡ Déploiement, CI/CD, hébergement cloud et optimisation des performances.</p>
+                    <p>⚡ Développement orienté <strong>Web3</strong> : intégration blockchain, smart contracts et sécurité.</p>
                 </div>
             </div>
             <div class="illustration">
-                <img class="fade-in-left zoom-scroll" src="asset/safar-safarov-koOdUvfGr4c-unsplash.avif" alt="image de img-compétences">
+                <img class=" img1 fade-in-left zoom-scroll" src="asset/img_2713.avif" alt="image de img-compétences">
+                <img class="img2 fade-in-right zoom-scroll" src="asset/img_2.avif" alt="image de img-compétences">
             </div>
         </section>
         <section class="section-display left-text-content" id="competences">
             <div class="text-content">
-                <h2 class="title">Compétences
-                    <picture class="emoji-gif">
-                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48e/512.webp" type="image/webp">
-                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f48e/512.gif" alt="💎" width="32" height="32">
-                    </picture>
-                </h2>
+                <h2 class="title">Compétences</h2>
                 <div class="stack-group">
                     <h3>Technologies solides & explorations en cours</h3>
                     <ul class="stack-list fade-in-right">
@@ -141,6 +137,202 @@ require_once "controllers/routeur.php"
                 </div>
             </div>
         </section>
+        <section class="section-display full-text-content" id="experiences">
+            <div class="text-content">
+                <h2 class="title">Expériences, projets, créations</h2>
+            </div>
+            <div class="experiences">
+                <article class="experience fade-in-right">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Ecoride</h3>
+                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet blog">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-subtitle">Plateforme de covoiturage écoresponsable</div>
+                        <div class="experience-date">2025</div>
+                        <div class="experience-description">
+                            • Projet de fin de formation validant l’ensemble des compétences back et front<br>
+                            • Stack : HTML, SCSS, JavaScript (Fetch), PHP, MySQL, JSON<br>
+                            - Réalisations clés :<br>
+                            • Recherche et ajout de covoiturages avec requêtes asynchrones<br>
+                            • Dashboard utilisateur + interface admin/employé<br>
+                            • Gestion des crédits, avis (NoSQL) et rôles utilisateurs<br>
+                            - Compétences acquises :<br>
+                            • Développement full-stack structuré (MVC, PDO, JS)<br>
+                            • Interaction SQL/NoSQL<br>
+                            • Déploiement complet sur hébergeur mutualisé
+                        </div>
+                    </div>
+                </article>
+                <article class="experience fade-in-left">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Site vitrine et gestion</h3>
+                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet blog">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-subtitle">Site vitrine et de gestions club de foot</div>
+                        <div class="experience-date">2025</div>
+                        <div class="experience-description">
+                            ⚠️ Projet en cours de développement<br>
+                            • Objectif : Créer un site moderne et dynamique pour un club de football local<br>
+                            • Stack : React.js, TypeScript, SCSS (front) | Node.js, Express.js (back) | SQL (MySQL)<br>
+                            - Réalisations :<br>
+                            • Maquettes et structure pro (client / server, architecture MVC)<br>
+                            • Système CRUD complet (équipes, joueurs, matchs, galeries, événements)<br>
+                            • Interface d’administration sécurisée (login, rôles, gestion des contenus)<br>
+                            • Galerie photo avec upload et description<br>
+                            • Affichage des résultats, calendrier et actualités<br>
+                            - Compétences acquises :<br>
+                            • Développement full-stack TypeScript (front + back)<br>
+                            • Structuration d’un projet professionnel (routes API REST, modèles SQL)<br>
+                            • Mise en place de la sécurité (auth, hash, middlewares, CORS, Helmet)<br>
+                            • Expérience en intégration React (composants, formulaires, state)<br>
+                            • Déploiement et documentation technique complète<br>
+                        </div>
+                    </div>
+                </article>
+                <article class="experience fade-in-right">
+                    <div class="experience-header">
+                        <h3 class="experience-title">TrackBuild</h3>
+                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo du projet TrackBuild">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-subtitle">Timer de suivi multi-projets</div>
+                        <div class="experience-date">2024</div>
+                        <div class="experience-description">
+                            • Objectif : Créer un outil de suivi de temps multi-projets<br>
+                            • Stack : HTML, SCSS, JavaScript (DOM), LocalStorage<br>
+                            - Fonctions principales :<br>
+                            • Démarrage/arrêt des sessions avec historique dynamique<br>
+                            • Sélecteur de projets + récapitulatif global hebdo<br>
+                            • Graphiques de suivi du temps (canvas)<br>
+                            • Export des données au format CSV<br>
+                            - Compétences acquises :<br>
+                            • Manipulation du DOM et du LocalStorage<br>
+                            • Génération de graphiques et formats d’export<br>
+                            • Architecture JS modulaire et évolutive
+                        </div>
+                    </div>
+                </article>
+                <article class="experience fade-in-left">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Messagerie</h3>
+                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet messagerie">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-subtitle">Projet d'une messagerie privée</div>
+                        <div class="experience-date">2024</div>
+                        <div class="experience-description">
+                            • Objectif : Créer une application de messagerie multi-utilisateurs avec envoi et réception de messages<br>
+                            • Stack : PHP, MySQL, JavaScript<br>
+                            - Réalisations :<br>
+                            • Création et gestion des tables utilisateurs/messages<br>
+                            • Interface de messagerie avec requêtes asynchrones (fetch)<br>
+                            • Organisation MVC simple avec contrôleur et vues séparées<br>
+                            • Tests multi-utilisateurs en local<br>
+                            - Compétences acquises :<br>
+                            • Architecture back-end<br>
+                            • Communication JS/PHP/SQL<br>
+                            • Bonne pratique de séparation des responsabilités<br>
+                            • Déploiement sur hébergement mutualisé.<br>
+                        </div>
+                    </div>
+                </article>
+                <article class="experience fade-in-right">
+                    <div class="experience-header">
+                        <h3 class="experience-title">Blog</h3>
+                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet blog">
+                    </div>
+                    <div class="experience-content">
+                        <div class="experience-subtitle">Projet de blog Web3</div>
+                        <div class="experience-date">2025</div>
+                        <div class="experience-description">
+                            ⚠️ Les articles sont générés avec Faker : leur contenu est fictif<br>
+                            • Objectif : Créer un blog dynamique avec interface d'administration<br>
+                            • Stack : PHP, SQL, HTML, CSS / Bootstrap<br>
+                            - Réalisations :<br>
+                            • Système CRUD complet (articles, création, modification, suppression)<br>
+                            • Interface d’administration sécurisée<br>
+                            • Utilisation de classes PHP, autoloading et routing<br>
+                            • Mise en page responsive<br>
+                            - Compétences acquises :<br>
+                            • Développement full-stack orienté projet<br>
+                            • Utilisation de concepts avancés PHP<br>
+                            • Expérience utilisateur et accessibilité<br>
+                            • Déploiement sur hébergement mutualisé<br>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-display full-text-content" id="projets">
+            <div class="text-content">
+                <section class="liste-blog">
+                    <a href="https://trackbuild.sites-alya.fr/">
+                        <article class="blog fade-in-right">
+                            <h4>TrackBuild</h4>
+                            <p>Gestionnaire de tache et de temps</p>
+                            <div href="https://trackbuild.sites-alya.fr/" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                        </article>
+                    </a>
+                    <a href="http://messagerie.sites-alya.fr/">
+                        <article class="blog fade-in-left">
+                            <h4>Méssagerie</h4>
+                            <p>Création d'une méssagerie privé full-stack</p>
+                            <div href="http://messagerie.sites-alya.fr/" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                        </article>
+                    </a>
+                    <a href="http://blogweb3.sites-alya.fr/">
+                        <article class="blog fade-in-right">
+                            <h4>Blog Web3</h4>
+                            <p>Création d'un blog spécialisé dans le Web3</p>
+                            <div href="http://blogweb3.sites-alya.fr/" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                        </article>
+                    </a>
+                    <a href="https://www.google.com/">
+                        <article class="blog fade-in-left">
+                            <h4>Ecoride</h4>
+                            <p>Réalisation full-stack d'une apllication de covoiturage (Déploiement prévue fin 2025)</p>
+                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                        </article>
+                    </a>
+                    <a href="https://www.google.com/">
+                        <article class="blog fade-in-right">
+                            <h4>Site club de foot</h4>
+                            <p>Réalisation full-stack d'un site vitrine et de gestion pour clud de foot local (Déploiement prévue fin 2025)</p>
+                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
+                        </article>
+                    </a>
+                </section>
+            </div>
+        </section>
+
+        <section class="section-display full-text-content" id="contact">
+            <div class="text-content">
+                <h2 class="title">Mes contacts et réseaux
+                    <picture class="emoji-gif">
+                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6ce_fe0f/512.webp" type="image/webp">
+                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6ce_fe0f/512.gif" alt="🛎" width="32" height="32">
+                    </picture>
+                </h2>
+                <p>Réseaux Professionnels</p>
+                <section class="listes-contacts">
+                    <div class="liste-contact fade-in-left">
+                        <a target="_blank" href="https://github.com/Alyaesub">
+                            <img src="asset/github.svg" alt="logo git hub">
+                        </a>
+                        <a target="_blank" href="https://www.malt.fr/profile/pascalreynier">
+                            <img src="asset/Malt_logo_pink.svg" alt="logo malt">
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/pascal-reynier-75a11b326/">
+                            <img src="asset/linkedin.svg" alt="logo linkedin">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </section>
+
         <section class="section-display full-text-content" id="diplomes">
             <div class="text-content">
                 <h2 class="title">Diplômes
@@ -173,147 +365,6 @@ require_once "controllers/routeur.php"
                 </div>
             </article>
         </section>
-        <section class="section-display full-text-content" id="experiences">
-            <div class="text-content">
-                <h2 class="title">Expériences, projets, créations
-                    <picture class="emoji-gif">
-                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.webp" type="image/webp">
-                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/2728/512.gif" alt="✨" width="32" height="32">
-                    </picture>
-                </h2>
-            </div>
-            <div class="experiences">
-                <article class="experience">
-                    <div class="experience-header">
-                        <h3 class="experience-title">TrackBuild</h3>
-                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo du projet TrackBuild">
-                    </div>
-                    <div class="experience-content">
-                        <div class="experience-subtitle">Timer de suivi multi-projets</div>
-                        <div class="experience-date">2024</div>
-                        <div class="experience-description">
-                            • Objectif : Créer un outil de suivi de temps multi-projets<br>
-                            • Stack : HTML, SCSS, JavaScript (DOM), LocalStorage<br>
-                            - Fonctions principales :<br>
-                            • Démarrage/arrêt des sessions avec historique dynamique<br>
-                            • Sélecteur de projets + récapitulatif global hebdo<br>
-                            • Graphiques de suivi du temps (canvas)<br>
-                            • Export des données au format CSV<br>
-                            - Compétences acquises :<br>
-                            • Manipulation du DOM et du LocalStorage<br>
-                            • Génération de graphiques et formats d’export<br>
-                            • Architecture JS modulaire et évolutive
-                        </div>
-                    </div>
-                </article>
-                <article class="experience">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Messagerie</h3>
-                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet messagerie">
-                    </div>
-                    <div class="experience-content">
-                        <div class="experience-subtitle">Projet d'une messagerie privée</div>
-                        <div class="experience-date">2024</div>
-                        <div class="experience-description">
-                            • Objectif : Créer une application de messagerie multi-utilisateurs avec envoi et réception de messages<br>
-                            • Stack : PHP, MySQL, JavaScript<br>
-                            - Réalisations :<br>
-                            • Création et gestion des tables utilisateurs/messages<br>
-                            • Interface de messagerie avec requêtes asynchrones (fetch)<br>
-                            • Organisation MVC simple avec contrôleur et vues séparées<br>
-                            • Tests multi-utilisateurs en local<br>
-                            - Compétences acquises :<br>
-                            • Architecture back-end<br>
-                            • Communication JS/PHP/SQL<br>
-                            • Bonne pratique de séparation des responsabilités<br>
-                            • Déploiement sur hébergement mutualisé.<br>
-                        </div>
-                    </div>
-                </article>
-                <article class="experience">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Blog</h3>
-                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet blog">
-                    </div>
-                    <div class="experience-content">
-                        <div class="experience-subtitle">Projet de blog Web3</div>
-                        <div class="experience-date">2025</div>
-                        <div class="experience-description">
-                            ⚠️ Les articles sont générés avec Faker : leur contenu est fictif<br>
-                            • Objectif : Créer un blog dynamique avec interface d'administration<br>
-                            • Stack : PHP, SQL, HTML, CSS / Bootstrap<br>
-                            - Réalisations :<br>
-                            • Système CRUD complet (articles, création, modification, suppression)<br>
-                            • Interface d’administration sécurisée<br>
-                            • Utilisation de classes PHP, autoloading et routing<br>
-                            • Mise en page responsive<br>
-                            - Compétences acquises :<br>
-                            • Développement full-stack orienté projet<br>
-                            • Utilisation de concepts avancés PHP<br>
-                            • Expérience utilisateur et accessibilité<br>
-                            • Déploiement sur hébergement mutualisé<br>
-                        </div>
-                    </div>
-                </article>
-                <article class="experience">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Ecoride</h3>
-                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet blog">
-                    </div>
-                    <div class="experience-content">
-                        <div class="experience-subtitle">Plateforme de covoiturage écoresponsable</div>
-                        <div class="experience-date">2025</div>
-                        <div class="experience-description">
-                            • Projet de fin de formation validant l’ensemble des compétences back et front<br>
-                            • Stack : HTML, SCSS, JavaScript (Fetch), PHP, MySQL, JSON<br>
-                            - Réalisations clés :<br>
-                            • Recherche et ajout de covoiturages avec requêtes asynchrones<br>
-                            • Dashboard utilisateur + interface admin/employé<br>
-                            • Gestion des crédits, avis (NoSQL) et rôles utilisateurs<br>
-                            - Compétences acquises :<br>
-                            • Développement full-stack structuré (MVC, PDO, JS)<br>
-                            • Interaction SQL/NoSQL<br>
-                            • Déploiement complet sur hébergeur mutualisé
-                        </div>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section class="section-display full-text-content" id="projets">
-            <div class="text-content">
-                <section class="liste-blog">
-                    <a href="https://trackbuild.sites-alya.fr/">
-                        <article class="blog">
-                            <h4>TrackBuild</h4>
-                            <p>Gestionnaire de tache et de temps</p>
-                            <div href="https://trackbuild.sites-alya.fr/" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                        </article>
-                    </a>
-                    <a href="http://messagerie.sites-alya.fr/">
-                        <article class="blog">
-                            <h4>Méssagerie</h4>
-                            <p>Création d'une méssagerie privé full-stack</p>
-                            <div href="http://messagerie.sites-alya.fr/" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                        </article>
-                    </a>
-                    <a href="http://blogweb3.sites-alya.fr/">
-                        <article class="blog">
-                            <h4>Blog Web3</h4>
-                            <p>Création d'un blog spécialisé dans le Web3</p>
-                            <div href="http://blogweb3.sites-alya.fr/" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                        </article>
-                    </a>
-                    <a href="https://www.google.com/">
-                        <article class="blog">
-                            <h4>Ecoride</h4>
-                            <p>Réalisation full-stack d'une apllication de covoiturage (Déploiement prévue fin 2025)</p>
-                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                        </article>
-                    </a>
-                </section>
-            </div>
-        </section>
 
         <section class="section-display full-text-content" id="archives">
             <div class="text-content">
@@ -329,31 +380,6 @@ require_once "controllers/routeur.php"
                         </article>
                     </a>
                     <!--  en rajouter d'autres ici -->
-                </section>
-            </div>
-        </section>
-
-        <section class="section-display full-text-content" id="contact">
-            <div class="text-content">
-                <h2 class="title">Mes contacts et réseaux
-                    <picture class="emoji-gif">
-                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6ce_fe0f/512.webp" type="image/webp">
-                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6ce_fe0f/512.gif" alt="🛎" width="32" height="32">
-                    </picture>
-                </h2>
-                <p>Réseaux Professionnels</p>
-                <section class="listes-contacts">
-                    <div class="liste-contact fade-in-left">
-                        <a target="_blank" href="https://github.com/Alyaesub">
-                            <img src="asset/github.svg" alt="logo git hub">
-                        </a>
-                        <a target="_blank" href="https://www.malt.fr/profile/pascalreynier">
-                            <img src="asset/Malt_logo_pink.svg" alt="logo malt">
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/pascal-reynier-75a11b326/">
-                            <img src="asset/linkedin.svg" alt="logo linkedin">
-                        </a>
-                    </div>
                 </section>
             </div>
         </section>
