@@ -1,9 +1,22 @@
+@import "variables";
+
 footer {
-    padding: 30px;
+    margin-top: 4rem;
+    padding: 2.5rem 1.5rem 3.5rem;
+    border-top: 1px solid rgba($white, 0.08);
+    background: rgba($surface, 0.6);
+    backdrop-filter: blur(10px);
+
     .credits {
+        max-width: 1200px;
+        margin: 0 auto;
         display: flex;
-        justify-content: center;
         align-items: center;
-        flex-direction: column;
+        justify-content: center;
+        gap: 0.75rem;
+        color: rgba($white, 0.6);
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 0.75rem;
     }
 }

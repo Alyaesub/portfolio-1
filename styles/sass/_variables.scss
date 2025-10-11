@@ -1,27 +1,27 @@
-//layout
+// Layout
+$border-radius: 12px;
+$border-radius2: 18px;
+$border-radius-logo: 36px;
 
-$border-radius: 5px;
-$border-radius2: 10px;
-$border-radius-logo: 30px;
-
-
-
-//Couleurs
-
-$primary : #55198b; //couleur primaire, bouton, touche actions...//
-$secondary : #aaa5ff; //couleur secondaire, petit liens, logo secondaire//
-$accent:#66ffb3; //couleur en rapport avec les images//
-$dark: #171c28; // couleur du background général//
-$white: #ffffff; //Blanc général//
-$gray:#868e96; //gris leger pour animation//
-$lightgray: #f3efef; //Gris leger//    
+// Couleurs
+$primary: #2563eb; // Bleu franc pour CTA et éléments interactifs
+$secondary: #1d4ed8; // Variation plus sombre pour les hover et titres
+$accent: #06b6d4; // Accent turquoise pour souligner les détails
+$dark: #0f172a; // Couleur principale du texte
+$surface: #111827; // Fonds sombres (cartes, header)
+$white: #ffffff;
+$gray: #94a3b8; // Gris doux pour les textes secondaires
+$lightgray: #e2e8f0; // Arrière-plans clairs et séparateurs
+$muted: #1e293b; // Surfaces intermédiaires
 
 $color: (
-    'primary':$primary,
-    'secondary':$secondary,
-    'accent':$accent,
-    'dark':$dark,
-    'white':$white,
-    'gray':$gray,
-    'lightgray':$lightgray,
+    'primary': $primary,
+    'secondary': $secondary,
+    'accent': $accent,
+    'dark': $dark,
+    'surface': $surface,
+    'white': $white,
+    'gray': $gray,
+    'lightgray': $lightgray,
+    'muted': $muted,
 );
