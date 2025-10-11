@@ -1,5 +1,5 @@
 <?php
-require_once "controllers/routeur.php"
+require_once "controllers/routeur.php";
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -24,6 +24,9 @@ require_once "controllers/routeur.php"
     <meta name="twitter:image" content="https://ton-site.fr/asset/preview.png">
     <title>Portfolio Pascal Reynier – Développeur Web Full Stack</title>
     <link rel="canonical" href="https://sites-alya.fr">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/css/main.css">
     <script src="javascript/script.js" defer></script>
@@ -32,402 +35,503 @@ require_once "controllers/routeur.php"
 <body>
     <header class="header-website">
         <nav class="navbar">
-            <div class="logo">
-                <img src="asset/ProfilePic.jpg" alt="photo de profile">
-            </div>
+            <a class="brand" href="/">
+                <img src="asset/ProfilePic.jpg" alt="Portrait de Pascal Reynier">
+                <div class="brand-details">
+                    <span class="brand-name">Pascal Reynier</span>
+
+                </div>
+            </a>
+
             <div class="menu">
                 <input type="checkbox" id="menu-toggle" class="menu-input" />
-                <label class="btn btn-primary menu-input-label" for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
+                <label class="menu-input-label" for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
                 <div class="dropdown-menu">
                     <ul class="nav-links">
                         <li class="nav-link">
-                            <a href="/accueil">Accueil</a>
+                            <a href="/accueil">Accueil <i class="fa-solid fa-arrow-right"></i></a>
                         </li>
                         <li class="nav-link">
-                            <a href="/a-propos">A propos</a>
+                            <a href="/a-propos">À propos <i class="fa-solid fa-arrow-right"></i></a>
                         </li>
                         <li class="nav-link">
-                            <a href="/contact">Contacts</a>
+                            <a href="/competences">Compétences <i class="fa-solid fa-arrow-right"></i></a>
                         </li>
                         <li class="nav-link">
-                            <a href="/competences">Compétences</a>
+                            <a href="/experiences">Expériences <i class="fa-solid fa-arrow-right"></i></a>
                         </li>
                         <li class="nav-link">
-                            <a href="/experiences">Experiences</a>
+                            <a href="/projets">Projets <i class="fa-solid fa-arrow-right"></i></a>
                         </li>
                         <li class="nav-link">
-                            <a href="/projets">Projets</a>
+                            <a href="/contact">Contact <i class="fa-solid fa-arrow-right"></i></a>
                         </li>
                         <li class="nav-link">
-                            <a href="/diplomes">Diplomes</a>
+                            <a href="/diplomes">Diplômes <i class="fa-solid fa-arrow-right"></i></a>
                         </li>
                         <li class="nav-link">
-                            <a href="/blog">Blogs</a>
+                            <a href="/blog">Veille <i class="fa-solid fa-arrow-right"></i></a>
                         </li>
                     </ul>
+
                 </div>
             </div>
         </nav>
     </header>
+
     <main>
-        <section class="section-display left-text-content" id="accueil">
-            <div class="text-content">
-                <h1 class="title">Développeur Web & Web3</h1>
-                <p class="paragraphe">
-                    Du concept à la mise en production : votre application web et web3.
-                    Je développe des solutions sur mesure en <strong>JavaScript</strong> et <strong>TypeScript</strong> pour startups et entreprises en croissance.
-                    Avec <strong>React.js</strong> et <strong>Next.js</strong> pour le front, et <strong>Node.js (Express)</strong> ou <strong>PHP</strong> pour le backend,
-                    je conçois des plateformes stables, performantes et scalables qui accélèrent vos projets digitaux et réduisent votre time-to-market.
+        <section class="section-display section-hero" id="accueil">
+            <div class="hero-intro">
+                <div class="section-heading">
+                    <span class="eyebrow">Freelance full stack & web3</span>
+                    <h1>Je conçois des plateformes web modernes qui accélèrent vos produits</h1>
+                </div>
+                <p class="lead">
+                    Du cadrage à la mise en production, j’aide les équipes produit à livrer des expériences web fiables, rapides et scalables.
+                    Ma stack JavaScript / TypeScript (React, Next.js) et back-end (Node.js, Express, PHP) couvre l’ensemble du cycle de vie,
+                    y compris les intégrations Web3 et la mise en place de pipelines CI/CD.
                 </p>
-                <p class="paragraphe">
-                    J’accompagne les entreprises dans la réalisation de leurs projets web et web3 en développant des solutions fiables, évolutives et maintenables.
-                </p>
-                <div class="action-div">
-                    <a href="#contact">
-                        <button class="btn btn-primary">Contact</button>
-                    </a>
-                    <a href="asset/cv-dev.pdf" download="cv-dev.pdf"><!-- mettre ajour le cv -->
-                        <button class="btn btn-primary">Mon CV</button>
-                    </a>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-comments"></i>Discutons de votre projet</a>
+                    <a href="asset/cv-dev.pdf" download="cv-dev.pdf" class="btn btn-secondary"><i class="fa-solid fa-file-arrow-down"></i>Télécharger mon CV</a>
+                </div>
+                <div class="hero-badges">
+                    <span class="badge"><i class="fa-solid fa-gauge-high"></i> React & Next.js</span>
+                    <span class="badge"><i class="fa-solid fa-server"></i> Node.js & PHP</span>
+                    <span class="badge"><i class="fa-brands fa-ethereum"></i> Web3 & blockchain</span>
+                </div>
+                <ul class="hero-points">
+                    <li>Delivery orienté produit : discovery, conception, développement, tests et déploiement.</li>
+                    <li>Front-end premium : design system, accessibilité, performance et SEO prêts pour la production.</li>
+                    <li>Back-end sécurisé : APIs REST/Graph, bases SQL & NoSQL, authentification, monitoring et CI/CD.</li>
+                </ul>
+                <div class="hero-metrics">
+                    <div class="hero-metric">
+                        <span class="metric-value">6+</span>
+                        <span class="metric-label">Projets livrés</span>
+                    </div>
+                    <div class="hero-metric">
+                        <span class="metric-value">100%</span>
+                        <span class="metric-label">Implication produit</span>
+                    </div>
+                    <div class="hero-metric">
+                        <span class="metric-value">Web3 Ready</span>
+                        <span class="metric-label">Intégrations blockchain</span>
+                    </div>
                 </div>
             </div>
-            <div class="illustration">
-                <img class=" img0 fade-in-right zoom-scroll" src="asset/imgPremiereDiv.avif" alt="image de presentations">
-            </div>
-        </section>
-        <section class="section-display right-text-content" id="a-propos">
-            <div class="text-content">
-                <h2 class="title fade-in-left">Ce que je fais</h2>
-                <p class="paragraphe fade-in-left"> Développeur web & web3 freelance, spécialisé en <strong>JavaScript</strong> et <strong>TypeScript</strong>, je conçois des applications modernes et évolutives.
+            <div class="hero-panel">
+                <span class="hero-panel__title"><i class="fa-solid fa-diagram-project"></i>Approche produit & tech</span>
+                <div class="media-frame">
+                    <img class="zoom-scroll" src="asset/imgPremiereDiv.avif" alt="Interface web moderne illustrant le travail de Pascal Reynier">
+                </div>
+                <p class="hero-panel__caption">
+                    J’accompagne startups et PME pour transformer leurs idées en plateformes robustes. Workshops de cadrage, prototypage rapide,
+                    développement itératif et accompagnement au déploiement : chaque projet est traité comme un produit à forte valeur.
                 </p>
-                <div class="liste-competences fade-in-right">
-                    <p>⚡ Développement front-end avec <strong>React.js</strong> et <strong>Next.js</strong> (interfaces rapides, responsives et SEO-friendly).</p>
-                    <p>⚡ Back-end robuste avec <strong>Node.js (Express)</strong> et <strong>PHP</strong> (APIs, authentification, bases de données).</p>
-                    <p>⚡ Intégration d’API tierces et gestion de bases de données <strong>SQL</strong> & <strong>NoSQL</strong>.</p>
-                    <p>⚡ Déploiement, CI/CD, hébergement cloud et optimisation des performances.</p>
-                    <p>⚡ Développement orienté <strong>Web3</strong> : intégration blockchain, smart contracts et sécurité.</p>
+                <div class="hero-panel__tags">
+                    <span class="tag">Audits techniques</span>
+                    <span class="tag">Scalabilité</span>
+                    <span class="tag">Design system</span>
+                    <span class="tag">CI/CD</span>
                 </div>
             </div>
-            <div class="illustration">
-                <img class=" img1 fade-in-left zoom-scroll" src="asset/img_2713.avif" alt="image de img-compétences">
-                <img class="img2 fade-in-right zoom-scroll" src="asset/img_2.avif" alt="image de img-compétences">
-            </div>
         </section>
-        <section class="section-display left-text-content" id="competences">
-            <div class="text-content">
-                <h2 class="title">Compétences</h2>
-                <div class="stack-group">
-                    <h3>Technologies solides & explorations en cours</h3>
-                    <ul class="stack-list fade-in-right">
-                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
-                        <li><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" style="width: 1em; vertical-align: middle;"> TypeScript</li>
-                        <li><i class="fa-brands fa-react"></i> React / Next.js</li>
-                        <li><i class="fa-brands fa-node-js"></i> Node.js</li>
-                        <li><i class="fa-solid fa-gears"></i> Express.js</li>
-                        <li><i class="fa-brands fa-php"></i> PHP</li>
-                        <li><i class="fa-brands fa-ethereum"></i> Solidity / Web3</li>
-                        <li><i class="fa-solid fa-shield"></i> Cyber sécurité</li>
-                        <li><i class="fa-solid fa-file-code"></i> API REST / JSON</li>
-                        <li><i class="fa-solid fa-database"></i> MySQL / SQL</li>
-                        <li><i class="fa-solid fa-leaf"></i> MongoDB / NoSQL</li>
-                        <li><i class="fa-solid fa-network-wired"></i> MVC & Routage personnalisé</li>
-                        <li><i class="fa-brands fa-git-alt"></i> Git / GitHub</li>
-                        <li><i class="fa-brands fa-docker"></i> Docker</li>
+
+        <section class="section-display section-services" id="a-propos">
+            <div class="section-heading">
+                <span class="eyebrow">Ce que je fais</span>
+                <h2>Un partenaire tech polyvalent pour vos produits digitaux</h2>
+                <p>
+                    Je construis des expériences utilisateur soignées tout en garantissant une architecture stable, maintenable et prête pour la croissance.
+                    Du MVP à la refonte complète, je mets en place les outils, les process et la rigueur nécessaires pour délivrer rapidement.
+                </p>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <h3>Produits web sur-mesure</h3>
+                    <p>Applications modernes, performantes et évolutives, pensées pour vos utilisateurs.</p>
+                    <ul>
+                        <li>Architecture front-end scalable (React, Next.js)</li>
+                        <li>Design system, responsive et accessibilité native</li>
+                        <li>Intégrations API tierces, analytics, SEO technique</li>
                     </ul>
+                </article>
+                <article class="feature-card">
+                    <h3>Back-end robuste</h3>
+                    <p>API, services et automatisations fiables pour soutenir vos ambitions produit.</p>
+                    <ul>
+                        <li>Node.js (Express), PHP, MVC personnalisés</li>
+                        <li>Authentification, rôles, gestion des permissions</li>
+                        <li>MySQL, MongoDB, Redis, Webhooks, tests & monitoring</li>
+                    </ul>
+                </article>
+                <article class="feature-card">
+                    <h3>Expérience Web3</h3>
+                    <p>Intégration de briques blockchain et smart contracts dans des interfaces accessibles.</p>
+                    <ul>
+                        <li>Onboarding utilisateurs Web2 → Web3</li>
+                        <li>Connexion wallets, gestion des transactions</li>
+                        <li>Best practices sécurité & UX Web3</li>
+                    </ul>
+                </article>
+                <article class="feature-card">
+                    <h3>Accompagnement produit</h3>
+                    <p>Conseil stratégique pour prendre les bonnes décisions techniques et business.</p>
+                    <ul>
+                        <li>Roadmaps, cadrage fonctionnel & ateliers d’idéation</li>
+                        <li>Revue de code, audit de performance, dette technique</li>
+                        <li>Documentation, passation, montée en compétence des équipes</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-display section-skills" id="competences">
+            <div class="section-heading">
+                <span class="eyebrow">Compétences</span>
+                <h2>Stack technique maîtrisée & veille constante</h2>
+                <p>
+                    J’équilibre innovation et pragmatisme : une base solide pour livrer vite, tout en gardant un œil sur les technologies qui feront la différence demain.
+                </p>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Langages & frameworks</h3>
+                    <ul>
+                        <li><i class="fa-brands fa-js"></i>JavaScript ES6+, TypeScript</li>
+                        <li><i class="fa-brands fa-react"></i>React, Next.js, Zustand, React Query</li>
+                        <li><i class="fa-brands fa-node-js"></i>Node.js, Express.js</li>
+                        <li><i class="fa-brands fa-php"></i>PHP, MVC maison, Twig</li>
+                        <li><i class="fa-brands fa-ethereum"></i>Solidity, intégrations Web3</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>Architecture & données</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-database"></i>MySQL, MariaDB, PostgreSQL</li>
+                        <li><i class="fa-solid fa-leaf"></i>MongoDB, stockage NoSQL</li>
+                        <li><i class="fa-solid fa-file-code"></i>API REST / JSON, Webhooks</li>
+                        <li><i class="fa-solid fa-gears"></i>Microservices, orchestrations</li>
+                        <li><i class="fa-brands fa-docker"></i>Docker, environnements isolés</li>
+                    </ul>
+                </article>
+                <article class="skill-card">
+                    <h3>Qualité & delivery</h3>
+                    <ul>
+                        <li><i class="fa-solid fa-shield"></i>OWASP, audits sécurité, roles & permissions</li>
+                        <li><i class="fa-solid fa-network-wired"></i>CI/CD, GitHub Actions, GitFlow</li>
+                        <li><i class="fa-solid fa-code-compare"></i>Tests fonctionnels, monitoring</li>
+                        <li><i class="fa-solid fa-list-check"></i>Product management, priorisation</li>
+                        <li><i class="fa-solid fa-people-group"></i>Animation d’ateliers et formation équipes</li>
+                    </ul>
+                </article>
+            </div>
+            <div class="skill-tags">
+                <span class="tag">Clean code</span>
+                <span class="tag">Performance</span>
+                <span class="tag">Accessibilité</span>
+                <span class="tag">Documentation</span>
+                <span class="tag">Mentoring</span>
+            </div>
+        </section>
+
+        <section class="section-display section-experiences" id="experiences">
+            <div class="section-heading">
+                <span class="eyebrow">Expériences</span>
+                <h2>Projets, delivery et responsabilités</h2>
+                <p>Une sélection de projets significatifs qui illustrent ma capacité à piloter un produit de bout en bout, front, back et organisation.</p>
+            </div>
+            <div class="experience-grid">
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <span>2025</span>
+                        <span class="badge">Projet diplômant</span>
+                    </div>
+                    <h3>Ecoride</h3>
+                    <p class="experience-subtitle">Plateforme de covoiturage écoresponsable</p>
+                    <ul class="experience-list">
+                        <li>Recherche, réservation et ajout de trajets avec requêtes asynchrones</li>
+                        <li>Dashboards dédiés (utilisateur, employé, administrateur)</li>
+                        <li>Gestion des crédits, avis NoSQL, rôles et sécurité back-office</li>
+                    </ul>
+                    <div class="experience-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">SCSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">JSON</span>
+                    </div>
+                </article>
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <span>2025</span>
+                        <span class="badge">Projet freelance</span>
+                    </div>
+                    <h3>Site vitrine & gestion</h3>
+                    <p class="experience-subtitle">Transformation digitale d’un club de football</p>
+                    <ul class="experience-list">
+                        <li>Système CRUD complet (équipes, matchs, événements, médias)</li>
+                        <li>Interface d’administration sécurisée avec rôles et workflow éditorial</li>
+                        <li>Stack TypeScript full-stack : React, Node.js, Express, MySQL</li>
+                    </ul>
+                    <div class="experience-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </article>
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <span>2024</span>
+                        <span class="badge">Side project</span>
+                    </div>
+                    <h3>TrackBuild</h3>
+                    <p class="experience-subtitle">Timer multi-projets & reporting</p>
+                    <ul class="experience-list">
+                        <li>Gestion des sessions avec historique dynamique et export CSV</li>
+                        <li>Visualisation des temps hebdomadaires et métriques clés</li>
+                        <li>Interface modulaire, architecture JavaScript évolutive</li>
+                    </ul>
+                    <div class="experience-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">SCSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">LocalStorage</span>
+                    </div>
+                </article>
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <span>2024</span>
+                        <span class="badge">Full stack</span>
+                    </div>
+                    <h3>Messagerie privée</h3>
+                    <p class="experience-subtitle">Application temps réel multi-utilisateurs</p>
+                    <ul class="experience-list">
+                        <li>Architecture MVC PHP avec routing, contrôleurs et vues dédiées</li>
+                        <li>Requêtes asynchrones (Fetch) et rafraîchissement des conversations</li>
+                        <li>Gestion des utilisateurs, sécurisation et déploiement mutualisé</li>
+                    </ul>
+                    <div class="experience-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">MySQL</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Fetch API</span>
+                    </div>
+                </article>
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <span>2025</span>
+                        <span class="badge">Back-office</span>
+                    </div>
+                    <h3>Blog Web3</h3>
+                    <p class="experience-subtitle">CMS complet avec interface d’administration</p>
+                    <ul class="experience-list">
+                        <li>CRUD articles, authentification et gestion des rôles</li>
+                        <li>Autoloading PHP, routing sur-mesure, sécurisation des formulaires</li>
+                        <li>Responsive design et accessibilité multi devices</li>
+                    </ul>
+                    <div class="experience-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">UX</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-display section-projects" id="projets">
+            <div class="section-heading">
+                <span class="eyebrow">Projets</span>
+                <h2>Quelques réalisations accessibles en ligne</h2>
+                <p>Des démos publiques pour découvrir mon approche front/back et les choix d’architecture mis en place sur chaque produit.</p>
+            </div>
+            <div class="projects-grid">
+                <a class="project-card" href="http://ecoride.sites-alya.fr/" target="_blank" rel="noopener">
+                    <span class="badge"><i class="fa-solid fa-stopwatch"></i>Site mis en production</span>
+                    <h4>Ecoride</h4>
+                    <p>Plateforme de covoiturage écoresponsable : réservation temps réel, dashboards multi-rôles et suivi des crédits/avis.</p>
+                    <span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
+                <a class="project-card" href="https://trackbuild.sites-alya.fr/" target="_blank" rel="noopener">
+                    <span class="badge"><i class="fa-solid fa-stopwatch"></i>SaaS interne</span>
+                    <h4>TrackBuild</h4>
+                    <p>Gestionnaire de tâches et suivi du temps multi-projets. Interface modulable et reporting synthétique.</p>
+                    <span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
+                <article class="project-card">
+                    <span class="badge"><i class="fa-solid fa-futbol"></i>En cours</span>
+                    <h4>Site vitrine & portail club</h4>
+                    <p>Refonte complète pour un club sportif : espace public dynamique, back-office éditorial, modules événements & galerie.</p>
+                    <span class="project-link">déploiement pour fin 2025 <i class="fa-solid fa-arrow-right"></i></span>
+                </article>
+            </div>
+        </section>
+
+        <section class="section-display section-contact" id="contact">
+            <div class="section-heading">
+                <span class="eyebrow">Contact</span>
+                <h2>Construisons votre prochain produit</h2>
+                <p>Prêt à lancer un MVP, industrialiser une plateforme existante ou ajouter une brique Web3 ? Contactez-moi, je réponds sous 24 h.</p>
+            </div>
+            <div class="contact-panel">
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <h3>LinkedIn</h3>
+                        <p>Restons connectés et discutez de vos besoins directement via LinkedIn.</p>
+                        <div class="contact-links">
+                            <a target="_blank" href="https://www.linkedin.com/in/pascal-reynier-75a11b326/" rel="noopener">
+                                <img src="asset/linkedin.svg" alt="Logo LinkedIn">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <h3>Malt</h3>
+                        <p>Mission freelance encadrée, devis rapide et contrat sécurisé via Malt.</p>
+                        <div class="contact-links">
+                            <a target="_blank" href="https://www.malt.fr/profile/pascalreynier" rel="noopener">
+                                <img src="asset/Malt_logo_pink.svg" alt="Logo Malt">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <h3>GitHub</h3>
+                        <p>Consultez mon code, mes expérimentations et contributions open source.</p>
+                        <div class="contact-links">
+                            <a target="_blank" href="https://github.com/Alyaesub" rel="noopener">
+                                <img src="asset/github.svg" alt="Logo GitHub">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <article class="contact-card contact-card--form">
+                        <div class="contact-form-header">
+                            <div class="availability">
+                                <h3>Disponibilité</h3>
+                                <div class="tag-list">
+                                    <span class="tag">Remote / Hybrid</span>
+                                    <span class="tag">Français & Anglais</span>
+                                    <span class="tag">Timezones EU / US EST</span>
+                                </div>
+                            </div>
+                            <div class="direct-email">
+                                <span class="direct-email__label">Email direct</span>
+                                <a class="direct-email__value" href="mailto:reynierpascal@yahoo.com">reynierpascal@yahoo.com</a>
+                            </div>
+                        </div>
+                        <form id="contact-form">
+                            <div class="form-grid">
+                                <div class="form-field">
+                                    <label for="fullname">Nom complet</label>
+                                    <input type="text" id="fullname" name="fullname" required placeholder="Nom Prénom" />
+                                </div>
+                                <div class="form-field">
+                                    <label for="email">Email pro</label>
+                                    <input type="email" id="email" name="email" required placeholder="email@entreprise.com" />
+                                </div>
+                                <div class="form-field">
+                                    <label for="company">Société</label>
+                                    <input type="text" id="company" name="company" placeholder="Nom de l'entreprise" />
+                                </div>
+                            </div>
+                            <div class="form-field">
+                                <label for="message">Contexte du projet</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Budget, délais, objectifs..."></textarea>
+                            </div>
+                            <button class="btn btn-primary" type="submit">
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Envoyer
+                            </button>
+                        </form>
+                    </article>
                 </div>
             </div>
         </section>
-        <section class="section-display full-text-content" id="experiences">
-            <div class="text-content">
-                <h2 class="title">Expériences, projets, créations</h2>
+
+        <section class="section-display section-diplomas" id="diplomes">
+            <div class="section-heading">
+                <span class="eyebrow">Formation</span>
+                <h2>Diplômes & parcours certifiants</h2>
             </div>
-            <div class="experiences">
-                <article class="experience fade-in-right">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Ecoride</h3>
-                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet blog">
-                    </div>
-                    <div class="experience-content">
-                        <div class="experience-subtitle">Plateforme de covoiturage écoresponsable</div>
-                        <div class="experience-date">2025</div>
-                        <div class="experience-description">
-                            • Projet de fin de formation validant l’ensemble des compétences back et front<br>
-                            • Stack : HTML, SCSS, JavaScript (Fetch), PHP, MySQL, JSON<br>
-                            - Réalisations clés :<br>
-                            • Recherche et ajout de covoiturages avec requêtes asynchrones<br>
-                            • Dashboard utilisateur + interface admin/employé<br>
-                            • Gestion des crédits, avis (NoSQL) et rôles utilisateurs<br>
-                            - Compétences acquises :<br>
-                            • Développement full-stack structuré (MVC, PDO, JS)<br>
-                            • Interaction SQL/NoSQL<br>
-                            • Déploiement complet sur hébergeur mutualisé
-                        </div>
+            <div class="diploma-grid">
+                <article class="diploma-card">
+                    <img src="asset/studi-2.png" alt="Logo Studi">
+                    <div class="diploma-content">
+                        <h3>Développeur applications web et mobiles</h3>
+                        <span class="diploma-school">Studi</span>
+                        <span class="diploma-date">2024 – 2026 (cursus en cours)</span>
+                        <p>Approfondissement full-stack, architecture logicielle et pratiques DevOps. Semestre 2 validé.</p>
                     </div>
                 </article>
-                <article class="experience fade-in-left">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Site vitrine et gestion</h3>
-                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet blog">
-                    </div>
-                    <div class="experience-content">
-                        <div class="experience-subtitle">Site vitrine et de gestions club de foot</div>
-                        <div class="experience-date">2025</div>
-                        <div class="experience-description">
-                            ⚠️ Projet en cours de développement<br>
-                            • Objectif : Créer un site moderne et dynamique pour un club de football local<br>
-                            • Stack : React.js, TypeScript, SCSS (front) | Node.js, Express.js (back) | SQL (MySQL)<br>
-                            - Réalisations :<br>
-                            • Maquettes et structure pro (client / server, architecture MVC)<br>
-                            • Système CRUD complet (équipes, joueurs, matchs, galeries, événements)<br>
-                            • Interface d’administration sécurisée (login, rôles, gestion des contenus)<br>
-                            • Galerie photo avec upload et description<br>
-                            • Affichage des résultats, calendrier et actualités<br>
-                            - Compétences acquises :<br>
-                            • Développement full-stack TypeScript (front + back)<br>
-                            • Structuration d’un projet professionnel (routes API REST, modèles SQL)<br>
-                            • Mise en place de la sécurité (auth, hash, middlewares, CORS, Helmet)<br>
-                            • Expérience en intégration React (composants, formulaires, state)<br>
-                            • Déploiement et documentation technique complète<br>
-                        </div>
-                    </div>
-                </article>
-                <article class="experience fade-in-right">
-                    <div class="experience-header">
-                        <h3 class="experience-title">TrackBuild</h3>
-                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo du projet TrackBuild">
-                    </div>
-                    <div class="experience-content">
-                        <div class="experience-subtitle">Timer de suivi multi-projets</div>
-                        <div class="experience-date">2024</div>
-                        <div class="experience-description">
-                            • Objectif : Créer un outil de suivi de temps multi-projets<br>
-                            • Stack : HTML, SCSS, JavaScript (DOM), LocalStorage<br>
-                            - Fonctions principales :<br>
-                            • Démarrage/arrêt des sessions avec historique dynamique<br>
-                            • Sélecteur de projets + récapitulatif global hebdo<br>
-                            • Graphiques de suivi du temps (canvas)<br>
-                            • Export des données au format CSV<br>
-                            - Compétences acquises :<br>
-                            • Manipulation du DOM et du LocalStorage<br>
-                            • Génération de graphiques et formats d’export<br>
-                            • Architecture JS modulaire et évolutive
-                        </div>
-                    </div>
-                </article>
-                <article class="experience fade-in-left">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Messagerie</h3>
-                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet messagerie">
-                    </div>
-                    <div class="experience-content">
-                        <div class="experience-subtitle">Projet d'une messagerie privée</div>
-                        <div class="experience-date">2024</div>
-                        <div class="experience-description">
-                            • Objectif : Créer une application de messagerie multi-utilisateurs avec envoi et réception de messages<br>
-                            • Stack : PHP, MySQL, JavaScript<br>
-                            - Réalisations :<br>
-                            • Création et gestion des tables utilisateurs/messages<br>
-                            • Interface de messagerie avec requêtes asynchrones (fetch)<br>
-                            • Organisation MVC simple avec contrôleur et vues séparées<br>
-                            • Tests multi-utilisateurs en local<br>
-                            - Compétences acquises :<br>
-                            • Architecture back-end<br>
-                            • Communication JS/PHP/SQL<br>
-                            • Bonne pratique de séparation des responsabilités<br>
-                            • Déploiement sur hébergement mutualisé.<br>
-                        </div>
-                    </div>
-                </article>
-                <article class="experience fade-in-right">
-                    <div class="experience-header">
-                        <h3 class="experience-title">Blog</h3>
-                        <img class="experience-logo" src="asset/freelance.jpg" alt="logo projet blog">
-                    </div>
-                    <div class="experience-content">
-                        <div class="experience-subtitle">Projet de blog Web3</div>
-                        <div class="experience-date">2025</div>
-                        <div class="experience-description">
-                            ⚠️ Les articles sont générés avec Faker : leur contenu est fictif<br>
-                            • Objectif : Créer un blog dynamique avec interface d'administration<br>
-                            • Stack : PHP, SQL, HTML, CSS / Bootstrap<br>
-                            - Réalisations :<br>
-                            • Système CRUD complet (articles, création, modification, suppression)<br>
-                            • Interface d’administration sécurisée<br>
-                            • Utilisation de classes PHP, autoloading et routing<br>
-                            • Mise en page responsive<br>
-                            - Compétences acquises :<br>
-                            • Développement full-stack orienté projet<br>
-                            • Utilisation de concepts avancés PHP<br>
-                            • Expérience utilisateur et accessibilité<br>
-                            • Déploiement sur hébergement mutualisé<br>
-                        </div>
+                <article class="diploma-card">
+                    <img src="asset/digital-campus.png" alt="Logo Digital Campus">
+                    <div class="diploma-content">
+                        <h3>Développeur applications web et mobiles</h3>
+                        <span class="diploma-school">Digital Campus</span>
+                        <span class="diploma-date">2024 – 2026 (cursus en cours)</span>
+                        <p>Projet orienté produit, UX/UI, gestion client et montée en compétence sur les stacks JavaScript & Web3.</p>
                     </div>
                 </article>
             </div>
         </section>
 
-        <section class="section-display full-text-content" id="projets">
-            <div class="text-content">
-                <section class="liste-blog">
-                    <a href="https://trackbuild.sites-alya.fr/">
-                        <article class="blog fade-in-right">
-                            <h4>TrackBuild</h4>
-                            <p>Gestionnaire de tache et de temps</p>
-                            <div href="https://trackbuild.sites-alya.fr/" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                        </article>
-                    </a>
-                    <a href="http://messagerie.sites-alya.fr/">
-                        <article class="blog fade-in-left">
-                            <h4>Méssagerie</h4>
-                            <p>Création d'une méssagerie privé full-stack</p>
-                            <div href="http://messagerie.sites-alya.fr/" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                        </article>
-                    </a>
-                    <a href="http://blogweb3.sites-alya.fr/">
-                        <article class="blog fade-in-right">
-                            <h4>Blog Web3</h4>
-                            <p>Création d'un blog spécialisé dans le Web3</p>
-                            <div href="http://blogweb3.sites-alya.fr/" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                        </article>
-                    </a>
-                    <a href="https://www.google.com/">
-                        <article class="blog fade-in-left">
-                            <h4>Ecoride</h4>
-                            <p>Réalisation full-stack d'une apllication de covoiturage (Déploiement prévue fin 2025)</p>
-                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                        </article>
-                    </a>
-                    <a href="https://www.google.com/">
-                        <article class="blog fade-in-right">
-                            <h4>Site club de foot</h4>
-                            <p>Réalisation full-stack d'un site vitrine et de gestion pour clud de foot local (Déploiement prévue fin 2025)</p>
-                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                        </article>
-                    </a>
-                </section>
+        <section class="section-display section-archives" id="archives">
+            <div class="section-heading">
+                <span class="eyebrow">Archives</span>
+                <h2>Premiers projets & expérimentations</h2>
+                <p>Des réalisations plus anciennes, parfaites pour comprendre ma progression et ma curiosité technique.</p>
+            </div>
+            <div class="resource-grid">
+                <a class="resource-card" href="https://jeux-de-des.sites-alya.fr/" target="_blank" rel="noopener">
+                    <h4>🎲 Jeu de dés</h4>
+                    <p>Exploration JavaScript vanilla : gestion des états, interactions DOM et animations.</p>
+                    <span class="resource-link">Voir la démo <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
             </div>
         </section>
 
-        <section class="section-display full-text-content" id="contact">
-            <div class="text-content">
-                <h2 class="title">Mes contacts et réseaux
-                    <picture class="emoji-gif">
-                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6ce_fe0f/512.webp" type="image/webp">
-                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6ce_fe0f/512.gif" alt="🛎" width="32" height="32">
-                    </picture>
-                </h2>
-                <p>Réseaux Professionnels</p>
-                <section class="listes-contacts">
-                    <div class="liste-contact fade-in-left">
-                        <a target="_blank" href="https://github.com/Alyaesub">
-                            <img src="asset/github.svg" alt="logo git hub">
-                        </a>
-                        <a target="_blank" href="https://www.malt.fr/profile/pascalreynier">
-                            <img src="asset/Malt_logo_pink.svg" alt="logo malt">
-                        </a>
-                        <a target="_blank" href="https://www.linkedin.com/in/pascal-reynier-75a11b326/">
-                            <img src="asset/linkedin.svg" alt="logo linkedin">
-                        </a>
-                    </div>
-                </section>
+        <section class="section-display section-blog" id="blog">
+            <div class="section-heading">
+                <span class="eyebrow">Veille</span>
+                <h2>Ressources que je consulte régulièrement</h2>
+                <p>Se maintenir à jour est essentiel : voici quelques lectures incontournables pour rester au contact des tendances tech.</p>
             </div>
-        </section>
-
-        <section class="section-display full-text-content" id="diplomes">
-            <div class="text-content">
-                <h2 class="title">Diplômes
-                    <picture class="emoji-gif">
-                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f393/512.webp" type="image/webp">
-                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f393/512.gif" alt="🎓" width="32" height="32">
-                    </picture>
-                </h2>
-            </div>
-            <article class="diplomes fade-in-left">
-                <img class="diplome-logo" src="asset/studi-2.png" alt="logo studi">
-                <div class="diplome-content ">
-                    <h3 class="diplome-title">Développeur applications web et mobiles</h3>
-                    <div class="diplome-subtitle">Studi</div>
-                    <div class="diplome-date">2024-2026</div>
-                    <div class="diplome-description">
-                        En cours de formation. second semestre validé.
-                    </div>
-                </div>
-            </article>
-            <article class="diplomes fade-in-right">
-                <img class="diplome-logo" src="asset/digital-campus.png" alt="logo studi">
-                <div class="diplome-content ">
-                    <h3 class="diplome-title">Développeur applications web et mobiles</h3>
-                    <div class="diplome-subtitle">Digital Campus</div>
-                    <div class="diplome-date">2024-2026</div>
-                    <div class="diplome-description">
-                        En cours de formation. second semestre validé.
-                    </div>
-                </div>
-            </article>
-        </section>
-
-        <section class="section-display full-text-content" id="archives">
-            <div class="text-content">
-                <h2 class="title">Archives & premiers projets 📁</h2>
-                <p>Des projets plus anciens, simples mais formateurs. 👨‍💻</p>
-
-                <section class="liste-blog">
-                    <a href="https://jeux-de-des.sites-alya.fr/">
-                        <article class="blog">
-                            <h4>🎲 Jeu de dés</h4>
-                            <p>Petit jeu 2 joueurs pour manipuler le DOM en JS pur. Projet d'exercice lors de l'apprentissage JavaScript.</p>
-                            <div class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                        </article>
-                    </a>
-                    <!--  en rajouter d'autres ici -->
-                </section>
-            </div>
-        </section>
-
-        <section class="section-display full-text-content" id="blog">
-            <div class="text-content">
-                <h2 class="title">Blog
-                    <picture class="emoji-gif">
-                        <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/1f195/512.webp" type="image/webp">
-                        <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f195/512.gif" alt="🆕" width="32" height="32">
-                    </picture>
-                </h2>
-                <p>Continuer à apprendre, Continuer à decouvrir, Rester en veille</p>
-                <section class="liste-blog">
-                    <a href="https://www.journalduhacker.net/">
-                        <article class="blog">
-                            <h4>🧑‍💻 Le Journal du Hacker</h4>
-                            <p>Version francophone de Hacker News – actu dev, sécurité, web, open source.
-                                Super adapté pour un profil curieux !</p>
-                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                        </article>
-                    </a>
-                    <a href="https://www.blogdumoderateur.com/tech/">
-                        <article class="blog">
-                            <h4>🧑‍💻 Blog du Modérateur – Rubrique Tech</h4>
-                            <p>Pour une veille plus large (actu tech, outils, web, réseaux pro…)</p>
-                            <div href="google.com" class="link-blog"><i class="fa-solid fa-arrow-right"></i></div>
-                        </article>
-                    </a>
-                </section>
+            <div class="resource-grid">
+                <a class="resource-card" href="https://www.journalduhacker.net/" target="_blank" rel="noopener">
+                    <h4>🧑‍💻 Le Journal du Hacker</h4>
+                    <p>Version francophone de Hacker News : dev, sécurité, web, open source. Parfait pour une veille quotidienne.</p>
+                    <span class="resource-link">Lire maintenant <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
+                <a class="resource-card" href="https://www.blogdumoderateur.com/tech/" target="_blank" rel="noopener">
+                    <h4>🧠 Blog du Modérateur – Tech</h4>
+                    <p>Tendances, outils, productivité, retours d’expérience. Une veille transversale sur l’écosystème numérique.</p>
+                    <span class="resource-link">Explorer <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="credits">
-            <span>© 2024 Reynier Pascal</span>
+            <span>© 2024 Pascal Reynier · Tous droits réservés</span>
         </div>
     </footer>
+
     <div id="loader">
         <div class="loader"></div>
     </div>
+
     <a id="gototop" href="#">
         <picture>
             <source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_fe0f/512.webp" type="image/webp">
             <img src="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_fe0f/512.gif" alt="☝" width="32" height="32">
         </picture>
     </a>
-
 </body>
 
 </html>
