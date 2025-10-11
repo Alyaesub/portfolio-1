@@ -63,3 +63,48 @@ const observer = new IntersectionObserver((entries) => {
 document
 	.querySelectorAll(".fade-in-right, .fade-in-left")
 	.forEach((el) => observer.observe(el));
+
+//feedback pour envoie de mail via le form
+const contactForm = document.querySelector("#contact-form");
+if (contactForm) {
+	contactForm.addEventListener("submit", async (e) => {
+		e.preventDefault();
+		const form = e.target;
+		try {
+			const response = await fetch(form.action, {
+				method: "POST",
+				body: new FormData(form),
+			});
+
+			const contentType = response.headers.get("content-type") || "";
+			let payload;
+
+			if (contentType.includes("application/json")) {
+				payload = await response.json();
+			} else {
+				const fallbackText = await response.text();
+				if (fallbackText.trim().startsWith("<")) {
+					throw new Error("Réponse inattendue du serveur.");
+				}
+				throw new Error(
+					fallbackText || "Réponse inattendue du serveur."
+				);
+			}
+
+			if (!response.ok || payload.status !== "success") {
+				throw new Error(
+					payload.message || "Une erreur inattendue est survenue."
+				);
+			}
+
+			alert(payload.message || "Message envoyé.");
+			form.reset();
+		} catch (error) {
+			const message =
+				error instanceof Error
+					? error.message
+					: "Une erreur inattendue est survenue.";
+			alert("Oups : " + message);
+		}
+	});
+}
