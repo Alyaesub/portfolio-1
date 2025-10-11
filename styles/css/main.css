@@ -1253,6 +1253,6 @@ footer .credits {
   }
 
   .section-hero .hero-panel {
-    padding: 1.6rem;
+    display: none;
   }
 }
