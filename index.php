@@ -7,7 +7,7 @@ require_once "controllers/routeur.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Pascal Reynier, développeur web full stack : création de sites, d'applications web & mobiles, back-end PHP, front-end JS, bases de données et projets Web 3.">
+    <meta name="description" content="Portfolio de Pascal Reynier, Développeur web full stack à l’écoute de vos besoins. Du design au déploiement, je conçois des plateformes modernes, rapides et durables (PHP, JS, Web3).">
     <meta name="author" content="Pascal Reynier">
     <meta name="robots" content="index, follow">
     <!-- Open Graph (Facebook, LinkedIn...) -->
@@ -22,7 +22,7 @@ require_once "controllers/routeur.php";
     <meta name="twitter:title" content="Pascal Reynier – Développeur Web Full Stack">
     <meta name="twitter:description" content="Développement web et mobile, projets PHP, JS, Web3.">
     <meta name="twitter:image" content="https://ton-site.fr/asset/preview.png">
-    <title>Portfolio Pascal Reynier – Développeur Web Full Stack</title>
+    <title>Portfolio Pascal Reynier – Développeur Web Full Stack & Web3</title>
     <link rel="canonical" href="https://sites-alya.fr">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,12 +84,12 @@ require_once "controllers/routeur.php";
             <div class="hero-intro">
                 <div class="section-heading">
                     <span class="eyebrow">Freelance full stack & web3</span>
-                    <h1>Je conçois des plateformes web modernes qui accélèrent vos produits</h1>
+                    <h1>Je conçois des plateformes web modernes, performantes et durables pensées pour grandir avec vos projets.</h1>
                 </div>
                 <p class="lead">
-                    Du cadrage à la mise en production, j’aide les équipes produit à livrer des expériences web fiables, rapides et scalables.
+                    Du cadrage à la mise en production, je livre des expériences web fiables, rapides et scalables, avec une approche simple, directe et orientée résultat.
                     Ma stack JavaScript / TypeScript (React, Next.js) et back-end (Node.js, Express, PHP) couvre l’ensemble du cycle de vie,
-                    y compris les intégrations Web3 et la mise en place de pipelines CI/CD.
+                    y compris les intégrations Web3.
                 </p>
                 <div class="hero-actions">
                     <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-comments"></i>Discutons de votre projet</a>
@@ -126,11 +126,12 @@ require_once "controllers/routeur.php";
                     <img class="zoom-scroll" src="asset/imgPremiereDiv.avif" alt="Interface web moderne illustrant le travail de Pascal Reynier">
                 </div>
                 <p class="hero-panel__caption">
-                    J’accompagne startups et PME pour transformer leurs idées en plateformes robustes. Workshops de cadrage, prototypage rapide,
-                    développement itératif et accompagnement au déploiement : chaque projet est traité comme un produit à forte valeur.
+                    J’accompagne startups et PME pour transformer leurs idées en plateformes robustes.
+                    Workshops de cadrage, prototypage rapide, développement itératif et accompagnement au déploiement :
+                    chaque projet est traité comme un produit à forte valeur ajoutée.
                 </p>
                 <div class="hero-panel__tags">
-                    <span class="tag">Audits techniques</span>
+                    <span class="tag">Code clair et robuste</span>
                     <span class="tag">Scalabilité</span>
                     <span class="tag">Design system</span>
                     <span class="tag">CI/CD</span>
@@ -144,7 +145,7 @@ require_once "controllers/routeur.php";
                 <h2>Un partenaire tech polyvalent pour vos produits digitaux</h2>
                 <p>
                     Je construis des expériences utilisateur soignées tout en garantissant une architecture stable, maintenable et prête pour la croissance.
-                    Du MVP à la refonte complète, je mets en place les outils, les process et la rigueur nécessaires pour délivrer rapidement.
+                    Du MVP à la refonte complète, j’installe les bons outils et les bonnes méthodes pour livrer vite, sans sacrifier la qualité.
                 </p>
             </div>
             <div class="feature-grid">
@@ -163,7 +164,7 @@ require_once "controllers/routeur.php";
                     <ul>
                         <li>Node.js (Express), PHP, MVC personnalisés</li>
                         <li>Authentification, rôles, gestion des permissions</li>
-                        <li>MySQL, MongoDB, Redis, Webhooks, tests & monitoring</li>
+                        <li>MySQL, MongoDB, Webhooks, tests & monitoring</li>
                     </ul>
                 </article>
                 <article class="feature-card">
@@ -181,7 +182,7 @@ require_once "controllers/routeur.php";
                     <ul>
                         <li>Roadmaps, cadrage fonctionnel & ateliers d’idéation</li>
                         <li>Revue de code, audit de performance, dette technique</li>
-                        <li>Documentation, passation, montée en compétence des équipes</li>
+                        <li>Documentation, passation, montée en compétences</li>
                     </ul>
                 </article>
             </div>
@@ -192,7 +193,7 @@ require_once "controllers/routeur.php";
                 <span class="eyebrow">Compétences</span>
                 <h2>Stack technique maîtrisée & veille constante</h2>
                 <p>
-                    J’équilibre innovation et pragmatisme : une base solide pour livrer vite, tout en gardant un œil sur les technologies qui feront la différence demain.
+                    J’équilibre innovation et pragmatisme : livrer vite, bien, et rester à jour sur ce qui fera la différence demain.
                 </p>
             </div>
             <div class="skills-grid">
@@ -200,7 +201,7 @@ require_once "controllers/routeur.php";
                     <h3>Langages & frameworks</h3>
                     <ul>
                         <li><i class="fa-brands fa-js"></i>JavaScript ES6+, TypeScript</li>
-                        <li><i class="fa-brands fa-react"></i>React, Next.js, Zustand, React Query</li>
+                        <li><i class="fa-brands fa-react"></i>React, Next.js</li>
                         <li><i class="fa-brands fa-node-js"></i>Node.js, Express.js</li>
                         <li><i class="fa-brands fa-php"></i>PHP, MVC maison, Twig</li>
                         <li><i class="fa-brands fa-ethereum"></i>Solidity, intégrations Web3</li>
@@ -212,18 +213,15 @@ require_once "controllers/routeur.php";
                         <li><i class="fa-solid fa-database"></i>MySQL, MariaDB, PostgreSQL</li>
                         <li><i class="fa-solid fa-leaf"></i>MongoDB, stockage NoSQL</li>
                         <li><i class="fa-solid fa-file-code"></i>API REST / JSON, Webhooks</li>
-                        <li><i class="fa-solid fa-gears"></i>Microservices, orchestrations</li>
                         <li><i class="fa-brands fa-docker"></i>Docker, environnements isolés</li>
                     </ul>
                 </article>
                 <article class="skill-card">
                     <h3>Qualité & delivery</h3>
                     <ul>
-                        <li><i class="fa-solid fa-shield"></i>OWASP, audits sécurité, roles & permissions</li>
+                        <li><i class="fa-solid fa-shield"></i>OWASP, roles & permissions</li>
                         <li><i class="fa-solid fa-network-wired"></i>CI/CD, GitHub Actions, GitFlow</li>
                         <li><i class="fa-solid fa-code-compare"></i>Tests fonctionnels, monitoring</li>
-                        <li><i class="fa-solid fa-list-check"></i>Product management, priorisation</li>
-                        <li><i class="fa-solid fa-people-group"></i>Animation d’ateliers et formation équipes</li>
                     </ul>
                 </article>
             </div>
@@ -232,7 +230,6 @@ require_once "controllers/routeur.php";
                 <span class="tag">Performance</span>
                 <span class="tag">Accessibilité</span>
                 <span class="tag">Documentation</span>
-                <span class="tag">Mentoring</span>
             </div>
         </section>
 
@@ -376,7 +373,8 @@ require_once "controllers/routeur.php";
             <div class="section-heading">
                 <span class="eyebrow">Contact</span>
                 <h2>Construisons votre prochain produit</h2>
-                <p>Prêt à lancer un MVP, industrialiser une plateforme existante ou ajouter une brique Web3 ? Contactez-moi, je réponds sous 24 h.</p>
+                <p>Un projet, une idée ou une refonte en tête ?
+                    Parlons-en ! Je réponds sous 24 h avec un vrai regard produit et technique.</p>
             </div>
             <div class="contact-panel">
                 <div class="contact-grid">
@@ -419,12 +417,8 @@ require_once "controllers/routeur.php";
                                     <span class="tag">Timezones EU / US EST</span>
                                 </div>
                             </div>
-                            <div class="direct-email">
-                                <span class="direct-email__label">Email direct</span>
-                                <a class="direct-email__value" href="mailto:reynierpascal@yahoo.com">reynierpascal@yahoo.com</a>
-                            </div>
                         </div>
-                        <form id="contact-form">
+                        <form id="contact-form" action="/Function/mailHelper.php" method="POST">
                             <div class="form-grid">
                                 <div class="form-field">
                                     <label for="fullname">Nom complet</label>
@@ -457,6 +451,7 @@ require_once "controllers/routeur.php";
             <div class="section-heading">
                 <span class="eyebrow">Formation</span>
                 <h2>Diplômes & parcours certifiants</h2>
+                <p>Un parcours tourné vers la création de produits concrets et durables, avec une attention particulière à la qualité du code et à l’impact.</p>
             </div>
             <div class="diploma-grid">
                 <article class="diploma-card">
