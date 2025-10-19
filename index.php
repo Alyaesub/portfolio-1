@@ -243,6 +243,26 @@ require_once "controllers/routeur.php";
                 <article class="experience-card">
                     <div class="experience-meta">
                         <span>2025</span>
+                        <span class="badge">Projet freelance</span>
+                    </div>
+                    <h3>Site vitrine & gestion</h3>
+                    <p class="experience-subtitle">Transformation digitale d’un club de football</p>
+                    <ul class="experience-list">
+                        <li>Système CRUD complet (équipes, matchs, événements, médias)</li>
+                        <li>Interface d’administration sécurisée avec rôles et workflow éditorial</li>
+                        <li>Stack TypeScript full-stack : React, Node.js, Express, MySQL</li>
+                    </ul>
+                    <div class="experience-tags">
+                        <span class="tag">React</span>
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Express</span>
+                        <span class="tag">SQL</span>
+                    </div>
+                </article>
+                <article class="experience-card">
+                    <div class="experience-meta">
+                        <span>2025</span>
                         <span class="badge">Projet diplômant</span>
                     </div>
                     <h3>Ecoride</h3>
@@ -259,26 +279,6 @@ require_once "controllers/routeur.php";
                         <span class="tag">PHP</span>
                         <span class="tag">MySQL</span>
                         <span class="tag">JSON</span>
-                    </div>
-                </article>
-                <article class="experience-card">
-                    <div class="experience-meta">
-                        <span>2025</span>
-                        <span class="badge">Projet freelance</span>
-                    </div>
-                    <h3>Site vitrine & gestion</h3>
-                    <p class="experience-subtitle">Transformation digitale d’un club de football</p>
-                    <ul class="experience-list">
-                        <li>Système CRUD complet (équipes, matchs, événements, médias)</li>
-                        <li>Interface d’administration sécurisée avec rôles et workflow éditorial</li>
-                        <li>Stack TypeScript full-stack : React, Node.js, Express, MySQL</li>
-                    </ul>
-                    <div class="experience-tags">
-                        <span class="tag">React</span>
-                        <span class="tag">TypeScript</span>
-                        <span class="tag">Node.js</span>
-                        <span class="tag">Express</span>
-                        <span class="tag">SQL</span>
                     </div>
                 </article>
                 <article class="experience-card">
@@ -319,25 +319,7 @@ require_once "controllers/routeur.php";
                         <span class="tag">Fetch API</span>
                     </div>
                 </article>
-                <article class="experience-card">
-                    <div class="experience-meta">
-                        <span>2025</span>
-                        <span class="badge">Back-office</span>
-                    </div>
-                    <h3>Blog Web3</h3>
-                    <p class="experience-subtitle">CMS complet avec interface d’administration</p>
-                    <ul class="experience-list">
-                        <li>CRUD articles, authentification et gestion des rôles</li>
-                        <li>Autoloading PHP, routing sur-mesure, sécurisation des formulaires</li>
-                        <li>Responsive design et accessibilité multi devices</li>
-                    </ul>
-                    <div class="experience-tags">
-                        <span class="tag">PHP</span>
-                        <span class="tag">SQL</span>
-                        <span class="tag">Bootstrap</span>
-                        <span class="tag">UX</span>
-                    </div>
-                </article>
+
             </div>
         </section>
 
@@ -348,8 +330,14 @@ require_once "controllers/routeur.php";
                 <p>Des démos publiques pour découvrir mon approche front/back et les choix d’architecture mis en place sur chaque produit.</p>
             </div>
             <div class="projects-grid">
+                <article class="project-card">
+                    <span class="badge"><i class="fa-solid fa-futbol"></i>En cours</span>
+                    <h4>Site vitrine & portail club</h4>
+                    <p>Refonte complète pour un club sportif : espace public dynamique, back-office éditorial, modules événements & galerie.</p>
+                    <span class="project-link">déploiement pour fin 2025 <i class="fa-solid fa-arrow-right"></i></span>
+                </article>
                 <a class="project-card" href="http://ecoride.sites-alya.fr/" target="_blank" rel="noopener">
-                    <span class="badge"><i class="fa-solid fa-stopwatch"></i>Site mis en production</span>
+                    <span class="badge"><i class="fa-solid fa-stopwatch"></i>Site covoiturage</span>
                     <h4>Ecoride</h4>
                     <p>Plateforme de covoiturage écoresponsable : réservation temps réel, dashboards multi-rôles et suivi des crédits/avis.</p>
                     <span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
@@ -360,12 +348,7 @@ require_once "controllers/routeur.php";
                     <p>Gestionnaire de tâches et suivi du temps multi-projets. Interface modulable et reporting synthétique.</p>
                     <span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                 </a>
-                <article class="project-card">
-                    <span class="badge"><i class="fa-solid fa-futbol"></i>En cours</span>
-                    <h4>Site vitrine & portail club</h4>
-                    <p>Refonte complète pour un club sportif : espace public dynamique, back-office éditorial, modules événements & galerie.</p>
-                    <span class="project-link">déploiement pour fin 2025 <i class="fa-solid fa-arrow-right"></i></span>
-                </article>
+
             </div>
         </section>
 
@@ -482,9 +465,25 @@ require_once "controllers/routeur.php";
                 <p>Des réalisations plus anciennes, parfaites pour comprendre ma progression et ma curiosité technique.</p>
             </div>
             <div class="resource-grid">
+                <a class="resource-card" href="http://blogweb3.sites-alya.fr/" target="_blank" rel="noopener">
+                    <h4>Blog Web3</h4>
+                    <p>CMS complet avec interface d’administration, CRUD articles, authentification et gestion des rôles </p>
+                    <div class="experience-tags">
+                        <span class="tag">PHP</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Bootstrap</span>
+                        <span class="tag">UX</span>
+                    </div>
+                    <span class="resource-link">Voir la démo <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
                 <a class="resource-card" href="https://jeux-de-des.sites-alya.fr/" target="_blank" rel="noopener">
                     <h4>🎲 Jeu de dés</h4>
                     <p>Exploration JavaScript vanilla : gestion des états, interactions DOM et animations.</p>
+                    <div class="experience-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Bootstrap</span>
+                    </div>
                     <span class="resource-link">Voir la démo <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                 </a>
             </div>
