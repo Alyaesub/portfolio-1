@@ -283,6 +283,25 @@ require_once "controllers/routeur.php";
                 </article>
                 <article class="experience-card">
                     <div class="experience-meta">
+                        <span>2025</span>
+                        <span class="badge">Side project</span>
+                    </div>
+                    <h3>Starter Pack NFT</h3>
+                    <p class="experience-subtitle">Création d’une galerie NFT minimaliste et template réutilisable</p>
+                    <ul class="experience-list">
+                        <li>Conception d’une architecture modulaire (assets, metadata, data, render, utils)</li>
+                        <li>Chargement et validation dynamique des métadonnées JSON (name, image, attributes)</li>
+                        <li>Rendu automatisé d’une grille responsive jusqu’à 100 NFTs, avec placeholders et pagination</li>
+                    </ul>
+                    <div class="experience-tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Vite.js</span>
+                        <span class="tag">IPFS</span>
+                    </div>
+                </article>
+                <article class="experience-card">
+                    <div class="experience-meta">
                         <span>2024</span>
                         <span class="badge">Side project</span>
                     </div>
@@ -303,7 +322,7 @@ require_once "controllers/routeur.php";
                 <article class="experience-card">
                     <div class="experience-meta">
                         <span>2024</span>
-                        <span class="badge">Full stack</span>
+                        <span class="badge">Side project</span>
                     </div>
                     <h3>Messagerie privée</h3>
                     <p class="experience-subtitle">Application temps réel multi-utilisateurs</p>
@@ -330,16 +349,22 @@ require_once "controllers/routeur.php";
                 <p>Des démos publiques pour découvrir mon approche front/back et les choix d’architecture mis en place sur chaque produit.</p>
             </div>
             <div class="projects-grid">
-                <article class="project-card">
-                    <span class="badge"><i class="fa-solid fa-futbol"></i>En cours</span>
+                <a class="project-card" href="https://www.google.com/?hl=fr" target="_blank" rel="noopener">
+                    <span class="badge"><i class="fa-solid fa-stopwatch"></i>En cours</span>
                     <h4>Site vitrine & portail club</h4>
-                    <p>Refonte complète pour un club sportif : espace public dynamique, back-office éditorial, modules événements & galerie.</p>
-                    <span class="project-link">déploiement pour fin 2025 <i class="fa-solid fa-arrow-right"></i></span>
-                </article>
+                    <p>Création from scratch pour un club sportif : espace public dynamique, back-office éditorial, modules événements & galerie.</p>
+                    <span class="project-link">Voir le projet (déploiement pour fin 2025) <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
                 <a class="project-card" href="http://ecoride.sites-alya.fr/" target="_blank" rel="noopener">
                     <span class="badge"><i class="fa-solid fa-stopwatch"></i>Site covoiturage</span>
                     <h4>Ecoride</h4>
                     <p>Plateforme de covoiturage écoresponsable : réservation temps réel, dashboards multi-rôles et suivi des crédits/avis.</p>
+                    <span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                </a>
+                <a class="project-card" href="#" target="_blank" rel="noopener">
+                    <span class="badge"><i class="fa-solid fa-image"></i> Galerie NFT</span>
+                    <h4>Starter Pack NFT</h4>
+                    <p>Galerie minimaliste et réutilisable pour collections NFT : affichage dynamique jusqu’à 100 tokens, chargement des metadata JSON et rendu IPFS optimisé.</p>
                     <span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                 </a>
                 <a class="project-card" href="https://trackbuild.sites-alya.fr/" target="_blank" rel="noopener">
@@ -348,7 +373,6 @@ require_once "controllers/routeur.php";
                     <p>Gestionnaire de tâches et suivi du temps multi-projets. Interface modulable et reporting synthétique.</p>
                     <span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                 </a>
-
             </div>
         </section>
 
