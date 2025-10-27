@@ -287,17 +287,17 @@ require_once "controllers/routeur.php";
                         <span class="badge">Side project</span>
                     </div>
                     <h3>Starter Pack NFT</h3>
-                    <p class="experience-subtitle">Création d’une galerie NFT minimaliste et template réutilisable</p>
+                    <p class="experience-subtitle">Développement d’une galerie NFT minimaliste et entièrement réutilisable</p>
                     <ul class="experience-list">
-                        <li>Conception d’une architecture modulaire (assets, metadata, data, render, utils)</li>
-                        <li>Chargement et validation dynamique des métadonnées JSON (name, image, attributes)</li>
-                        <li>Rendu automatisé d’une grille responsive jusqu’à 100 NFTs, avec placeholders et pagination</li>
+                        <li>Architecture modulaire claire (assets, metadata, data, render, utils)</li>
+                        <li>Chargement et validation dynamique des métadonnées JSON (name, image, attributes...)</li>
+                        <li>Affichage responsive automatisé jusqu’à 100 NFTs, avec placeholders et recherche en temps réel</li>
                     </ul>
                     <div class="experience-tags">
                         <span class="tag">TypeScript</span>
-                        <span class="tag">JavaScript</span>
                         <span class="tag">Vite.js</span>
-                        <span class="tag">IPFS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CI/CD</span>
                     </div>
                 </article>
                 <article class="experience-card">
@@ -361,10 +361,10 @@ require_once "controllers/routeur.php";
                     <p>Plateforme de covoiturage écoresponsable : réservation temps réel, dashboards multi-rôles et suivi des crédits/avis.</p>
                     <span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                 </a>
-                <a class="project-card" href="#" target="_blank" rel="noopener">
+                <a class="project-card" href="https://nft-collection-1-liart.vercel.app/" target="_blank" rel="noopener">
                     <span class="badge"><i class="fa-solid fa-image"></i> Galerie NFT</span>
                     <h4>Starter Pack NFT</h4>
-                    <p>Galerie minimaliste et réutilisable pour collections NFT : affichage dynamique jusqu’à 100 tokens, chargement des metadata JSON et rendu IPFS optimisé.</p>
+                    <p>Galerie NFT performante et épurée : chargement dynamique, architecture modulaire TypeScript, et déploiement automatisé via CI/CD.</p>
                     <span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
                 </a>
                 <a class="project-card" href="https://trackbuild.sites-alya.fr/" target="_blank" rel="noopener">
