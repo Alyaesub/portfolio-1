@@ -163,6 +163,41 @@ picture.emoji-gif img {
     }
 }
 
+body[data-theme="light"] {
+    .header-website {
+        background: rgba($white, 0.9);
+        border-bottom-color: rgba($dark, 0.08);
+        box-shadow: 0 10px 30px rgba($dark, 0.08);
+
+        .menu {
+            .menu-input-label {
+                background: rgba($white, 0.85);
+                border-color: rgba($dark, 0.08);
+                color: $dark;
+
+                &:hover {
+                    border-color: rgba($primary, 0.35);
+                    color: $primary;
+                }
+            }
+
+            .dropdown-menu {
+                background: rgba($white, 0.96);
+                border-color: rgba($dark, 0.06);
+                box-shadow: 0 18px 40px rgba($dark, 0.12);
+
+                .nav-links a {
+                    color: rgba($dark, 0.82);
+
+                    &:hover {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 992px) {
     .header-website {
         .menu {

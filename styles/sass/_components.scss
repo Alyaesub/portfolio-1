@@ -61,6 +61,37 @@
         display: flex;
         flex-direction: column;
         gap: 1.6rem;
+        position: relative;
+        overflow: hidden;
+        padding: 2.4rem;
+        border-radius: $border-radius2;
+        background: linear-gradient(135deg, rgba($surface, 0.85), rgba($primary, 0.18));
+        border: 1px solid rgba($white, 0.1);
+        box-shadow: 0 28px 60px rgba(15, 23, 42, 0.35);
+        isolation: isolate;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: url("/asset/IMG_2777.JPG") center/cover no-repeat;
+            filter: blur(6px) brightness(0.86);
+            transform: scale(1.08);
+            z-index: 0;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba($surface, 0.88), rgba($primary, 0.28));
+            z-index: 1;
+        }
+
+        > * {
+            position: relative;
+            z-index: 2;
+        }
     }
 
     .hero-actions {
@@ -117,6 +148,15 @@
         display: flex;
         flex-direction: column;
         gap: 0.4rem;
+        box-shadow: 0 10px 26px rgba(15, 23, 42, 0.28);
+        transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+
+        &:hover {
+            transform: translateY(-8px) scale(1.01);
+            border-color: rgba($primary, 0.45);
+            background: linear-gradient(145deg, rgba($white, 0.08), rgba($primary, 0.06));
+            box-shadow: 0 16px 38px rgba($primary, 0.32), 0 10px 24px rgba($accent, 0.22);
+        }
 
         .metric-value {
             font-size: 1.8rem;
@@ -226,12 +266,14 @@
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
-    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.28);
+    transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
-        transform: translateY(-6px);
-        border-color: rgba($primary, 0.45);
-        background: rgba($white, 0.08);
+        transform: translateY(-10px) scale(1.01);
+        border-color: rgba($primary, 0.55);
+        background: linear-gradient(145deg, rgba($white, 0.08), rgba($primary, 0.08));
+        box-shadow: 0 18px 45px rgba($primary, 0.35), 0 10px 28px rgba($accent, 0.25);
     }
 
     h3 {
@@ -287,6 +329,15 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    box-shadow: 0 12px 28px rgba(15, 23, 42, 0.26);
+    transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+        transform: translateY(-8px) scale(1.01);
+        border-color: rgba($primary, 0.5);
+        background: linear-gradient(145deg, rgba($white, 0.08), rgba($primary, 0.06));
+        box-shadow: 0 16px 40px rgba($primary, 0.32), 0 10px 26px rgba($accent, 0.22);
+    }
 
     h3 {
         margin: 0;
@@ -346,12 +397,14 @@
     gap: 1.4rem;
     position: relative;
     overflow: hidden;
-    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+    box-shadow: 0 12px 28px rgba($dark, 0.28);
+    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
 
     &:hover {
         transform: translateY(-8px);
         border-color: rgba($primary, 0.45);
         background: rgba($white, 0.08);
+        box-shadow: 0 18px 42px rgba($primary, 0.32), 0 10px 26px rgba($accent, 0.22);
     }
 
     .experience-meta {
@@ -405,6 +458,369 @@
     }
 }
 
+.theme-switcher {
+    position: fixed;
+    bottom: 24px;
+    left: 24px;
+    display: flex;
+    align-items: flex-end;
+    gap: 0.8rem;
+    z-index: 140;
+
+    &__toggle {
+        width: 54px;
+        height: 54px;
+        border-radius: 18px;
+        border: 1px solid rgba($white, 0.18);
+        background: linear-gradient(135deg, $primary, $accent);
+        color: $white;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 18px 35px rgba($primary, 0.4);
+        cursor: pointer;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+
+        i {
+            color: inherit;
+            font-size: 1.1rem;
+        }
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 24px 45px rgba($primary, 0.45);
+            border-color: rgba($white, 0.3);
+        }
+    }
+
+    &__panel {
+        background: rgba($surface, 0.94);
+        border: 1px solid rgba($white, 0.1);
+        border-radius: $border-radius2;
+        box-shadow: 0 28px 60px rgba(15, 23, 42, 0.45);
+        padding: 1.25rem;
+        min-width: 220px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(12px) scale(0.98);
+        transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 0.8rem;
+    }
+
+    &__title {
+        font-weight: 700;
+        letter-spacing: 0.02em;
+    }
+
+    &__close {
+        background: transparent;
+        border: 1px solid rgba($white, 0.14);
+        border-radius: 12px;
+        width: 36px;
+        height: 36px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: rgba($white, 0.85);
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        i {
+            color: inherit;
+            font-size: 1rem;
+        }
+
+        &:hover {
+            color: $primary;
+            border-color: rgba($primary, 0.55);
+        }
+    }
+
+    &__options {
+        display: grid;
+        gap: 0.75rem;
+    }
+
+    .theme-option {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        padding: 0.8rem 0.9rem;
+        border-radius: $border-radius;
+        border: 1px solid rgba($white, 0.12);
+        background: rgba($white, 0.04);
+        color: $white;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        .theme-dot {
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            border: 2px solid rgba($white, 0.6);
+            background: $surface;
+
+            &--dark {
+                background: linear-gradient(135deg, $surface, $primary);
+            }
+
+            &--light {
+                background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+                border-color: rgba($dark, 0.2);
+            }
+        }
+
+        &:hover {
+            border-color: rgba($primary, 0.5);
+            transform: translateY(-2px);
+        }
+
+        &.is-active {
+            border-color: rgba($primary, 0.7);
+            box-shadow: 0 12px 28px rgba($primary, 0.35);
+            background: linear-gradient(145deg, rgba($white, 0.08), rgba($primary, 0.1));
+        }
+    }
+
+    &.is-open {
+        .theme-switcher__panel {
+            opacity: 1;
+            pointer-events: auto;
+            transform: translateY(0) scale(1);
+        }
+    }
+}
+
+body[data-theme="light"] {
+    .section-heading h1,
+    .section-heading h2,
+    .section-heading p,
+    .lead,
+    .hero-points li,
+    .hero-panel__caption,
+    .hero-panel__title,
+    .badge,
+    .tag {
+        color: rgba($dark, 0.9);
+    }
+
+    .section-heading .eyebrow {
+        color: rgba($dark, 0.65);
+    }
+
+    .section-display:not(.section-hero) {
+        background: rgba($white, 0.92);
+        border: 1px solid rgba($dark, 0.08);
+        color: $dark;
+        box-shadow: 0 20px 48px rgba($dark, 0.16);
+        backdrop-filter: blur(10px);
+    }
+
+    .section-hero .hero-intro {
+        background: linear-gradient(135deg, rgba($white, 0.9), rgba($primary, 0.08));
+        border-color: rgba($dark, 0.08);
+        box-shadow: 0 20px 48px rgba($dark, 0.16);
+
+        &::before {
+            filter: blur(6px) brightness(1);
+        }
+
+        &::after {
+            background: linear-gradient(135deg, rgba($white, 0.85), rgba($primary, 0.12));
+        }
+    }
+
+    .hero-metric,
+    .feature-card,
+    .skill-card,
+    .experience-card,
+    .project-card,
+    .resource-card,
+    .diploma-card,
+    .contact-card,
+    .contact-card--form {
+        background: rgba($white, 0.96);
+        border-color: rgba($dark, 0.12);
+        color: $dark;
+        box-shadow: 0 20px 48px rgba($dark, 0.16);
+    }
+
+    .hero-metric {
+        .metric-value {
+            color: $dark;
+        }
+
+        .metric-label {
+            color: rgba($dark, 0.7);
+        }
+    }
+
+    .feature-card {
+        p,
+        li {
+            color: rgba($dark, 0.75);
+        }
+    }
+
+    .skill-card ul li {
+        color: rgba($dark, 0.75);
+    }
+
+    .experience-card {
+        .experience-subtitle,
+        .experience-list li {
+            color: rgba($dark, 0.75);
+        }
+
+        .experience-meta span {
+            color: rgba($dark, 0.65);
+        }
+    }
+
+    .project-card p,
+    .resource-card p,
+    .diploma-card p,
+    .contact-card p,
+    .contact-card--form p,
+    .contact-card--form label {
+        color: rgba($dark, 0.8);
+    }
+
+    .contact-panel {
+        background: rgba($white, 0.96);
+        border-color: rgba($dark, 0.12);
+        box-shadow: 0 20px 48px rgba($dark, 0.16);
+    }
+
+    .contact-card {
+        .contact-links a {
+            border-color: rgba($dark, 0.12);
+
+            &:hover {
+                border-color: rgba($primary, 0.5);
+                background: rgba($primary, 0.08);
+            }
+
+            img {
+                filter: brightness(0.15) saturate(1.2);
+            }
+        }
+    }
+
+    .diploma-card {
+        background: rgba($white, 0.96);
+        border-color: rgba($dark, 0.12);
+        box-shadow: 0 20px 48px rgba($dark, 0.16);
+
+        img {
+            border-color: rgba($dark, 0.12);
+        }
+
+        .diploma-school {
+            color: rgba($dark, 0.65);
+        }
+
+        .diploma-date {
+            color: rgba($dark, 0.7);
+        }
+    }
+
+    .hero-metric:hover,
+    .feature-card:hover,
+    .skill-card:hover,
+    .experience-card:hover,
+    .project-card:hover,
+    .resource-card:hover,
+    .diploma-card:hover,
+    .contact-card:hover,
+    .contact-card--form:hover {
+        border-color: rgba($primary, 0.55);
+        box-shadow: 0 20px 48px rgba($primary, 0.32), 0 12px 28px rgba($accent, 0.22);
+    }
+
+    .contact-card--form {
+        label {
+            color: rgba($dark, 0.7);
+        }
+
+        input,
+        textarea {
+            background: rgba($dark, 0.03);
+            border-color: rgba($dark, 0.12);
+            color: $dark;
+
+            &::placeholder {
+                color: rgba($dark, 0.45);
+            }
+
+            &:focus {
+                border-color: rgba($primary, 0.7);
+                box-shadow: 0 0 0 4px rgba($primary, 0.18);
+            }
+        }
+    }
+
+    .badge {
+        background: rgba($primary, 0.08);
+    }
+
+    .tag {
+        background: rgba($primary, 0.06);
+    }
+
+    .dropdown-menu,
+    .contact-panel {
+        color: $dark;
+    }
+
+    .theme-switcher {
+        &__panel {
+            background: rgba($white, 0.96);
+            border-color: rgba($dark, 0.08);
+            box-shadow: 0 18px 40px rgba($dark, 0.14);
+            color: $dark;
+        }
+
+        .theme-option {
+            color: $dark;
+            border-color: rgba($dark, 0.08);
+            background: rgba($dark, 0.02);
+
+            &.is-active {
+                box-shadow: 0 12px 28px rgba($primary, 0.25);
+            }
+        }
+
+        &__close {
+            border-color: rgba($dark, 0.12);
+            color: rgba($dark, 0.8);
+
+            &:hover {
+                color: $primary;
+                border-color: rgba($primary, 0.5);
+            }
+        }
+
+        &__toggle {
+            color: $white;
+        }
+
+        &__close i {
+            color: inherit;
+        }
+    }
+}
+
 .projects-grid {
     display: grid;
     gap: 1.5rem;
@@ -422,12 +838,14 @@
     gap: 1rem;
     color: inherit;
     text-decoration: none;
-    transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+    box-shadow: 0 12px 28px rgba($dark, 0.28);
+    transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 
     &:hover {
         transform: translateY(-6px);
         background: rgba($white, 0.08);
         border-color: rgba($accent, 0.45);
+        box-shadow: 0 18px 42px rgba($primary, 0.32), 0 10px 26px rgba($accent, 0.22);
     }
 
     h4 {
@@ -486,11 +904,13 @@
     border: 1px solid rgba($white, 0.08);
     border-radius: 18px;
     padding: 1.5rem;
-    transition: transform 0.25s ease, border-color 0.25s ease;
+    box-shadow: 0 12px 28px rgba($dark, 0.26);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 
     &:hover {
         transform: translateY(-6px);
         border-color: rgba($accent, 0.45);
+        box-shadow: 0 18px 42px rgba($primary, 0.32), 0 10px 24px rgba($accent, 0.22);
     }
 
     h3 {
@@ -545,6 +965,14 @@
 .contact-card--form {
     padding: 2rem;
     gap: 1.8rem;
+    box-shadow: 0 12px 28px rgba($dark, 0.26);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+        transform: translateY(-6px);
+        border-color: rgba($accent, 0.45);
+        box-shadow: 0 18px 42px rgba($primary, 0.32), 0 10px 24px rgba($accent, 0.22);
+    }
 
     .contact-form-header {
         display: flex;
@@ -665,11 +1093,13 @@
     background: rgba($white, 0.05);
     border: 1px solid rgba($white, 0.08);
     border-radius: 18px;
-    transition: transform 0.25s ease, border-color 0.25s ease;
+    box-shadow: 0 12px 28px rgba($dark, 0.28);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 
     &:hover {
         transform: translateY(-6px);
         border-color: rgba($primary, 0.45);
+        box-shadow: 0 18px 42px rgba($primary, 0.32);
     }
 
     img {
@@ -720,12 +1150,14 @@
     gap: 0.9rem;
     color: inherit;
     text-decoration: none;
-    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+    box-shadow: 0 12px 28px rgba($dark, 0.28);
+    transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
 
     &:hover {
         transform: translateY(-6px);
         border-color: rgba($accent, 0.45);
         background: rgba($white, 0.08);
+        box-shadow: 0 18px 42px rgba($primary, 0.32), 0 10px 26px rgba($accent, 0.22);
     }
 
     h4 {

@@ -13,6 +13,13 @@ body {
     color: $white;
 }
 
+body[data-theme="light"] {
+    background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.08), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(6, 182, 212, 0.06), transparent 45%),
+        linear-gradient(165deg, #f7f9fd 0%, #eef2f8 55%, #e2e8f0 100%);
+    color: $dark;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }

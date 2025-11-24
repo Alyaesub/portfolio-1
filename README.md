@@ -1,18 +1,22 @@
-exercice de création d'un portfolio
-mise en pratique des exercices SASS
+Portfolio – Aly | Dev Web & Web3
 
-Depart du projet en mobil first et ajustement en desktop avec mediaquery
+Développeur TypeScript, JavaScript, Node.js, Express, React, Next.js & Solidity.
+Je conçois des applications web modernes, sécurisées et scalables — du front au smart contract.
 
-Ajouts de fichiers sass et fichiers css
-créaions d'un fichier .vscode pour parametré live sass compiler
+Compétences clés
+• Front-end : React · Next.js · TypeScript
+• Back-end : Node.js · Express · REST API
+• Web3 : Solidity · Smart Contracts · dApps
+• Outils : Git/GitHub · Docker · CI/CD
 
-répartitons par structure, créations de plusieur fichier et oragnisations
+⸻
 
-Dans le fichier variable ce trouves a coter en commentaires les utilité de celles-ci
+⚙️ Tech Stack
 
-plusieur push et commit éfféctuer
-
-Structure final fini
-sections et autres faites et stables
-contenue a remplire et images a adapter
-remplire les champs laisser vide avec les infos mise a jours
+| **Domaine** | **Technologies**             |
+| ----------- | ---------------------------- |
+| **Front**   | React · Next.js · TypeScript |
+| **Back**    | Node.js · Express            |
+| **Web3**    | Solidity                     |
+| **Tests**   | Jest                         |
+| **Infra**   | Git · Docker · Linux         |
