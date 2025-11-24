@@ -408,7 +408,7 @@ require_once "controllers/routeur.php";
 			</div>
 			<div class="projects-grid">
 
-				<a class="project-card" href="" target="_blank" rel="noopener">
+				<a class="project-card" href="https://www.google.com/?hl=fr" target="_blank" rel="noopener">
 					<span class="badge"><i class="fa-solid fa-mountain-sun"></i>Projet freelance </span>
 					<h4>Landing Page – Alpaguide</h4>
 					<p>Conception et développement complet de la landing page : design moderne, storytelling, sections marketing, système de mailing et mise en place du funnel d’acquisition.</p>
@@ -495,7 +495,11 @@ require_once "controllers/routeur.php";
 								</div>
 							</div>
 						</div>
-						<form id="contact-form" action="/Function/mailHelper.php" method="POST">
+						<form id="contact-form" action="/Functions/mailHelper.php" method="POST">
+							<!-- Champ honeypot  -->
+							<div style="display:none">
+								<input type="text" name="website" tabindex="-1" autocomplete="off">
+							</div>
 							<div class="form-grid">
 								<div class="form-field">
 									<label for="fullname">Nom complet</label>
