@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+
+# Empêcher Google d'indexer certains fichiers techniques
+Disallow: /Function/
+Disallow: /javascript/
+Disallow: /styles/
+Disallow: /asset/*.psd
+Disallow: /*.zip$
+
+# Autoriser l'ensemble du site
+Allow: /
+
+# Emplacements importants
+Sitemap: https://sites-alya.fr/sitemap.xml
+
+# Indice de crawl (booster un peu la fréquence)
+Crawl-delay: 5
