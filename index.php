@@ -88,7 +88,7 @@ require_once "controllers/routeur.php";
 				</div>
 				<p class="lead">
 					Du cadrage à la mise en production, je livre des expériences web fiables, rapides et scalables, avec une approche simple, directe et orientée résultat.
-					Ma stack JavaScript / TypeScript (React, Next.js) et back-end (Node.js, Express, PHP) couvre l’ensemble du cycle de vie,
+					Ma stack JavaScript / TypeScript (React, Next.js), Solidity et back-end (Node.js, Express, PHP) couvre l’ensemble du cycle de vie,
 					y compris les intégrations Web3.
 				</p>
 				<div class="hero-actions">
@@ -104,6 +104,12 @@ require_once "controllers/routeur.php";
 					<li>Front-end premium : design system, accessibilité, performance et SEO prêts pour la production.</li>
 					<li>Back-end sécurisé : APIs REST/Graph, bases SQL & NoSQL, authentification, monitoring et CI/CD.</li>
 				</ul>
+				<div class="hero-panel__tags">
+					<span class="tag">Code clair et robuste</span>
+					<span class="tag">Scalabilité</span>
+					<span class="tag">Architecture system</span>
+					<span class="tag">CI/CD</span>
+				</div>
 				<div class="hero-metrics">
 					<div class="hero-metric">
 						<span class="metric-value">6+</span>
@@ -117,23 +123,6 @@ require_once "controllers/routeur.php";
 						<span class="metric-value">Web3 Ready</span>
 						<span class="metric-label">Intégrations blockchain</span>
 					</div>
-				</div>
-			</div>
-			<div class="hero-panel">
-				<span class="hero-panel__title"><i class="fa-solid fa-diagram-project"></i>Approche produit & tech</span>
-				<div class="media-frame">
-					<img class="zoom-scroll" src="asset/IMG_2777.JPG" alt="Interface web moderne illustrant le travail de Pascal Reynier">
-				</div>
-				<p class="hero-panel__caption">
-					J’accompagne startups et PME pour transformer leurs idées en plateformes robustes.
-					Workshops de cadrage, prototypage rapide, développement itératif et accompagnement au déploiement :
-					chaque projet est traité comme un produit à forte valeur ajoutée.
-				</p>
-				<div class="hero-panel__tags">
-					<span class="tag">Code clair et robuste</span>
-					<span class="tag">Scalabilité</span>
-					<span class="tag">Design system</span>
-					<span class="tag">CI/CD</span>
 				</div>
 			</div>
 		</section>
@@ -182,7 +171,7 @@ require_once "controllers/routeur.php";
 					<h3>Accompagnement produit</h3>
 					<p>Conseil stratégique pour prendre les bonnes décisions techniques et business.</p>
 					<ul>
-						<li>Roadmaps, cadrage fonctionnel & ateliers produit</li>
+						<li>Roadmaps, cadrage fonctionnel</li>
 						<li>Audit de code, performance & dette technique</li>
 						<li>Documentation claire & rituels de développement</li>
 						<li>Passation, coaching & montée en compétences</li>
@@ -203,7 +192,7 @@ require_once "controllers/routeur.php";
 				<article class="skill-card">
 					<h3>Langages & frameworks</h3>
 					<ul>
-						<li><i class="fa-brands fa-js"></i>JavaScript ES6+, TypeScript</li>
+						<li><i class="fa-brands fa-js"></i>TypeScript, JavaScript ES6+</li>
 						<li><i class="fa-brands fa-react"></i>React, Next.js</li>
 						<li><i class="fa-brands fa-node-js"></i>Node.js, Express.js</li>
 						<li><i class="fa-brands fa-ethereum"></i>Solidity, intégrations Web3</li>
@@ -242,6 +231,30 @@ require_once "controllers/routeur.php";
 				<p>Une sélection de projets significatifs qui illustrent ma capacité à piloter un produit de bout en bout, front, back et organisation.</p>
 			</div>
 			<div class="experience-grid">
+
+				<article class="experience-card">
+					<div class="experience-meta">
+						<span>2025</span>
+						<span class="badge">Projet Freelance (SaaS B2C)</span>
+					</div>
+					<h3>Landing page & stratégie de conversion</h3>
+					<p class="experience-subtitle">Pré-lancement d’une application SaaS dédiée aux professionnels de la montagne</p>
+					<ul class="experience-list">
+						<li>Landing page complète orientée conversion (MVP + acquisition emails)</li>
+						<li>Positionnement marketing</li>
+						<li>Sections dédiées : présentation, offres, valeurs, formulaire bêta, FAQ, RGPD</li>
+						<li>Optimisation SEO + intégration mailing</li>
+						<li>Objectif : valider l’intérêt marché & collecter les premiers utilisateurs</li>
+					</ul>
+					<div class="experience-tags">
+						<span class="tag">JavaScript</span>
+						<span class="tag">Node</span>
+						<span class="tag">Express</span>
+						<span class="tag">SEO</span>
+						<span class="tag">Marketing</span>
+					</div>
+				</article>
+
 				<article class="experience-card">
 					<div class="experience-meta">
 						<span>2025</span>
@@ -250,9 +263,11 @@ require_once "controllers/routeur.php";
 					<h3>Site vitrine & gestion</h3>
 					<p class="experience-subtitle">Transformation digitale d’un club de football</p>
 					<ul class="experience-list">
-						<li>Système CRUD complet (équipes, matchs, événements, médias)</li>
-						<li>Interface d’administration sécurisée avec rôles et workflow éditorial</li>
-						<li>Stack TypeScript full-stack : React, Node.js, Express, MySQL</li>
+						<li>Développement d’un back-end structuré en MVC (routes, contrôleurs, services) avec API REST professionnelle</li>
+						<li>Dashboard d’administration complet : gestion des équipes, joueurs, matchs, médias et événements du club</li>
+						<li>Système d’authentification sécurisé avec rôles (admin, éditeur), permissions et gestion des accès</li>
+						<li>Espace public moderne avec affichage dynamique des résultats et actualités du club</li>
+						<li>Base de données SQL optimisée pour garantir performance et fiabilité</li>
 					</ul>
 					<div class="experience-tags">
 						<span class="tag">React</span>
@@ -262,27 +277,7 @@ require_once "controllers/routeur.php";
 						<span class="tag">SQL</span>
 					</div>
 				</article>
-				<article class="experience-card">
-					<div class="experience-meta">
-						<span>2025</span>
-						<span class="badge">Projet diplômant</span>
-					</div>
-					<h3>Ecoride</h3>
-					<p class="experience-subtitle">Plateforme de covoiturage écoresponsable</p>
-					<ul class="experience-list">
-						<li>Recherche, réservation et ajout de trajets avec requêtes asynchrones</li>
-						<li>Dashboards dédiés (utilisateur, employé, administrateur)</li>
-						<li>Gestion des crédits, avis NoSQL, rôles et sécurité back-office</li>
-					</ul>
-					<div class="experience-tags">
-						<span class="tag">HTML</span>
-						<span class="tag">SCSS</span>
-						<span class="tag">JavaScript</span>
-						<span class="tag">PHP</span>
-						<span class="tag">MySQL</span>
-						<span class="tag">JSON</span>
-					</div>
-				</article>
+
 				<article class="experience-card">
 					<div class="experience-meta">
 						<span>2025</span>
@@ -302,6 +297,27 @@ require_once "controllers/routeur.php";
 						<span class="tag">CI/CD</span>
 					</div>
 				</article>
+
+				<article class="experience-card">
+					<div class="experience-meta">
+						<span>2024/2025</span>
+						<span class="badge">Side Project</span>
+					</div>
+					<h3>Ecoride</h3>
+					<p class="experience-subtitle">Plateforme de covoiturage écoresponsable</p>
+					<ul class="experience-list">
+						<li>Recherche, réservation et ajout de trajets avec requêtes asynchrones</li>
+						<li>Dashboards dédiés (utilisateur, employé, administrateur)</li>
+						<li>Gestion des crédits, avis NoSQL, rôles et sécurité back-office</li>
+					</ul>
+					<div class="experience-tags">
+						<span class="tag">JavaScript</span>
+						<span class="tag">PHP</span>
+						<span class="tag">MySQL</span>
+						<span class="tag">JSON</span>
+					</div>
+				</article>
+
 				<article class="experience-card">
 					<div class="experience-meta">
 						<span>2024</span>
@@ -321,6 +337,7 @@ require_once "controllers/routeur.php";
 						<span class="tag">LocalStorage</span>
 					</div>
 				</article>
+
 				<article class="experience-card">
 					<div class="experience-meta">
 						<span>2024</span>
@@ -351,30 +368,42 @@ require_once "controllers/routeur.php";
 				<p>Des démos publiques pour découvrir mon approche front/back et les choix d’architecture mis en place sur chaque produit.</p>
 			</div>
 			<div class="projects-grid">
-				<a class="project-card" href="https://www.google.com/?hl=fr" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-stopwatch"></i>En cours</span>
-					<h4>Site vitrine & portail club</h4>
-					<p>Création from scratch pour un club sportif : espace public dynamique, back-office éditorial, modules événements & galerie.</p>
+
+				<a class="project-card" href="" target="_blank" rel="noopener">
+					<span class="badge"><i class="fa-solid fa-mountain-sun"></i>Projet freelance </span>
+					<h4>Landing Page – Alpaguide</h4>
+					<p>Conception et développement complet de la landing page : design moderne, storytelling, sections marketing, système de mailing et mise en place du funnel d’acquisition.</p>
 					<span class="project-link">Voir le projet (déploiement pour fin 2025) <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
-				<a class="project-card" href="http://ecoride.sites-alya.fr/" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-stopwatch"></i>Site covoiturage</span>
-					<h4>Ecoride</h4>
-					<p>Plateforme de covoiturage écoresponsable : réservation temps réel, dashboards multi-rôles et suivi des crédits/avis.</p>
-					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+
+				<a class="project-card" href="https://www.google.com/?hl=fr" target="_blank" rel="noopener">
+					<span class="badge"><i class="fa-solid fa-stopwatch"></i>Projet Freelance</span>
+					<h4>Site vitrine & portail club</h4>
+					<p>Création from scratch pour un club sportif : espace public dynamique, back-office éditorial, modules événements & galerie.</p>
+					<span class="project-link">Voir le projet (déploiement pour début 2026) <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
+
 				<a class="project-card" href="https://nft-collection-1-liart.vercel.app/" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-image"></i> Galerie NFT</span>
+					<span class="badge"><i class="fa-solid fa-stopwatch"></i>Side project</span>
 					<h4>Starter Pack NFT</h4>
 					<p>Galerie NFT performante et épurée : chargement dynamique, architecture modulaire TypeScript, et déploiement automatisé via CI/CD.</p>
 					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
+
+				<a class="project-card" href="http://ecoride.sites-alya.fr/" target="_blank" rel="noopener">
+					<span class="badge"><i class="fa-solid fa-stopwatch"></i>Side project</span>
+					<h4>Ecoride</h4>
+					<p>Plateforme de covoiturage écoresponsable : réservation temps réel, dashboards multi-rôles et suivi des crédits/avis.</p>
+					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+				</a>
+
 				<a class="project-card" href="https://trackbuild.sites-alya.fr/" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-stopwatch"></i>SaaS interne</span>
+					<span class="badge"><i class="fa-solid fa-stopwatch"></i>Side project</span>
 					<h4>TrackBuild</h4>
 					<p>Gestionnaire de tâches et suivi du temps multi-projets. Interface modulable et reporting synthétique.</p>
 					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
+
 			</div>
 		</section>
 
@@ -434,7 +463,7 @@ require_once "controllers/routeur.php";
 									<input type="text" id="fullname" name="fullname" required placeholder="Nom Prénom" />
 								</div>
 								<div class="form-field">
-									<label for="email">Email pro</label>
+									<label for="email">Votre e-mail</label>
 									<input type="email" id="email" name="email" required placeholder="email@entreprise.com" />
 								</div>
 								<div class="form-field">
@@ -491,6 +520,7 @@ require_once "controllers/routeur.php";
 				<p>Des réalisations plus anciennes, parfaites pour comprendre ma progression et ma curiosité technique.</p>
 			</div>
 			<div class="resource-grid">
+
 				<a class="resource-card" href="http://blogweb3.sites-alya.fr/" target="_blank" rel="noopener">
 					<h4>Blog Web3</h4>
 					<p>CMS complet avec interface d’administration, CRUD articles, authentification et gestion des rôles </p>
@@ -502,6 +532,7 @@ require_once "controllers/routeur.php";
 					</div>
 					<span class="resource-link">Voir la démo <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
+
 				<a class="resource-card" href="https://jeux-de-des.sites-alya.fr/" target="_blank" rel="noopener">
 					<h4>🎲 Jeu de dés</h4>
 					<p>Exploration JavaScript vanilla : gestion des états, interactions DOM et animations.</p>
@@ -512,6 +543,7 @@ require_once "controllers/routeur.php";
 					</div>
 					<span class="resource-link">Voir la démo <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
+
 			</div>
 		</section>
 
@@ -552,6 +584,30 @@ require_once "controllers/routeur.php";
 			<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_fe0f/512.gif" alt="☝" width="32" height="32">
 		</picture>
 	</a>
+
+	<div class="theme-switcher" aria-live="polite">
+		<button class="theme-switcher__toggle" type="button" aria-label="Ouvrir le sélecteur de thème">
+			<i class="fa-solid fa-swatchbook"></i>
+		</button>
+		<div class="theme-switcher__panel" role="dialog" aria-label="Choisir un thème">
+			<div class="theme-switcher__header">
+				<span class="theme-switcher__title">Thème</span>
+				<button class="theme-switcher__close" type="button" aria-label="Fermer">
+					<i class="fa-solid fa-xmark"></i>
+				</button>
+			</div>
+			<div class="theme-switcher__options">
+				<button class="theme-option" data-theme="dark" type="button">
+					<span class="theme-dot theme-dot--dark"></span>
+					<span>Principal</span>
+				</button>
+				<button class="theme-option" data-theme="light" type="button">
+					<span class="theme-dot theme-dot--light"></span>
+					<span>Clair</span>
+				</button>
+			</div>
+		</div>
+	</div>
 </body>
 
 </html>
