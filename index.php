@@ -7,39 +7,78 @@ require_once "controllers/routeur.php";
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Portfolio de Pascal Reynier, Développeur web full stack à l’écoute de vos besoins. Du design au déploiement, je conçois des plateformes modernes, rapides et durables (PHP, JS, Web3).">
+	<!-- SEO -->
+	<title>Pascal Reynier – Développeur Web Full Stack & Web3 Freelance</title>
+	<meta name="description" content="Développeur web full stack freelance spécialisé React, Next.js, Node.js, PHP et Web3. Création de sites, applications, APIs, dashboards et intégrations blockchain. Basé en France, disponible remote.">
 	<meta name="author" content="Pascal Reynier">
 	<meta name="robots" content="index, follow">
-	<!-- Open Graph (Facebook, LinkedIn...) -->
-	<meta property="og:title" content="Pascal Reynier – Développeur Web Full Stack">
-	<meta property="og:description" content="Découvrez mon portfolio de développeur web. Projets, compétences, contact. Full-stack PHP, JS, Web3.">
-	<meta property="og:image" content="https://sites-alya.fr/asset/logoPr.png">
-	<meta property="og:url" content="https://sites-alya.fr">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://sites-alya.fr/">
+	<!-- Hreflang -->
+	<link rel="alternate" hreflang="fr" href="https://sites-alya.fr/">
+	<link rel="alternate" hreflang="x-default" href="https://sites-alya.fr/">
+	<!-- Open Graph -->
 	<meta property="og:type" content="website">
-
+	<meta property="og:title" content="Pascal Reynier – Développeur Web Full Stack & Web3 Freelance">
+	<meta property="og:description" content="Création de plateformes web modernes : React, Next.js, Node.js, PHP, APIs, Web3. Découvrez mes projets et contactez-moi pour vos besoins.">
+	<meta property="og:url" content="https://sites-alya.fr/">
+	<meta property="og:image" content="https://sites-alya.fr/asset/logoPr.png">
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Pascal Reynier – Développeur Web Full Stack">
-	<meta name="twitter:description" content="Développement web et mobile, projets PHP, JS, Web3.">
-	<meta name="twitter:image" content="https://ton-site.fr/asset/preview.png">
-	<title>Portfolio Pascal Reynier – Développeur Web Full Stack & Web3</title>
-	<link rel="canonical" href="https://sites-alya.fr">
+	<meta name="twitter:title" content="Pascal Reynier – Développeur Web Full Stack & Web3 Freelance">
+	<meta name="twitter:description" content="Développement web moderne : React, Next.js, Node.js, PHP, Web3. Contactez-moi.">
+	<meta name="twitter:image" content="https://sites-alya.fr/asset/logoPr.png">
+	<!-- Performance -->
+	<link rel="preload" href="styles/css/main.css" as="style">
+	<link rel="preload" href="asset/ProfilePic.jpg" as="image">
+	<!-- Favicon -->
+	<link rel="icon" href="asset/favicon.png" type="image/png">
+	<!-- Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Font Awesome -->
+	<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+		integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="styles/css/main.css">
 	<script src="javascript/script.js" defer></script>
+	<!-- Schema.org-->
+	<script type="application/ld+json">
+		{
+			"@context": "https://schema.org",
+			"@type": "Person",
+			"name": "Pascal Reynier",
+			"jobTitle": "Développeur Web Full Stack & Web3 Freelance",
+			"url": "https://sites-alya.fr/",
+			"image": "https://sites-alya.fr/asset/ProfilePic.jpg",
+			"sameAs": [
+				"https://www.linkedin.com/in/pascal-reynier-75a11b326/",
+				"https://github.com/Alyaesub",
+				"https://www.malt.fr/profile/pascalreynier"
+			],
+			"knowsAbout": [
+				"React",
+				"Next.js",
+				"Node.js",
+				"Express",
+				"PHP",
+				"MySQL",
+				"Web3",
+				"Solidity"
+			]
+		}
+	</script>
 </head>
 
 <body>
 	<header class="header-website">
-		<nav class="navbar">
+		<nav class="navbar" aria-label="Navigation principale">
 			<a class="brand" href="/">
-				<img src="asset/ProfilePic.jpg" alt="Portrait de Pascal Reynier">
+				<img src="asset/ProfilePic.jpg" alt="Portrait de Pascal Reynier" loading="lazy">
 				<div class="brand-details">
 					<span class="brand-name">Pascal Reynier</span>
-
 				</div>
 			</a>
 
@@ -107,7 +146,7 @@ require_once "controllers/routeur.php";
 				<div class="hero-panel__tags">
 					<span class="tag">Code clair et robuste</span>
 					<span class="tag">Scalabilité</span>
-					<span class="tag">Architecture system</span>
+					<span class="tag">Architecture systèm</span>
 					<span class="tag">CI/CD</span>
 				</div>
 				<div class="hero-metrics">
@@ -162,7 +201,7 @@ require_once "controllers/routeur.php";
 					<p>Intégration de briques blockchain et smart contracts dans des interfaces accessibles.</p>
 					<ul>
 						<li>Onboarding Web2 → Web3 sans friction</li>
-						<li>Connexion wallets & gestion sécurisée des transactions</li>
+						<li>Connexion wallet & gestion sécurisée des transactions</li>
 						<li>Intégration smart contracts & interactions on-chain</li>
 						<li>Best practices UX & sécurité Web3</li>
 					</ul>
@@ -210,7 +249,7 @@ require_once "controllers/routeur.php";
 				<article class="skill-card">
 					<h3>Qualité & delivery</h3>
 					<ul>
-						<li><i class="fa-solid fa-shield"></i>OWASP, roles & permissions</li>
+						<li><i class="fa-solid fa-shield"></i>OWASP, Rôles & permissions</li>
 						<li><i class="fa-solid fa-network-wired"></i>CI/CD, GitHub Actions, GitFlow</li>
 						<li><i class="fa-solid fa-code-compare"></i>Tests fonctionnels, monitoring</li>
 					</ul>
@@ -421,7 +460,7 @@ require_once "controllers/routeur.php";
 						<p>Restons connectés et discutez de vos besoins directement via LinkedIn.</p>
 						<div class="contact-links">
 							<a target="_blank" href="https://www.linkedin.com/in/pascal-reynier-75a11b326/" rel="noopener">
-								<img src="asset/linkedin.svg" alt="Logo LinkedIn">
+								<img src="asset/linkedin.svg" alt="Logo LinkedIn" loading="lazy">
 							</a>
 						</div>
 					</div>
@@ -430,7 +469,7 @@ require_once "controllers/routeur.php";
 						<p>Mission freelance encadrée, devis rapide et contrat sécurisé via Malt.</p>
 						<div class="contact-links">
 							<a target="_blank" href="https://www.malt.fr/profile/pascalreynier" rel="noopener">
-								<img src="asset/Malt_logo_pink.svg" alt="Logo Malt">
+								<img src="asset/Malt_logo_pink.svg" alt="Logo Malt" loading="lazy">
 							</a>
 						</div>
 					</div>
@@ -439,7 +478,7 @@ require_once "controllers/routeur.php";
 						<p>Consultez mon code, mes expérimentations et contributions open source.</p>
 						<div class="contact-links">
 							<a target="_blank" href="https://github.com/Alyaesub" rel="noopener">
-								<img src="asset/github.svg" alt="Logo GitHub">
+								<img src="asset/github.svg" alt="Logo GitHub" loading="lazy">
 							</a>
 						</div>
 					</div>
@@ -493,18 +532,18 @@ require_once "controllers/routeur.php";
 			</div>
 			<div class="diploma-grid">
 				<article class="diploma-card">
-					<img src="asset/studi-2.png" alt="Logo Studi">
+					<img src="asset/studi-2.png" alt="Logo Studi" loading="lazy">
 					<div class="diploma-content">
-						<h3>Développeur applications web et mobiles</h3>
+						<h3>Développeur d'applications web et mobiles</h3>
 						<span class="diploma-school">Studi</span>
 						<span class="diploma-date">2024 – 2026 (cursus en cours)</span>
 						<p>Approfondissement full-stack, architecture logicielle et pratiques DevOps. Semestre 2 validé.</p>
 					</div>
 				</article>
 				<article class="diploma-card">
-					<img src="asset/digital-campus.png" alt="Logo Digital Campus">
+					<img src="asset/digital-campus.png" alt="Logo Digital Campus" loading="lazy">
 					<div class="diploma-content">
-						<h3>Développeur applications web et mobiles</h3>
+						<h3>Développeur d'applications web et mobiles</h3>
 						<span class="diploma-school">Digital Campus</span>
 						<span class="diploma-date">2024 – 2026 (cursus en cours)</span>
 						<p>Projet orienté produit, UX/UI, gestion client et montée en compétence sur les stacks JavaScript & Web3.</p>
@@ -581,7 +620,7 @@ require_once "controllers/routeur.php";
 	<a id="gototop" href="#">
 		<picture>
 			<source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_fe0f/512.webp" type="image/webp">
-			<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_fe0f/512.gif" alt="☝" width="32" height="32">
+			<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_fe0f/512.gif" alt="Remonter en haut de la page" loading="lazy" width="32" height="32">
 		</picture>
 	</a>
 
@@ -597,11 +636,11 @@ require_once "controllers/routeur.php";
 				</button>
 			</div>
 			<div class="theme-switcher__options">
-				<button class="theme-option" data-theme="dark" type="button">
+				<button class="theme-option" role="button" data-theme="dark" type="button">
 					<span class="theme-dot theme-dot--dark"></span>
 					<span>Principal</span>
 				</button>
-				<button class="theme-option" data-theme="light" type="button">
+				<button class="theme-option" role="button" data-theme="light" type="button">
 					<span class="theme-dot theme-dot--light"></span>
 					<span>Clair</span>
 				</button>
