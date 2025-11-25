@@ -1,9 +1,13 @@
 RewriteEngine On
 
-# Si c’est un fichier ou un dossier existant → ne pas réécrire
+# Forcer le HTTPS
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Si fichier ou dossier existant → ne rien réécrire
 RewriteCond %{REQUEST_FILENAME} -f [OR]
 RewriteCond %{REQUEST_FILENAME} -d
 RewriteRule ^ - [L]
 
-# Sinon → rediriger vers index.php
+# Sinon → redirige vers index.php?page=...
 RewriteRule ^([^/]+)/?$ index.php?page=$1 [QSA,L]
