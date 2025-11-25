@@ -9,25 +9,25 @@ require_once "controllers/routeur.php";
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- SEO -->
 	<title>Pascal Reynier – Développeur Web Full Stack & Web3 Freelance</title>
-	<meta name="description" content="Développeur web full stack freelance spécialisé React, Next.js, Node.js, PHP et Web3. Création de sites, applications, APIs, dashboards et intégrations blockchain. Basé en France, disponible remote.">
+	<meta name="description" content="Développeur web full stack freelance spécialisé React, Next.js, Node.js, PHP et Web3. Création de sites, applications, APIs, dashboards et intégrations blockchain. Basé en France, disponible en remote.">
 	<meta name="author" content="Pascal Reynier">
 	<meta name="robots" content="index, follow">
 	<!-- Canonical -->
-	<link rel="canonical" href="https://sites-alya.fr/">
+	<link rel="canonical" href="https://pascalreynier.fr/">
 	<!-- Hreflang -->
-	<link rel="alternate" hreflang="fr" href="https://sites-alya.fr/">
-	<link rel="alternate" hreflang="x-default" href="https://sites-alya.fr/">
+	<link rel="alternate" hreflang="fr" href="https://pascalreynier.fr/">
+	<link rel="alternate" hreflang="x-default" href="https://pascalreynier.fr/">
 	<!-- Open Graph -->
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="Pascal Reynier – Développeur Web Full Stack & Web3 Freelance">
-	<meta property="og:description" content="Création de plateformes web modernes : React, Next.js, Node.js, PHP, APIs, Web3. Découvrez mes projets et contactez-moi pour vos besoins.">
-	<meta property="og:url" content="https://sites-alya.fr/">
-	<meta property="og:image" content="https://sites-alya.fr/asset/logoPr.png">
+	<meta property="og:description" content="Création de plateformes web modernes : React, Next.js, Node.js, PHP, APIs et Web3. Découvrez mes projets et contactez-moi pour vos besoins.">
+	<meta property="og:url" content="https://pascalreynier.fr/">
+	<meta property="og:image" content="https://pascalreynier.fr/asset/logoPr.png">
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
 	<meta name="twitter:title" content="Pascal Reynier – Développeur Web Full Stack & Web3 Freelance">
 	<meta name="twitter:description" content="Développement web moderne : React, Next.js, Node.js, PHP, Web3. Contactez-moi.">
-	<meta name="twitter:image" content="https://sites-alya.fr/asset/logoPr.png">
+	<meta name="twitter:image" content="https://pascalreynier.fr/asset/logoPr.png">
 	<!-- Performance -->
 	<link rel="preload" href="styles/css/main.css" as="style">
 	<link rel="preload" href="asset/ProfilePic.jpg" as="image">
@@ -42,17 +42,19 @@ require_once "controllers/routeur.php";
 		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
 		integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- Main CSS -->
 	<link rel="stylesheet" href="styles/css/main.css">
+	<!-- Script -->
 	<script src="javascript/script.js" defer></script>
-	<!-- Schema.org-->
+	<!-- Schema.org -->
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
 			"@type": "Person",
 			"name": "Pascal Reynier",
 			"jobTitle": "Développeur Web Full Stack & Web3 Freelance",
-			"url": "https://sites-alya.fr/",
-			"image": "https://sites-alya.fr/asset/ProfilePic.jpg",
+			"url": "https://pascalreynier.fr/",
+			"image": "https://pascalreynier.fr/asset/ProfilePic.jpg",
 			"sameAs": [
 				"https://www.linkedin.com/in/pascal-reynier-75a11b326/",
 				"https://github.com/Alyaesub",
@@ -126,16 +128,18 @@ require_once "controllers/routeur.php";
 					<h1>Je conçois des plateformes web modernes, performantes et durables pensées pour grandir avec vos projets.</h1>
 				</div>
 				<p class="lead">
-					Du cadrage à la mise en production, je livre des expériences web fiables, rapides et scalables, avec une approche simple, directe et orientée résultat.
-					Ma stack JavaScript / TypeScript (React, Next.js), Solidity et back-end (Node.js, Express, PHP) couvre l’ensemble du cycle de vie,
-					y compris les intégrations Web3.
+					Du cadrage à la mise en production, j’accompagne vos projets avec une approche claire,
+					efficace et orientée résultats. Je conçois des plateformes/App web & web3 fiables, performantes
+					et prêtes à évoluer, en mêlant stratégie produit, qualité technique et souci du détail.
 				</p>
 				<div class="hero-actions">
 					<a href="#contact" class="btn btn-primary"><i class="fa-solid fa-comments"></i>Discutons de votre projet</a>
 				</div>
 				<div class="hero-badges">
+					<span class="badge"><i class="fa-solid fa-gauge-high"></i> TypeScript</span>
 					<span class="badge"><i class="fa-solid fa-gauge-high"></i> React & Next.js</span>
 					<span class="badge"><i class="fa-solid fa-server"></i> Node.js & Express</span>
+					<span class="badge"><i class="fa-solid fa-gauge-high"></i> Solidity & Hardhat & Ethers.js</span>
 					<span class="badge"><i class="fa-brands fa-ethereum"></i> Web3 & blockchain</span>
 				</div>
 				<ul class="hero-points">
@@ -559,34 +563,29 @@ require_once "controllers/routeur.php";
 		<section class="section-display section-archives" id="archives">
 			<div class="section-heading">
 				<span class="eyebrow">Archives</span>
-				<h2>Premiers projets & expérimentations</h2>
-				<p>Des réalisations plus anciennes, parfaites pour comprendre ma progression et ma curiosité technique.</p>
+				<h2>Sandbox & premiers projets</h2>
+				<p>
+					Un espace dédié regroupant mes anciens projets, expérimentations et prototypes.
+					Parfait pour explorer mon parcours, mes progrès techniques et mes premières approches front/back.
+				</p>
 			</div>
 			<div class="resource-grid">
-
-				<a class="resource-card" href="http://blogweb3.sites-alya.fr/" target="_blank" rel="noopener">
-					<h4>Blog Web3</h4>
-					<p>CMS complet avec interface d’administration, CRUD articles, authentification et gestion des rôles </p>
+				<!-- Carte Sandbox principale -->
+				<a class="resource-card" href="https://sites-alya.fr/" target="_blank" rel="noopener">
+					<h4>Sandbox – Projets & Démos</h4>
+					<p>
+						Accédez à toutes mes anciennes réalisations : mini-apps, jeux, tests techniques,
+						interfaces PHP, JavaScript vanilla, et autres expérimentations.
+					</p>
 					<div class="experience-tags">
-						<span class="tag">PHP</span>
-						<span class="tag">SQL</span>
-						<span class="tag">Bootstrap</span>
-						<span class="tag">UX</span>
+						<span class="tag">Apprentissage</span>
+						<span class="tag">Autodidacte</span>
+						<span class="tag">Formation</span>
 					</div>
-					<span class="resource-link">Voir la démo <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+					<span class="resource-link">
+						Explorer le Sandbox <i class="fa-solid fa-arrow-up-right-from-square"></i>
+					</span>
 				</a>
-
-				<a class="resource-card" href="https://jeux-de-des.sites-alya.fr/" target="_blank" rel="noopener">
-					<h4>🎲 Jeu de dés</h4>
-					<p>Exploration JavaScript vanilla : gestion des états, interactions DOM et animations.</p>
-					<div class="experience-tags">
-						<span class="tag">HTML/CSS</span>
-						<span class="tag">JavaScript</span>
-						<span class="tag">Bootstrap</span>
-					</div>
-					<span class="resource-link">Voir la démo <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-				</a>
-
 			</div>
 		</section>
 
