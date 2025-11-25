@@ -73,7 +73,7 @@ try {
   }
   $mail = new PHPMailer(true);
   $mail->isSMTP();
-  $mail->Host = 'mail.sites-alya.fr';
+  $mail->Host = 'mail.pascalreynier.fr';
   $mail->SMTPAuth = true;
   $mail->Username = $env['SMTP_USER'];
   $mail->Password = $env['SMTP_PASS'];
@@ -81,11 +81,11 @@ try {
   $mail->Port = 587;
 
   // Expéditeur
-  $mail->setFrom('contact@sites-alya.fr', 'Portfolio - Formulaire');
+  $mail->setFrom('contact@pascalreynier.fr', 'Portfolio - Formulaire');
 
   // Destinataires (mail pro ici)
   $mail->addAddress('reynierpascal@yahoo.com');
-  $mail->addAddress('contact@sites-alya.fr'); // copie dans ta boîte O2Switch
+  $mail->addAddress('contact@pascalreynier.fr'); // copie dans boîte O2Switch
 
   // Contenu du message
   $mail->isHTML(true);
