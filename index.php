@@ -173,7 +173,7 @@ require_once "controllers/routeur.php";
 		<section class="section-display section-services" id="a-propos">
 			<div class="section-heading">
 				<span class="eyebrow">Ce que je fais</span>
-				<h2>Un partenaire tech polyvalent pour vos produits digitaux</h2>
+				<h2>Un partenaire tech pour vos produits digitaux</h2>
 				<p>
 					Je construis des expériences utilisateur soignées tout en garantissant une architecture stable, maintenable et prête pour la croissance.
 					Du MVP à la refonte complète, j’installe les bons outils et les bonnes méthodes pour livrer vite, sans sacrifier la qualité.
@@ -412,11 +412,11 @@ require_once "controllers/routeur.php";
 			</div>
 			<div class="projects-grid">
 
-				<a class="project-card" href="https://www.google.com/?hl=fr" target="_blank" rel="noopener">
+				<a class="project-card" href="https://alpaguide.fr/" target="_blank" rel="noopener">
 					<span class="badge"><i class="fa-solid fa-mountain-sun"></i>Projet freelance </span>
 					<h4>Landing Page – Alpaguide</h4>
 					<p>Conception et développement complet de la landing page : design moderne, storytelling, sections marketing, système de mailing et mise en place du funnel d’acquisition.</p>
-					<span class="project-link">Voir le projet (déploiement pour fin 2025) <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
 
 				<a class="project-card" href="https://www.google.com/?hl=fr" target="_blank" rel="noopener">
@@ -540,21 +540,12 @@ require_once "controllers/routeur.php";
 			</div>
 			<div class="diploma-grid">
 				<article class="diploma-card">
-					<img src="asset/studi-2.png" alt="Logo Studi" loading="lazy">
-					<div class="diploma-content">
-						<h3>Développeur d'applications web et mobiles</h3>
-						<span class="diploma-school">Studi</span>
-						<span class="diploma-date">2024 – 2026 (cursus en cours)</span>
-						<p>Approfondissement full-stack, architecture logicielle et pratiques DevOps. Semestre 2 validé.</p>
-					</div>
-				</article>
-				<article class="diploma-card">
 					<img src="asset/digital-campus.png" alt="Logo Digital Campus" loading="lazy">
 					<div class="diploma-content">
 						<h3>Développeur d'applications web et mobiles</h3>
 						<span class="diploma-school">Digital Campus</span>
 						<span class="diploma-date">2024 – 2026 (cursus en cours)</span>
-						<p>Projet orienté produit, UX/UI, gestion client et montée en compétence sur les stacks JavaScript & Web3.</p>
+						<p>Formation orientée produit : gestion de projets full-stack, développement moderne en JavaScript & TypeScript, et spécialisation progressive sur les technologies web actuelles.</p>
 					</div>
 				</article>
 			</div>
