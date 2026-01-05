@@ -1,0 +1,132 @@
+@import "variables";
+@import "Mixins/mixins";
+
+// Carousel container
+.experience-carousel {
+    position: relative;
+    overflow: hidden;
+    padding: 0 3rem;
+
+    @media screen and (max-width: 767px) {
+        padding: 0 2.5rem;
+    }
+}
+
+// Carousel track
+.experience-carousel__track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    gap: 1.5rem;
+}
+
+// Carousel item
+.experience-carousel__item {
+    flex: 0 0 100%;
+    min-width: 0;
+
+    @media screen and (min-width: 768px) {
+        flex: 0 0 calc(50% - 0.75rem);
+    }
+}
+
+// Carousel controls
+.experience-carousel__controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.experience-carousel__button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid rgba($white, 0.18);
+    background: linear-gradient(135deg, rgba($primary, 0.8), rgba($accent, 0.6));
+    color: $white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 12px 28px rgba($primary, 0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, opacity 0.25s ease;
+
+    i {
+        color: inherit;
+        font-size: 1.1rem;
+    }
+
+    &:hover:not(:disabled) {
+        transform: translateY(-4px) scale(1.05);
+        box-shadow: 0 18px 38px rgba($primary, 0.45);
+        border-color: rgba($white, 0.3);
+    }
+
+    &:disabled {
+        opacity: 0.4;
+        cursor: not-allowed;
+        background: rgba($white, 0.1);
+    }
+}
+
+// Dots indicators
+.experience-carousel__dots {
+    display: flex;
+    gap: 0.6rem;
+    align-items: center;
+}
+
+.experience-carousel__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: rgba($white, 0.3);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0;
+
+    &:hover {
+        background: rgba($white, 0.5);
+        transform: scale(1.2);
+    }
+
+    &.active {
+        width: 28px;
+        border-radius: 999px;
+        background: linear-gradient(135deg, $primary, $accent);
+        box-shadow: 0 0 0 4px rgba($primary, 0.2);
+    }
+}
+
+// Light theme adjustments
+body[data-theme="light"] {
+    .experience-carousel__button {
+        border-color: rgba($dark, 0.18);
+        background: linear-gradient(135deg, $primary, $accent);
+        box-shadow: 0 12px 28px rgba($primary, 0.35);
+
+        &:hover:not(:disabled) {
+            border-color: rgba($dark, 0.3);
+            box-shadow: 0 18px 38px rgba($primary, 0.45);
+        }
+
+        &:disabled {
+            background: rgba($dark, 0.15);
+        }
+    }
+
+    .experience-carousel__dot {
+        background: rgba($dark, 0.25);
+
+        &:hover {
+            background: rgba($dark, 0.45);
+        }
+
+        &.active {
+            background: linear-gradient(135deg, $primary, $accent);
+            box-shadow: 0 0 0 4px rgba($primary, 0.2);
+        }
+    }
+}
