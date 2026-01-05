@@ -273,9 +273,11 @@ require_once "controllers/routeur.php";
 				<h2>Projets, delivery et responsabilités</h2>
 				<p>Une sélection de projets significatifs qui illustrent ma capacité à piloter un produit de bout en bout, front, back et organisation.</p>
 			</div>
-			<div class="experience-grid">
+			<div class="experience-carousel">
+			<div class="experience-carousel__track" id="experience-track">
 
-				<article class="experience-card">
+				<div class="experience-carousel__item">
+					<article class="experience-card">
 					<div class="experience-meta">
 						<span>2025</span>
 						<span class="badge">Projet Freelance (SaaS B2C)</span>
@@ -297,8 +299,10 @@ require_once "controllers/routeur.php";
 						<span class="tag">Marketing</span>
 					</div>
 				</article>
+				</div>
 
-				<article class="experience-card">
+				<div class="experience-carousel__item">
+					<article class="experience-card">
 					<div class="experience-meta">
 						<span>2025</span>
 						<span class="badge">Projet freelance</span>
@@ -320,8 +324,10 @@ require_once "controllers/routeur.php";
 						<span class="tag">SQL</span>
 					</div>
 				</article>
+				</div>
 
-				<article class="experience-card">
+				<div class="experience-carousel__item">
+					<article class="experience-card">
 					<div class="experience-meta">
 						<span>2025</span>
 						<span class="badge">Side project</span>
@@ -340,8 +346,10 @@ require_once "controllers/routeur.php";
 						<span class="tag">CI/CD</span>
 					</div>
 				</article>
+				</div>
 
-				<article class="experience-card">
+				<div class="experience-carousel__item">
+					<article class="experience-card">
 					<div class="experience-meta">
 						<span>2024/2025</span>
 						<span class="badge">Side Project</span>
@@ -360,8 +368,10 @@ require_once "controllers/routeur.php";
 						<span class="tag">JSON</span>
 					</div>
 				</article>
+				</div>
 
-				<article class="experience-card">
+				<div class="experience-carousel__item">
+					<article class="experience-card">
 					<div class="experience-meta">
 						<span>2024</span>
 						<span class="badge">Side project</span>
@@ -380,8 +390,10 @@ require_once "controllers/routeur.php";
 						<span class="tag">LocalStorage</span>
 					</div>
 				</article>
+				</div>
 
-				<article class="experience-card">
+				<div class="experience-carousel__item">
+					<article class="experience-card">
 					<div class="experience-meta">
 						<span>2024</span>
 						<span class="badge">Side project</span>
@@ -400,8 +412,21 @@ require_once "controllers/routeur.php";
 						<span class="tag">Fetch API</span>
 					</div>
 				</article>
+				</div>
 
 			</div>
+
+			<!-- Carousel controls -->
+			<div class="experience-carousel__controls">
+				<button class="experience-carousel__button" id="experience-prev" aria-label="Projet précédent">
+					<i class="fa-solid fa-chevron-left"></i>
+				</button>
+				<div class="experience-carousel__dots" id="experience-dots"></div>
+				<button class="experience-carousel__button" id="experience-next" aria-label="Projet suivant">
+					<i class="fa-solid fa-chevron-right"></i>
+				</button>
+			</div>
+		</div>
 		</section>
 
 		<section class="section-display section-projects" id="projets">

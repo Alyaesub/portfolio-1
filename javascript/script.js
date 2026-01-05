@@ -1,3 +1,15 @@
+// Hide loader when page is fully loaded
+window.addEventListener("load", () => {
+	const loader = document.getElementById("loader");
+	if (loader) {
+		loader.style.opacity = "0";
+		loader.style.transition = "opacity 0.5s ease";
+		setTimeout(() => {
+			loader.style.display = "none";
+		}, 500);
+	}
+});
+
 document.addEventListener("DOMContentLoaded", () => {
 	const links = document.querySelectorAll(".nav-links a");
 
@@ -157,11 +169,148 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	document.addEventListener("click", (event) => {
 		if (!switcher.classList.contains("is-open")) return;
-		if (event.target instanceof Element && switcher.contains(event.target)) return;
+		if (event.target instanceof Element && switcher.contains(event.target))
+			return;
 		closePanel();
 	});
 
 	document.addEventListener("keydown", (event) => {
 		if (event.key === "Escape") closePanel();
 	});
+});
+
+// Experience Carousel
+document.addEventListener("DOMContentLoaded", () => {
+	const track = document.getElementById("experience-track");
+	const prevButton = document.getElementById("experience-prev");
+	const nextButton = document.getElementById("experience-next");
+	const dotsContainer = document.getElementById("experience-dots");
+
+	if (!track || !prevButton || !nextButton || !dotsContainer) return;
+
+	const items = Array.from(track.children);
+	let currentIndex = 0;
+	let itemsPerView = 1;
+
+	// Calcule le nombre d'items visibles selon la largeur de l'écran
+	const calculateItemsPerView = () => {
+		const width = window.innerWidth;
+		if (width >= 768) return 2;
+		return 1;
+	};
+
+	// Crée les dots de navigation
+	const createDots = () => {
+		dotsContainer.innerHTML = "";
+		const totalDots = Math.ceil(items.length / itemsPerView);
+
+		for (let i = 0; i < totalDots; i++) {
+			const dot = document.createElement("button");
+			dot.classList.add("experience-carousel__dot");
+			dot.setAttribute("aria-label", `Aller au groupe ${i + 1}`);
+			if (i === 0) dot.classList.add("active");
+
+			dot.addEventListener("click", () => goToSlide(i));
+			dotsContainer.appendChild(dot);
+		}
+	};
+
+	// Met à jour la position du carousel
+	const updateCarousel = () => {
+		const itemWidth = items[0].offsetWidth;
+		const gap = 24; // 1.5rem = 24px
+		const offset = -(currentIndex * (itemWidth + gap));
+		track.style.transform = `translateX(${offset}px)`;
+
+		// Met à jour les dots
+		const dots = dotsContainer.querySelectorAll(
+			".experience-carousel__dot"
+		);
+		const activeDotIndex = Math.floor(currentIndex / itemsPerView);
+		dots.forEach((dot, index) => {
+			dot.classList.toggle("active", index === activeDotIndex);
+		});
+
+		// Gère l'état des boutons
+		const maxIndex = Math.max(0, items.length - itemsPerView);
+		prevButton.disabled = currentIndex === 0;
+		nextButton.disabled = currentIndex >= maxIndex;
+	};
+
+	// Navigation vers un slide spécifique
+	const goToSlide = (dotIndex) => {
+		currentIndex = dotIndex * itemsPerView;
+		const maxIndex = Math.max(0, items.length - itemsPerView);
+		currentIndex = Math.min(currentIndex, maxIndex);
+		updateCarousel();
+	};
+
+	// Navigation précédent
+	prevButton.addEventListener("click", () => {
+		if (currentIndex > 0) {
+			currentIndex -= itemsPerView;
+			currentIndex = Math.max(0, currentIndex);
+			updateCarousel();
+		}
+	});
+
+	// Navigation suivant
+	nextButton.addEventListener("click", () => {
+		const maxIndex = Math.max(0, items.length - itemsPerView);
+		if (currentIndex < maxIndex) {
+			currentIndex += itemsPerView;
+			currentIndex = Math.min(currentIndex, maxIndex);
+			updateCarousel();
+		}
+	});
+
+	// Support du swipe tactile
+	let touchStartX = 0;
+	let touchEndX = 0;
+
+	track.addEventListener("touchstart", (e) => {
+		touchStartX = e.changedTouches[0].screenX;
+	});
+
+	track.addEventListener("touchend", (e) => {
+		touchEndX = e.changedTouches[0].screenX;
+		handleSwipe();
+	});
+
+	const handleSwipe = () => {
+		const swipeThreshold = 50;
+		if (touchStartX - touchEndX > swipeThreshold) {
+			// Swipe left (next)
+			nextButton.click();
+		} else if (touchEndX - touchStartX > swipeThreshold) {
+			// Swipe right (prev)
+			prevButton.click();
+		}
+	};
+
+	// Support des touches clavier
+	document.addEventListener("keydown", (e) => {
+		if (e.key === "ArrowLeft") prevButton.click();
+		if (e.key === "ArrowRight") nextButton.click();
+	});
+
+	// Réinitialise le carousel au redimensionnement
+	let resizeTimeout;
+	window.addEventListener("resize", () => {
+		clearTimeout(resizeTimeout);
+		resizeTimeout = setTimeout(() => {
+			const newItemsPerView = calculateItemsPerView();
+			if (newItemsPerView !== itemsPerView) {
+				itemsPerView = newItemsPerView;
+				currentIndex = 0;
+				createDots();
+				updateCarousel();
+			}
+		}, 250);
+	});
+
+	// Initialisation
+	itemsPerView = calculateItemsPerView();
+	createDots();
+	updateCarousel();
 });
