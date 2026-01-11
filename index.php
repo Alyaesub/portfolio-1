@@ -124,38 +124,39 @@ require_once "controllers/routeur.php";
 		<section class="section-display section-hero" id="accueil">
 			<div class="hero-intro">
 				<div class="section-heading">
-					<span class="eyebrow">Freelance full stack & web3</span>
-					<h1>Je conçois des plateformes web modernes, performantes et durables pensées pour grandir avec vos projets.</h1>
+					<span class="eyebrow">Développeur Full-Stack orienté DevSecOps</span>
+					<h1>Je conçois des plateformes web sécurisées, fiables et durables, pensées pour évoluer sans dette technique.</h1>
 				</div>
 				<p class="lead">
-					Du cadrage à la mise en production, j’accompagne vos projets avec une approche claire,
-					efficace et orientée résultats. Je conçois des plateformes/App web & web3 fiables, performantes
-					et prêtes à évoluer, en mêlant stratégie produit, qualité technique et souci du détail.
+					Du cadrage à la mise en production, j’accompagne vos projets avec une approche
+					orientée sécurité, robustesse et maintenabilité.
+					Je conçois des applications web fiables, prêtes à évoluer,
+					en intégrant les bonnes pratiques DevSecOps dès la conception.
 				</p>
 				<div class="hero-actions">
 					<a href="#contact" class="btn btn-primary"><i class="fa-solid fa-comments"></i>Discutons de votre projet</a>
 				</div>
 				<div class="hero-badges">
-					<span class="badge"><i class="fa-solid fa-gauge-high"></i> TypeScript</span>
-					<span class="badge"><i class="fa-solid fa-gauge-high"></i> React & Next.js</span>
-					<span class="badge"><i class="fa-solid fa-server"></i> Node.js & Express</span>
-					<span class="badge"><i class="fa-solid fa-gauge-high"></i> Solidity & Hardhat & Ethers.js</span>
-					<span class="badge"><i class="fa-brands fa-ethereum"></i> Web3 & blockchain</span>
+					<span class="badge"><i class="fa-solid fa-terminal"></i> Bash & automatisation</span>
+					<span class="badge"><i class="fa-solid fa-server"></i> Node.js & APIs sécurisées</span>
+					<span class="badge"><i class="fa-solid fa-shield"></i> Sécurité applicative</span>
+					<span class="badge"><i class="fa-solid fa-network-wired"></i> CI/CD & Docker</span>
 				</div>
 				<ul class="hero-points">
-					<li>Delivery orienté produit : discovery, conception, développement, tests et déploiement.</li>
-					<li>Front-end premium : design system, accessibilité, performance et SEO prêts pour la production.</li>
-					<li>Back-end sécurisé : APIs REST/Graph, bases SQL & NoSQL, authentification, monitoring et CI/CD.</li>
+					<li>Approche DevSecOps : conception, développement, tests, sécurité et déploiement.</li>
+					<li>Applications robustes : validation des flux, gestion des rôles, contrôle des accès.</li>
+					<li>Back-end et APIs sécurisées : monitoring, CI/CD, bases de données maîtrisées.</li>
 				</ul>
 				<div class="hero-panel__tags">
-					<span class="tag">Code clair et robuste</span>
-					<span class="tag">Scalabilité</span>
-					<span class="tag">Architecture systèm</span>
+					<span class="tag">Sécurité applicative</span>
+					<span class="tag">Automatisation</span>
+					<span class="tag">Architecture système</span>
 					<span class="tag">CI/CD</span>
 				</div>
+
 				<div class="hero-metrics">
 					<div class="hero-metric">
-						<span class="metric-value">6+</span>
+						<span class="metric-value">8+</span>
 						<span class="metric-label">Projets livrés</span>
 					</div>
 					<div class="hero-metric">
@@ -163,11 +164,10 @@ require_once "controllers/routeur.php";
 						<span class="metric-label">Implication produit</span>
 					</div>
 					<div class="hero-metric">
-						<span class="metric-value">Web3 Ready</span>
-						<span class="metric-label">Intégrations blockchain</span>
+						<span class="metric-value">Ops-ready</span>
+						<span class="metric-label">CI/CD · Docker · monitoring</span>
 					</div>
 				</div>
-			</div>
 		</section>
 
 		<section class="section-display section-services" id="a-propos">
@@ -175,49 +175,54 @@ require_once "controllers/routeur.php";
 				<span class="eyebrow">Ce que je fais</span>
 				<h2>Un partenaire tech pour vos produits digitaux</h2>
 				<p>
-					Je construis des expériences utilisateur soignées tout en garantissant une architecture stable, maintenable et prête pour la croissance.
-					Du MVP à la refonte complète, j’installe les bons outils et les bonnes méthodes pour livrer vite, sans sacrifier la qualité.
+					Je conçois des produits digitaux en combinant expérience utilisateur,
+					architecture robuste et bonnes pratiques DevSecOps.
+					Du MVP à la refonte complète, je mets en place des systèmes
+					maintenables, sécurisés et prêts à évoluer.
 				</p>
 			</div>
 			<div class="feature-grid">
 				<article class="feature-card">
-					<h3>Produits web sur-mesure</h3>
-					<p>Applications modernes, performantes et évolutives, pensées pour vos utilisateurs.</p>
+					<h3>Produits web robustes et sur-mesure</h3>
+					<p>Applications modernes pensées pour durer, avec un socle technique sain et maintenable.</p>
 					<ul>
 						<li>Architecture front-end scalable (React, Next.js)</li>
 						<li>Design system, responsive & accessibilité native</li>
 						<li>Composants réutilisables & optimisation des performances</li>
-						<li>Intégrations API tierces, analytics & SEO technique</li>
+						<li>Séparation claire des responsabilités</li>
 					</ul>
 				</article>
 				<article class="feature-card">
-					<h3>Back-end robuste</h3>
-					<p>API, services, pipelines et architectures professionnelles pour soutenir vos ambitions produit.</p>
+					<h3>Back-end sécurisé & industrialisé</h3>
+					<p>APIs, services et pipelines conçus pour la fiabilité, la sécurité et la montée en charge.</p>
 					<ul>
-						<li>Node.js (Express / Nest), architecture multi-couches</li>
-						<li>DDD, services métier & séparation des responsabilités</li>
-						<li>CI/CD GitHub Actions : tests, lint, build & déploiement</li>
-						<li>SQL & NoSQL, migrations, sécurité API & monitoring</li>
+						<li>Node.js, architecture multi-couches sécurisée</li>
+						<li>Gestion des rôles, permissions et validation des entrées</li>
+						<li>CI/CD : tests, lint, scans, build & déploiement</li>
+						<li>Logs, monitoring et contrôle des erreurs</li>
+					</ul>
+				</article>
+				<article class="feature-card">
+					<h3>Approche DevSecOps</h3>
+					<p>
+						Intégration de la sécurité et de l’automatisation
+						tout au long du cycle de vie applicatif.
+					</p>
+					<ul>
+						<li>Sécurité applicative by design</li>
+						<li>Automatisation des déploiements et des contrôles</li>
+						<li>Gestion des environnements (dev, staging, prod)</li>
+						<li>Observabilité, logs et supervision</li>
 					</ul>
 				</article>
 				<article class="feature-card">
 					<h3>Expérience Web3</h3>
-					<p>Intégration de briques blockchain et smart contracts dans des interfaces accessibles.</p>
+					<p>Intégration de briques blockchain avec une attention particulière portée à la sécurité des flux et des transactions.</p>
 					<ul>
 						<li>Onboarding Web2 → Web3 sans friction</li>
 						<li>Connexion wallet & gestion sécurisée des transactions</li>
 						<li>Intégration smart contracts & interactions on-chain</li>
 						<li>Best practices UX & sécurité Web3</li>
-					</ul>
-				</article>
-				<article class="feature-card">
-					<h3>Accompagnement produit</h3>
-					<p>Conseil stratégique pour prendre les bonnes décisions techniques et business.</p>
-					<ul>
-						<li>Roadmaps, cadrage fonctionnel</li>
-						<li>Audit de code, performance & dette technique</li>
-						<li>Documentation claire & rituels de développement</li>
-						<li>Passation, coaching & montée en compétences</li>
 					</ul>
 				</article>
 			</div>
@@ -226,43 +231,62 @@ require_once "controllers/routeur.php";
 		<section class="section-display section-skills" id="competences">
 			<div class="section-heading">
 				<span class="eyebrow">Compétences</span>
-				<h2>Stack technique maîtrisée & veille constante</h2>
+				<h2>Socle technique solide & orientation DevSecOps</h2>
 				<p>
-					J’équilibre innovation et pragmatisme : livrer vite, bien, et rester à jour sur ce qui fera la différence demain.
+					Je m’appuie sur des bases de développement solides
+					tout en intégrant les pratiques DevSecOps :
+					sécurité, automatisation et fiabilité des systèmes.
 				</p>
 			</div>
 			<div class="skills-grid">
 				<article class="skill-card">
-					<h3>Langages & frameworks</h3>
+					<h3>DevSecOps & sécurité</h3>
+					<ul>
+						<li><i class="fa-solid fa-terminal"></i>Bash, scripts d’automatisation</li>
+						<li><i class="fa-solid fa-shield"></i>OWASP, gestion des rôles & permissions</li>
+						<li><i class="fa-solid fa-network-wired"></i>CI/CD, GitHub Actions, GitFlow</li>
+						<li><i class="fa-solid fa-eye"></i>Logs, monitoring & gestion des erreurs</li>
+					</ul>
+				</article>
+				<article class="skill-card">
+					<h3>Back-end & données</h3>
+					<ul>
+						<li><i class="fa-brands fa-node-js"></i>Node.js, Express.js</li>
+						<li><i class="fa-solid fa-database"></i>MySQL, MariaDB, PostgreSQL</li>
+						<li><i class="fa-solid fa-leaf"></i>MongoDB, stockage NoSQL</li>
+						<li><i class="fa-solid fa-file-code"></i>API REST, Webhooks, JSON</li>
+					</ul>
+				</article>
+				<article class="skill-card">
+					<h3>Front-end & produit</h3>
 					<ul>
 						<li><i class="fa-brands fa-js"></i>TypeScript, JavaScript ES6+</li>
 						<li><i class="fa-brands fa-react"></i>React, Next.js</li>
-						<li><i class="fa-brands fa-node-js"></i>Node.js, Express.js</li>
-						<li><i class="fa-brands fa-ethereum"></i>Solidity, intégrations Web3</li>
+						<li><i class="fa-solid fa-layer-group"></i>Design system, accessibilité</li>
+						<li><i class="fa-solid fa-gauge-high"></i>Performance & expérience utilisateur</li>
 					</ul>
 				</article>
 				<article class="skill-card">
-					<h3>Architecture & données</h3>
+					<h3>Infrastructure & environnements</h3>
 					<ul>
-						<li><i class="fa-solid fa-database"></i>MySQL, MariaDB, PostgreSQL</li>
-						<li><i class="fa-solid fa-leaf"></i>MongoDB, stockage NoSQL</li>
-						<li><i class="fa-solid fa-file-code"></i>API REST / JSON, Webhooks</li>
 						<li><i class="fa-brands fa-docker"></i>Docker, environnements isolés</li>
+						<li><i class="fa-solid fa-server"></i>Configuration serveur & déploiement</li>
+						<li><i class="fa-solid fa-code-branch"></i>Gestion des environnements (dev, staging, prod)</li>
 					</ul>
 				</article>
 				<article class="skill-card">
-					<h3>Qualité & delivery</h3>
+					<h3>Web3</h3>
 					<ul>
-						<li><i class="fa-solid fa-shield"></i>OWASP, Rôles & permissions</li>
-						<li><i class="fa-solid fa-network-wired"></i>CI/CD, GitHub Actions, GitFlow</li>
-						<li><i class="fa-solid fa-code-compare"></i>Tests fonctionnels, monitoring</li>
+						<li><i class="fa-brands fa-ethereum"></i>Solidity & smart contracts</li>
+						<li><i class="fa-solid fa-wallet"></i>Intégration wallet & transactions</li>
+						<li><i class="fa-solid fa-shield-halved"></i>Sensibilisation aux risques Web3</li>
 					</ul>
 				</article>
 			</div>
 			<div class="skill-tags">
-				<span class="tag">Clean code</span>
-				<span class="tag">Performance</span>
-				<span class="tag">Accessibilité</span>
+				<span class="tag">Sécurité applicative</span>
+				<span class="tag">Automatisation</span>
+				<span class="tag">Observabilité</span>
 				<span class="tag">Documentation</span>
 			</div>
 		</section>
@@ -270,208 +294,217 @@ require_once "controllers/routeur.php";
 		<section class="section-display section-experiences" id="experiences">
 			<div class="section-heading">
 				<span class="eyebrow">Expériences</span>
-				<h2>Projets, delivery et responsabilités</h2>
-				<p>Une sélection de projets significatifs qui illustrent ma capacité à piloter un produit de bout en bout, front, back et organisation.</p>
+				<h2>Projets, architecture et sécurisation</h2>
+				<p>Une sélection de projets illustrant ma capacité à concevoir, sécuriser et faire évoluer des systèmes web complets.</p>
 			</div>
 			<div class="experience-carousel">
-			<div class="experience-carousel__track" id="experience-track">
+				<div class="experience-carousel__track" id="experience-track">
 
-				<div class="experience-carousel__item">
-					<article class="experience-card">
-					<div class="experience-meta">
-						<span>2025</span>
-						<span class="badge">Projet Freelance (SaaS B2C)</span>
+					<div class="experience-carousel__item">
+						<article class="experience-card">
+							<div class="experience-meta">
+								<span>2025</span>
+								<span class="badge">Projet Freelance (SaaS B2C)</span>
+							</div>
+							<h3>Landing page & stratégie de conversion</h3>
+							<p class="experience-subtitle">Pré-lancement d’une application SaaS dédiée aux professionnels de la montagne</p>
+							<ul class="experience-list">
+								<li>Conception d’un MVP orienté acquisition avec structure claire et maintenable</li>
+								<li>Mise en place de formulaires sécurisés (validation, anti-spam, RGPD)</li>
+								<li>Intégration mailing avec contrôle des flux et protection des données</li>
+								<li>Optimisation SEO et performance front</li>
+								<li>Objectif : validation marché sans exposition inutile des données</li>
+							</ul>
+							<div class="experience-tags">
+								<span class="tag">JavaScript</span>
+								<span class="tag">Node</span>
+								<span class="tag">Express</span>
+								<span class="tag">SEO</span>
+								<span class="tag">Data</span>
+							</div>
+						</article>
 					</div>
-					<h3>Landing page & stratégie de conversion</h3>
-					<p class="experience-subtitle">Pré-lancement d’une application SaaS dédiée aux professionnels de la montagne</p>
-					<ul class="experience-list">
-						<li>Landing page complète orientée conversion (MVP + acquisition emails)</li>
-						<li>Positionnement marketing</li>
-						<li>Sections dédiées : présentation, offres, valeurs, formulaire bêta, FAQ, RGPD</li>
-						<li>Optimisation SEO + intégration mailing</li>
-						<li>Objectif : valider l’intérêt marché & collecter les premiers utilisateurs</li>
-					</ul>
-					<div class="experience-tags">
-						<span class="tag">JavaScript</span>
-						<span class="tag">Node</span>
-						<span class="tag">Express</span>
-						<span class="tag">SEO</span>
-						<span class="tag">Marketing</span>
+
+					<div class="experience-carousel__item">
+						<article class="experience-card">
+							<div class="experience-meta">
+								<span>2025</span>
+								<span class="badge">Projet freelance</span>
+							</div>
+							<h3>Site vitrine & gestion</h3>
+							<p class="experience-subtitle">Transformation digitale d’un club de football</p>
+							<ul class="experience-list">
+								<li>Back-end structuré en MVC avec séparation claire des responsabilités</li>
+								<li>API REST sécurisée : authentification, rôles, permissions et accès restreints</li>
+								<li>Dashboard d’administration avec contrôle fin des actions sensibles</li>
+								<li>Validation des entrées et protection des endpoints critiques</li>
+								<li>Base de données SQL optimisée pour la performance et la fiabilité</li>
+							</ul>
+							<div class="experience-tags">
+								<span class="tag">React</span>
+								<span class="tag">TypeScript</span>
+								<span class="tag">Node.js</span>
+								<span class="tag">Express</span>
+								<span class="tag">SQL</span>
+							</div>
+						</article>
 					</div>
-				</article>
+
+					<div class="experience-carousel__item">
+						<article class="experience-card">
+							<div class="experience-meta">
+								<span>2025</span>
+								<span class="badge">Side project</span>
+							</div>
+							<h3>Starter Pack NFT</h3>
+							<p class="experience-subtitle">Développement d’une galerie NFT minimaliste et entièrement réutilisable</p>
+							<ul class="experience-list">
+								<li>Architecture modulaire claire facilitant la maintenance et l’audit</li>
+								<li>Chargement et validation stricte des métadonnées JSON</li>
+								<li>Gestion des erreurs et des cas limites côté front</li>
+								<li>Déploiement automatisé via CI/CD</li>
+							</ul>
+							<div class="experience-tags">
+								<span class="tag">TypeScript</span>
+								<span class="tag">Vite.js</span>
+								<span class="tag">JavaScript</span>
+								<span class="tag">CI/CD</span>
+							</div>
+						</article>
+					</div>
+
+					<div class="experience-carousel__item">
+						<article class="experience-card">
+							<div class="experience-meta">
+								<span>2024/2025</span>
+								<span class="badge">Side Project</span>
+							</div>
+							<h3>Ecoride</h3>
+							<p class="experience-subtitle">Plateforme de covoiturage écoresponsable</p>
+							<ul class="experience-list">
+								<li>Plateforme multi-rôles : utilisateur, employé, administrateur</li>
+								<li>Sécurisation des flux critiques (réservations, crédits, avis)</li>
+								<li>Gestion des transactions avec statuts et traçabilité</li>
+								<li>Back-office protégé avec contrôles d’accès et permissions</li>
+								<li>Isolation des responsabilités et logique métier sécurisée</li>
+							</ul>
+							<div class="experience-tags">
+								<span class="tag">Sécurité applicative</span>
+								<span class="tag">Rôles & permissions</span>
+								<span class="tag">Architectur</span>
+								<span class="tag">Sécurité applicative</span>
+							</div>
+						</article>
+					</div>
+
+					<div class="experience-carousel__item">
+						<article class="experience-card">
+							<div class="experience-meta">
+								<span>2024</span>
+								<span class="badge">Side project</span>
+							</div>
+							<h3>TrackBuild</h3>
+							<p class="experience-subtitle">Timer multi-projets & reporting</p>
+							<ul class="experience-list">
+								<li>Application orientée métriques et suivi d’activité</li>
+								<li>Gestion fiable des données locales et des états applicatifs</li>
+								<li>Architecture JavaScript pensée pour l’évolution</li>
+								<li>Export de données et reporting</li>
+							</ul>
+							<div class="experience-tags">
+								<span class="tag">DevSecOps</span>
+								<span class="tag">Data</span>
+								<span class="tag">JavaScript</span>
+								<span class="tag">LocalStorage</span>
+							</div>
+						</article>
+					</div>
+
+					<div class="experience-carousel__item">
+						<article class="experience-card">
+							<div class="experience-meta">
+								<span>2024</span>
+								<span class="badge">Side project</span>
+							</div>
+							<h3>Messagerie privée</h3>
+							<p class="experience-subtitle">Application temps réel multi-utilisateurs</p>
+							<ul class="experience-list">
+								<li>Architecture MVC avec routing et contrôleurs dédiés</li>
+								<li>Gestion sécurisée des utilisateurs et des accès</li>
+								<li>Protection des échanges et rafraîchissement asynchrone</li>
+								<li>Déploiement maîtrisé sur environnement mutualisé</li>
+							</ul>
+							<div class="experience-tags">
+								<span class="tag">Rôles & permissions</span>
+								<span class="tag">MySQL</span>
+								<span class="tag">JavaScript</span>
+								<span class="tag">Fetch API</span>
+							</div>
+						</article>
+					</div>
 				</div>
 
-				<div class="experience-carousel__item">
-					<article class="experience-card">
-					<div class="experience-meta">
-						<span>2025</span>
-						<span class="badge">Projet freelance</span>
-					</div>
-					<h3>Site vitrine & gestion</h3>
-					<p class="experience-subtitle">Transformation digitale d’un club de football</p>
-					<ul class="experience-list">
-						<li>Développement d’un back-end structuré en MVC (routes, contrôleurs, services) avec API REST professionnelle</li>
-						<li>Dashboard d’administration complet : gestion des équipes, joueurs, matchs, médias et événements du club</li>
-						<li>Système d’authentification sécurisé avec rôles (admin, éditeur), permissions et gestion des accès</li>
-						<li>Espace public moderne avec affichage dynamique des résultats et actualités du club</li>
-						<li>Base de données SQL optimisée pour garantir performance et fiabilité</li>
-					</ul>
-					<div class="experience-tags">
-						<span class="tag">React</span>
-						<span class="tag">TypeScript</span>
-						<span class="tag">Node.js</span>
-						<span class="tag">Express</span>
-						<span class="tag">SQL</span>
-					</div>
-				</article>
+				<!-- Carousel controls -->
+				<div class="experience-carousel__controls">
+					<button class="experience-carousel__button" id="experience-prev" aria-label="Projet précédent">
+						<i class="fa-solid fa-chevron-left"></i>
+					</button>
+					<div class="experience-carousel__dots" id="experience-dots"></div>
+					<button class="experience-carousel__button" id="experience-next" aria-label="Projet suivant">
+						<i class="fa-solid fa-chevron-right"></i>
+					</button>
 				</div>
-
-				<div class="experience-carousel__item">
-					<article class="experience-card">
-					<div class="experience-meta">
-						<span>2025</span>
-						<span class="badge">Side project</span>
-					</div>
-					<h3>Starter Pack NFT</h3>
-					<p class="experience-subtitle">Développement d’une galerie NFT minimaliste et entièrement réutilisable</p>
-					<ul class="experience-list">
-						<li>Architecture modulaire claire (assets, metadata, data, render, utils)</li>
-						<li>Chargement et validation dynamique des métadonnées JSON (name, image, attributes...)</li>
-						<li>Affichage responsive automatisé jusqu’à 100 NFTs, avec placeholders et recherche en temps réel</li>
-					</ul>
-					<div class="experience-tags">
-						<span class="tag">TypeScript</span>
-						<span class="tag">Vite.js</span>
-						<span class="tag">JavaScript</span>
-						<span class="tag">CI/CD</span>
-					</div>
-				</article>
-				</div>
-
-				<div class="experience-carousel__item">
-					<article class="experience-card">
-					<div class="experience-meta">
-						<span>2024/2025</span>
-						<span class="badge">Side Project</span>
-					</div>
-					<h3>Ecoride</h3>
-					<p class="experience-subtitle">Plateforme de covoiturage écoresponsable</p>
-					<ul class="experience-list">
-						<li>Recherche, réservation et ajout de trajets avec requêtes asynchrones</li>
-						<li>Dashboards dédiés (utilisateur, employé, administrateur)</li>
-						<li>Gestion des crédits, avis NoSQL, rôles et sécurité back-office</li>
-					</ul>
-					<div class="experience-tags">
-						<span class="tag">JavaScript</span>
-						<span class="tag">PHP</span>
-						<span class="tag">MySQL</span>
-						<span class="tag">JSON</span>
-					</div>
-				</article>
-				</div>
-
-				<div class="experience-carousel__item">
-					<article class="experience-card">
-					<div class="experience-meta">
-						<span>2024</span>
-						<span class="badge">Side project</span>
-					</div>
-					<h3>TrackBuild</h3>
-					<p class="experience-subtitle">Timer multi-projets & reporting</p>
-					<ul class="experience-list">
-						<li>Gestion des sessions avec historique dynamique et export CSV</li>
-						<li>Visualisation des temps hebdomadaires et métriques clés</li>
-						<li>Interface modulaire, architecture JavaScript évolutive</li>
-					</ul>
-					<div class="experience-tags">
-						<span class="tag">HTML</span>
-						<span class="tag">SCSS</span>
-						<span class="tag">JavaScript</span>
-						<span class="tag">LocalStorage</span>
-					</div>
-				</article>
-				</div>
-
-				<div class="experience-carousel__item">
-					<article class="experience-card">
-					<div class="experience-meta">
-						<span>2024</span>
-						<span class="badge">Side project</span>
-					</div>
-					<h3>Messagerie privée</h3>
-					<p class="experience-subtitle">Application temps réel multi-utilisateurs</p>
-					<ul class="experience-list">
-						<li>Architecture MVC PHP avec routing, contrôleurs et vues dédiées</li>
-						<li>Requêtes asynchrones (Fetch) et rafraîchissement des conversations</li>
-						<li>Gestion des utilisateurs, sécurisation et déploiement mutualisé</li>
-					</ul>
-					<div class="experience-tags">
-						<span class="tag">PHP</span>
-						<span class="tag">MySQL</span>
-						<span class="tag">JavaScript</span>
-						<span class="tag">Fetch API</span>
-					</div>
-				</article>
-				</div>
-
 			</div>
-
-			<!-- Carousel controls -->
-			<div class="experience-carousel__controls">
-				<button class="experience-carousel__button" id="experience-prev" aria-label="Projet précédent">
-					<i class="fa-solid fa-chevron-left"></i>
-				</button>
-				<div class="experience-carousel__dots" id="experience-dots"></div>
-				<button class="experience-carousel__button" id="experience-next" aria-label="Projet suivant">
-					<i class="fa-solid fa-chevron-right"></i>
-				</button>
-			</div>
-		</div>
 		</section>
 
 		<section class="section-display section-projects" id="projets">
 			<div class="section-heading">
 				<span class="eyebrow">Projets</span>
 				<h2>Quelques réalisations accessibles en ligne</h2>
-				<p>Des démos publiques pour découvrir mon approche front/back et les choix d’architecture mis en place sur chaque produit.</p>
+				<p>Des démos publiques pour illustrer mon approche orientée architecture, sécurité et maintenabilité.</p>
 			</div>
 			<div class="projects-grid">
 
 				<a class="project-card" href="https://alpaguide.fr/" target="_blank" rel="noopener">
 					<span class="badge"><i class="fa-solid fa-mountain-sun"></i>Projet freelance </span>
 					<h4>Landing Page – Alpaguide</h4>
-					<p>Conception et développement complet de la landing page : design moderne, storytelling, sections marketing, système de mailing et mise en place du funnel d’acquisition.</p>
+					<p>Conception et développement d’un MVP orienté acquisition,
+						avec formulaires sécurisés, protection des données
+						et structure prête à évoluer.</p>
 					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
 
 				<a class="project-card" href="https://www.google.com/?hl=fr" target="_blank" rel="noopener">
 					<span class="badge"><i class="fa-solid fa-stopwatch"></i>Projet Freelance</span>
 					<h4>Site vitrine & portail club</h4>
-					<p>Création from scratch pour un club sportif : espace public dynamique, back-office éditorial, modules événements & galerie.</p>
+					<p>Application web complète avec back-office sécurisé,
+						gestion des rôles et architecture évolutive.</p>
 					<span class="project-link">Voir le projet (déploiement pour début 2026) <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
 
 				<a class="project-card" href="https://nft-collection-1-liart.vercel.app/" target="_blank" rel="noopener">
 					<span class="badge"><i class="fa-solid fa-stopwatch"></i>Side project</span>
 					<h4>Starter Pack NFT</h4>
-					<p>Galerie NFT performante et épurée : chargement dynamique, architecture modulaire TypeScript, et déploiement automatisé via CI/CD.</p>
+					<p>Galerie NFT modulaire avec validation des données,
+						gestion des erreurs et déploiement automatisé via CI/CD.</p>
 					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
 
 				<a class="project-card" href="http://ecoride.sites-alya.fr/" target="_blank" rel="noopener">
 					<span class="badge"><i class="fa-solid fa-stopwatch"></i>Side project</span>
 					<h4>Ecoride</h4>
-					<p>Plateforme de covoiturage écoresponsable : réservation temps réel, dashboards multi-rôles et suivi des crédits/avis.</p>
+					<p>Plateforme multi-rôles avec sécurisation des flux critiques,
+						gestion des accès et logique métier protégée.</p>
 					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
 
 				<a class="project-card" href="https://trackbuild.sites-alya.fr/" target="_blank" rel="noopener">
 					<span class="badge"><i class="fa-solid fa-stopwatch"></i>Side project</span>
 					<h4>TrackBuild</h4>
-					<p>Gestionnaire de tâches et suivi du temps multi-projets. Interface modulable et reporting synthétique.</p>
+					<p>Outil de suivi et de reporting orienté métriques,
+						avec architecture JavaScript pensée pour l’évolution.</p>
 					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
-
 			</div>
 		</section>
 
@@ -628,7 +661,7 @@ require_once "controllers/routeur.php";
 
 	<footer>
 		<div class="credits">
-			<span>© 2024 Pascal Reynier · Tous droits réservés</span>
+			<span>© 2026 Pascal Reynier · Tous droits réservés</span>
 		</div>
 	</footer>
 
