@@ -8,7 +8,7 @@ require_once "controllers/routeur.php";
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- SEO -->
-	<title>Pascal Reynier – Développeur Web Full Stack & Web3 Freelance</title>
+	<title>Pascal Reynier – Développeur Web Full Stack & DevSecOps Freelance</title>
 	<meta name="description" content="Développeur web full stack freelance spécialisé React, Next.js, Node.js, PHP et Web3. Création de sites, applications, APIs, dashboards et intégrations blockchain. Basé en France, disponible en remote.">
 	<meta name="author" content="Pascal Reynier">
 	<meta name="robots" content="index, follow">
@@ -19,14 +19,14 @@ require_once "controllers/routeur.php";
 	<link rel="alternate" hreflang="x-default" href="https://pascalreynier.fr/">
 	<!-- Open Graph -->
 	<meta property="og:type" content="website">
-	<meta property="og:title" content="Pascal Reynier – Développeur Web Full Stack & Web3 Freelance">
-	<meta property="og:description" content="Création de plateformes web modernes : React, Next.js, Node.js, PHP, APIs et Web3. Découvrez mes projets et contactez-moi pour vos besoins.">
+	<meta property="og:title" content="Pascal Reynier – Développeur Web Full Stack devSecOps Freelance">
+	<meta property="og:description" content="Création de plateformes web modernes : React, Next.js, Node.js, PHP, APIs et devSecOps. Découvrez mes projets et contactez-moi pour vos besoins.">
 	<meta property="og:url" content="https://pascalreynier.fr/">
 	<meta property="og:image" content="https://pascalreynier.fr/asset/logoPr.png">
 	<!-- Twitter Card -->
 	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Pascal Reynier – Développeur Web Full Stack & Web3 Freelance">
-	<meta name="twitter:description" content="Développement web moderne : React, Next.js, Node.js, PHP, Web3. Contactez-moi.">
+	<meta name="twitter:title" content="Pascal Reynier – Développeur Web Full Stack & DevSecOps Freelance">
+	<meta name="twitter:description" content="Développement web moderne : DevSecOps, React, Next.js, Node.js. Contactez-moi.">
 	<meta name="twitter:image" content="https://pascalreynier.fr/asset/logoPr.png">
 	<!-- Performance -->
 	<link rel="preload" href="styles/css/main.css" as="style">
@@ -52,7 +52,7 @@ require_once "controllers/routeur.php";
 			"@context": "https://schema.org",
 			"@type": "Person",
 			"name": "Pascal Reynier",
-			"jobTitle": "Développeur Web Full Stack & Web3 Freelance",
+			"jobTitle": "Développeur Web Full Stack & devsecops Freelance",
 			"url": "https://pascalreynier.fr/",
 			"image": "https://pascalreynier.fr/asset/ProfilePic.jpg",
 			"sameAs": [
@@ -61,6 +61,9 @@ require_once "controllers/routeur.php";
 				"https://www.malt.fr/profile/pascalreynier"
 			],
 			"knowsAbout": [
+				"DevSecOps"
+				"devops"
+				"cybersecurité"
 				"React",
 				"Next.js",
 				"Node.js",
@@ -114,7 +117,6 @@ require_once "controllers/routeur.php";
 							<a href="/blog">Veille <i class="fa-solid fa-arrow-right"></i></a>
 						</li>
 					</ul>
-
 				</div>
 			</div>
 		</nav>
@@ -124,34 +126,29 @@ require_once "controllers/routeur.php";
 		<section class="section-display section-hero" id="accueil">
 			<div class="hero-intro">
 				<div class="section-heading">
-					<span class="eyebrow">Développeur Full-Stack orienté DevSecOps</span>
-					<h1>Je conçois des plateformes web sécurisées, fiables et durables, pensées pour évoluer sans dette technique.</h1>
+					<span class="eyebrow">Expert DevSecOps & Fullstack</span>
+					<h1>Sécuriser votre croissance technique et l'intégrité de vos données critiques.</h1>
 				</div>
 				<p class="lead">
-					Du cadrage à la mise en production, j’accompagne vos projets avec une approche
-					orientée sécurité, robustesse et maintenabilité.
-					Je conçois des applications web fiables, prêtes à évoluer,
-					en intégrant les bonnes pratiques DevSecOps dès la conception.
+					Du cadrage à la mise en production, j'interviens sur des projets à forts enjeux pour transformer votre dette technique en un <strong>actif sécurisé, scalable et auditable.</strong> <br>
+					Je conçois des plateformes où la sécurité n'est pas une option, mais une fondation de votre business.
 				</p>
 				<div class="hero-actions">
 					<a href="#contact" class="btn btn-primary"><i class="fa-solid fa-comments"></i>Discutons de votre projet</a>
 				</div>
-				<div class="hero-badges">
-					<span class="badge"><i class="fa-solid fa-terminal"></i> Bash & automatisation</span>
-					<span class="badge"><i class="fa-solid fa-server"></i> Node.js & APIs sécurisées</span>
-					<span class="badge"><i class="fa-solid fa-shield"></i> Sécurité applicative</span>
-					<span class="badge"><i class="fa-solid fa-network-wired"></i> CI/CD & Docker</span>
+				<div class="hero-panel__tags">
+					<span class="tag"><i class="fa-solid fa-lock"></i> Sécurité by Design</span>
+					<span class="tag"><i class="fa-solid fa-chart-line"></i> Vision Business</span>
+					<span class="tag"><i class="fa-solid fa-gears"></i> Automatisation</span>
 				</div>
 				<ul class="hero-points">
-					<li>Approche DevSecOps : conception, développement, tests, sécurité et déploiement.</li>
-					<li>Applications robustes : validation des flux, gestion des rôles, contrôle des accès.</li>
-					<li>Back-end et APIs sécurisées : monitoring, CI/CD, bases de données maîtrisées.</li>
+					<li>Approche DevSecOps. Votre partenaire business qui met le code au service de vos besoins et vos ROI</li>
 				</ul>
-				<div class="hero-panel__tags">
-					<span class="tag">Sécurité applicative</span>
-					<span class="tag">Automatisation</span>
-					<span class="tag">Architecture système</span>
-					<span class="tag">CI/CD</span>
+				<div class="hero-badges">
+					<span class="badge"><i class="fa-solid fa-terminal"></i> Bash & scripts</span>
+					<span class="badge"><i class="fa-solid fa-server"></i> Node.js & APIs</span>
+					<span class="badge"><i class="fa-solid fa-network-wired"></i> CI/CD & Docker</span>
+					<span class="badge"><i class="fa-solid fa-shield-virus"></i> OWASP & Audits</span>
 				</div>
 
 				<div class="hero-metrics">
@@ -161,7 +158,7 @@ require_once "controllers/routeur.php";
 					</div>
 					<div class="hero-metric">
 						<span class="metric-value">100%</span>
-						<span class="metric-label">Implication produit</span>
+						<span class="metric-label">Intégrité Garantie</span>
 					</div>
 					<div class="hero-metric">
 						<span class="metric-value">Ops-ready</span>
@@ -172,19 +169,16 @@ require_once "controllers/routeur.php";
 
 		<section class="section-display section-services" id="a-propos">
 			<div class="section-heading">
-				<span class="eyebrow">Ce que je fais</span>
+				<span class="eyebrow">Expertise & Solutions</span>
 				<h2>Un partenaire tech pour vos produits digitaux</h2>
 				<p>
-					Je conçois des produits digitaux en combinant expérience utilisateur,
-					architecture robuste et bonnes pratiques DevSecOps.
-					Du MVP à la refonte complète, je mets en place des systèmes
-					maintenables, sécurisés et prêts à évoluer.
+					Je ne me contente pas de livrer du code. J'apporte une rigueur opérationnelle pour garantir la pérennité de votre produit.
 				</p>
 			</div>
 			<div class="feature-grid">
 				<article class="feature-card">
-					<h3>Produits web robustes et sur-mesure</h3>
-					<p>Applications modernes pensées pour durer, avec un socle technique sain et maintenable.</p>
+					<h3>Ingénierie Fullstack & Performance</h3>
+					<p>Conception d'interfaces modernes et rapides où l'expérience utilisateur sert vos objectifs de conversion.</p>
 					<ul>
 						<li>Architecture front-end scalable (React, Next.js)</li>
 						<li>Design system, responsive & accessibilité native</li>
@@ -193,8 +187,8 @@ require_once "controllers/routeur.php";
 					</ul>
 				</article>
 				<article class="feature-card">
-					<h3>Back-end sécurisé & industrialisé</h3>
-					<p>APIs, services et pipelines conçus pour la fiabilité, la sécurité et la montée en charge.</p>
+					<h3>Systèmes Back-end & Intégrité</h3>
+					<p>Développement de serveurs robustes et d'APIs sécurisées pour protéger le cœur de votre métier : vos données.</p>
 					<ul>
 						<li>Node.js, architecture multi-couches sécurisée</li>
 						<li>Gestion des rôles, permissions et validation des entrées</li>
@@ -215,79 +209,66 @@ require_once "controllers/routeur.php";
 						<li>Observabilité, logs et supervision</li>
 					</ul>
 				</article>
-				<article class="feature-card">
-					<h3>Expérience Web3</h3>
-					<p>Intégration de briques blockchain avec une attention particulière portée à la sécurité des flux et des transactions.</p>
-					<ul>
-						<li>Onboarding Web2 → Web3 sans friction</li>
-						<li>Connexion wallet & gestion sécurisée des transactions</li>
-						<li>Intégration smart contracts & interactions on-chain</li>
-						<li>Best practices UX & sécurité Web3</li>
-					</ul>
-				</article>
 			</div>
 		</section>
 
 		<section class="section-display section-skills" id="competences">
 			<div class="section-heading">
-				<span class="eyebrow">Compétences</span>
-				<h2>Socle technique solide & orientation DevSecOps</h2>
+				<span class="eyebrow">Expertise Technique</span>
+				<h2>Maîtrise technologique & Culture SecOps</h2>
 				<p>
-					Je m’appuie sur des bases de développement solides
-					tout en intégrant les pratiques DevSecOps :
-					sécurité, automatisation et fiabilité des systèmes.
+					Mon approche repose sur l'équilibre entre agilité de développement et rigueur opérationnelle.
+					Chaque choix technologique est guidé par des impératifs de <strong>sécurité, de fiabilité et de performance.</strong>
 				</p>
 			</div>
+
 			<div class="skills-grid">
 				<article class="skill-card">
-					<h3>DevSecOps & sécurité</h3>
+					<h3>Protection & Automatisation</h3>
 					<ul>
-						<li><i class="fa-solid fa-terminal"></i>Bash, scripts d’automatisation</li>
-						<li><i class="fa-solid fa-shield"></i>OWASP, gestion des rôles & permissions</li>
-						<li><i class="fa-solid fa-network-wired"></i>CI/CD, GitHub Actions, GitFlow</li>
-						<li><i class="fa-solid fa-eye"></i>Logs, monitoring & gestion des erreurs</li>
+						<li><i class="fa-solid fa-shield-halved"></i>OWASP Top 10 & Hardening</li>
+						<li><i class="fa-solid fa-network-wired"></i>CI/CD (GitHub Actions, GitFlow)</li>
+						<li><i class="fa-solid fa-terminal"></i>Scripts d'automatisation (Bash)</li>
+						<li><i class="fa-solid fa-chart-line"></i>Observabilité (Logs & Monitoring)</li>
 					</ul>
 				</article>
+
 				<article class="skill-card">
-					<h3>Back-end & données</h3>
+					<h3>Back-end & Architecture</h3>
 					<ul>
-						<li><i class="fa-brands fa-node-js"></i>Node.js, Express.js</li>
-						<li><i class="fa-solid fa-database"></i>MySQL, MariaDB, PostgreSQL</li>
-						<li><i class="fa-solid fa-leaf"></i>MongoDB, stockage NoSQL</li>
-						<li><i class="fa-solid fa-file-code"></i>API REST, Webhooks, JSON</li>
+						<li><i class="fa-brands fa-node-js"></i>Runtime Node.js & Express</li>
+						<li><i class="fa-solid fa-database"></i>SQL (PostgreSQL, MariaDB)</li>
+						<li><i class="fa-solid fa-vault"></i>Gestion des secrets & Webhooks</li>
+						<li><i class="fa-solid fa-gears"></i>Design de micro-services & APIs</li>
 					</ul>
 				</article>
+
 				<article class="skill-card">
-					<h3>Front-end & produit</h3>
+					<h3>Front-end & Interface</h3>
 					<ul>
-						<li><i class="fa-brands fa-js"></i>TypeScript, JavaScript ES6+</li>
-						<li><i class="fa-brands fa-react"></i>React, Next.js</li>
-						<li><i class="fa-solid fa-layer-group"></i>Design system, accessibilité</li>
-						<li><i class="fa-solid fa-gauge-high"></i>Performance & expérience utilisateur</li>
+						<li><i class="fa-brands fa-react"></i>React & Next.js (SSR/SSG)</li>
+						<li><i class="fa-solid fa-code"></i>TypeScript (Typage fort & Sécurité)</li>
+						<li><i class="fa-solid fa-gauge-high"></i>Optimisation des Core Web Vitals</li>
+						<li><i class="fa-solid fa-universal-access"></i>Conformité accessibilité & SEO</li>
 					</ul>
 				</article>
+
 				<article class="skill-card">
-					<h3>Infrastructure & environnements</h3>
+					<h3>Infrastructure & Ops</h3>
 					<ul>
-						<li><i class="fa-brands fa-docker"></i>Docker, environnements isolés</li>
-						<li><i class="fa-solid fa-server"></i>Configuration serveur & déploiement</li>
-						<li><i class="fa-solid fa-code-branch"></i>Gestion des environnements (dev, staging, prod)</li>
-					</ul>
-				</article>
-				<article class="skill-card">
-					<h3>Web3</h3>
-					<ul>
-						<li><i class="fa-brands fa-ethereum"></i>Solidity & smart contracts</li>
-						<li><i class="fa-solid fa-wallet"></i>Intégration wallet & transactions</li>
-						<li><i class="fa-solid fa-shield-halved"></i>Sensibilisation aux risques Web3</li>
+						<li><i class="fa-brands fa-docker"></i>Conteneurisation & Isolation</li>
+						<li><i class="fa-solid fa-server"></i>Gestion VPS & Serveurs Linux</li>
+						<li><i class="fa-solid fa-code-merge"></i>Stratégie de déploiement (Staging/Prod)</li>
+						<li><i class="fa-solid fa-file-shield"></i>Audit de dépendances & vulnérabilités</li>
 					</ul>
 				</article>
 			</div>
+
 			<div class="skill-tags">
-				<span class="tag">Sécurité applicative</span>
-				<span class="tag">Automatisation</span>
-				<span class="tag">Observabilité</span>
-				<span class="tag">Documentation</span>
+				<span class="tag">Sécurité by design</span>
+				<span class="tag">Scalabilité</span>
+				<span class="tag">Zéro Trust</span>
+				<span class="tag">Auditabilité</span>
 			</div>
 		</section>
 
@@ -304,48 +285,19 @@ require_once "controllers/routeur.php";
 						<article class="experience-card">
 							<div class="experience-meta">
 								<span>2025</span>
-								<span class="badge">Projet Freelance (SaaS B2C)</span>
+								<span class="badge">SaaS B2C (Lancement)</span>
 							</div>
-							<h3>Landing page & stratégie de conversion</h3>
-							<p class="experience-subtitle">Pré-lancement d’une application SaaS dédiée aux professionnels de la montagne</p>
+							<h3>Stratégie d'Acquisition & Intégrité Data</h3>
+							<p class="experience-subtitle">Infrastructure de pré-lancement pour une application SaaS</p>
 							<ul class="experience-list">
-								<li>Conception d’un MVP orienté acquisition avec structure claire et maintenable</li>
-								<li>Mise en place de formulaires sécurisés (validation, anti-spam, RGPD)</li>
-								<li>Intégration mailing avec contrôle des flux et protection des données</li>
-								<li>Optimisation SEO et performance front</li>
-								<li>Objectif : validation marché sans exposition inutile des données</li>
+								<li>Mise en place de tunnels de conversion isolés avec validation stricte anti-injection.</li>
+								<li>Architecture pensée pour le respect du RGPD et la confidentialité des flux.</li>
+								<li>Optimisation du SEO technique et des Core Web Vitals pour maximiser le ROI publicitaire.</li>
 							</ul>
 							<div class="experience-tags">
-								<span class="tag">JavaScript</span>
-								<span class="tag">Node</span>
-								<span class="tag">Express</span>
-								<span class="tag">SEO</span>
-								<span class="tag">Data</span>
-							</div>
-						</article>
-					</div>
-
-					<div class="experience-carousel__item">
-						<article class="experience-card">
-							<div class="experience-meta">
-								<span>2025</span>
-								<span class="badge">Projet freelance</span>
-							</div>
-							<h3>Site vitrine & gestion</h3>
-							<p class="experience-subtitle">Transformation digitale d’un club de football</p>
-							<ul class="experience-list">
-								<li>Back-end structuré en MVC avec séparation claire des responsabilités</li>
-								<li>API REST sécurisée : authentification, rôles, permissions et accès restreints</li>
-								<li>Dashboard d’administration avec contrôle fin des actions sensibles</li>
-								<li>Validation des entrées et protection des endpoints critiques</li>
-								<li>Base de données SQL optimisée pour la performance et la fiabilité</li>
-							</ul>
-							<div class="experience-tags">
-								<span class="tag">React</span>
-								<span class="tag">TypeScript</span>
 								<span class="tag">Node.js</span>
-								<span class="tag">Express</span>
-								<span class="tag">SQL</span>
+								<span class="tag">Validation Flux</span>
+								<span class="tag">Data Privacy</span>
 							</div>
 						</article>
 					</div>
@@ -354,21 +306,19 @@ require_once "controllers/routeur.php";
 						<article class="experience-card">
 							<div class="experience-meta">
 								<span>2025</span>
-								<span class="badge">Side project</span>
+								<span class="badge">Transformation Digitale</span>
 							</div>
-							<h3>Starter Pack NFT</h3>
-							<p class="experience-subtitle">Développement d’une galerie NFT minimaliste et entièrement réutilisable</p>
+							<h3>Portail de Gestion & Contrôle d'Accès</h3>
+							<p class="experience-subtitle">Modernisation d'un système de gestion de club sportif</p>
 							<ul class="experience-list">
-								<li>Architecture modulaire claire facilitant la maintenance et l’audit</li>
-								<li>Chargement et validation stricte des métadonnées JSON</li>
-								<li>Gestion des erreurs et des cas limites côté front</li>
-								<li>Déploiement automatisé via CI/CD</li>
+								<li>Système granulaire de rôles et permissions pour sécuriser les actions sensibles (admin vs staff).</li>
+								<li>Protection des endpoints critiques et sécurisation des échanges REST via TypeScript.</li>
+								<li>Back-office structuré pour une traçabilité totale des modifications de données.</li>
 							</ul>
 							<div class="experience-tags">
 								<span class="tag">TypeScript</span>
-								<span class="tag">Vite.js</span>
-								<span class="tag">JavaScript</span>
-								<span class="tag">CI/CD</span>
+								<span class="tag">RBAC</span>
+								<span class="tag">PostgreSQL</span>
 							</div>
 						</article>
 					</div>
@@ -377,22 +327,40 @@ require_once "controllers/routeur.php";
 						<article class="experience-card">
 							<div class="experience-meta">
 								<span>2024/2025</span>
-								<span class="badge">Side Project</span>
+								<span class="badge">Architecture Fullstack</span>
 							</div>
-							<h3>Ecoride</h3>
-							<p class="experience-subtitle">Plateforme de covoiturage écoresponsable</p>
+							<h3>Plateforme Transférable & Isolation des Privilèges</h3>
+							<p class="experience-subtitle">Plateforme multi-rôles de mise en relation (Ecoride)</p>
 							<ul class="experience-list">
-								<li>Plateforme multi-rôles : utilisateur, employé, administrateur</li>
-								<li>Sécurisation des flux critiques (réservations, crédits, avis)</li>
-								<li>Gestion des transactions avec statuts et traçabilité</li>
-								<li>Back-office protégé avec contrôles d’accès et permissions</li>
-								<li>Isolation des responsabilités et logique métier sécurisée</li>
+								<li>Isolation complète de la logique métier pour les transactions et réservations.</li>
+								<li>Gestion des états critiques et résilience des bases de données face aux accès concurrents.</li>
+								<li>Implémentation de middleware de sécurité systématiques sur chaque point d'entrée.</li>
 							</ul>
 							<div class="experience-tags">
-								<span class="tag">Sécurité applicative</span>
-								<span class="tag">Rôles & permissions</span>
-								<span class="tag">Architectur</span>
-								<span class="tag">Sécurité applicative</span>
+								<span class="tag">SecOps</span>
+								<span class="tag">Logic-First</span>
+								<span class="tag">Node/Express</span>
+							</div>
+						</article>
+					</div>
+
+					<div class="experience-carousel__item">
+						<article class="experience-card">
+							<div class="experience-meta">
+								<span>2025</span>
+								<span class="badge">R&D / Web3</span>
+							</div>
+							<h3>Standardisation de Pipeline & Audit Metadata</h3>
+							<p class="experience-subtitle">Framework modulaire pour déploiement d'actifs numériques</p>
+							<ul class="experience-list">
+								<li>Automatisation totale du déploiement via CI/CD (GitHub Actions).</li>
+								<li>Algorithmes de vérification de l'intégrité des métadonnées avant injection on-chain.</li>
+								<li>Architecture modulaire facilitant l'audit de code externe.</li>
+							</ul>
+							<div class="experience-tags">
+								<span class="tag">CI/CD</span>
+								<span class="tag">Automation</span>
+								<span class="tag">JSON Integrity</span>
 							</div>
 						</article>
 					</div>
@@ -459,52 +427,48 @@ require_once "controllers/routeur.php";
 
 		<section class="section-display section-projects" id="projets">
 			<div class="section-heading">
-				<span class="eyebrow">Projets</span>
-				<h2>Quelques réalisations accessibles en ligne</h2>
-				<p>Des démos publiques pour illustrer mon approche orientée architecture, sécurité et maintenabilité.</p>
+				<span class="eyebrow">Démonstrateurs</span>
+				<h2>Réalisations & Preuves de Concept</h2>
+				<p>Une immersion dans mon approche technique : architecture propre, sécurité native et déploiement maîtrisé.</p>
 			</div>
+
 			<div class="projects-grid">
 
 				<a class="project-card" href="https://alpaguide.fr/" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-mountain-sun"></i>Projet freelance </span>
-					<h4>Landing Page – Alpaguide</h4>
-					<p>Conception et développement d’un MVP orienté acquisition,
-						avec formulaires sécurisés, protection des données
-						et structure prête à évoluer.</p>
-					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+					<span class="badge"><i class="fa-solid fa-check-double"></i> Production </span>
+					<h4>SaaS Acquisition – Alpaguide</h4>
+					<p>Architecture optimisée pour la conversion : formulaires durcis, protection contre l'injection de données et infrastructure SEO-ready.</p>
+					<span class="project-link">Analyser le déploiement <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
 
-				<a class="project-card" href="https://www.google.com/?hl=fr" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-stopwatch"></i>Projet Freelance</span>
-					<h4>Site vitrine & portail club</h4>
-					<p>Application web complète avec back-office sécurisé,
-						gestion des rôles et architecture évolutive.</p>
-					<span class="project-link">Voir le projet (déploiement pour début 2026) <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-				</a>
-
-				<a class="project-card" href="https://nft-collection-1-liart.vercel.app/" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-stopwatch"></i>Side project</span>
-					<h4>Starter Pack NFT</h4>
-					<p>Galerie NFT modulaire avec validation des données,
-						gestion des erreurs et déploiement automatisé via CI/CD.</p>
-					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+				<a class="project-card" href="#" target="_blank" rel="noopener">
+					<span class="badge"><i class="fa-solid fa-clock-rotate-left"></i> En cours (2026)</span>
+					<h4>Portail Métier & Dashboard</h4>
+					<p>Système de gestion centralisé avec authentification sécurisée, gestion fine des privilèges (RBAC) et intégrité SQL garantie.</p>
+					<span class="project-link">Accès restreint <i class="fa-solid fa-lock"></i></span>
 				</a>
 
 				<a class="project-card" href="http://ecoride.sites-alya.fr/" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-stopwatch"></i>Side project</span>
-					<h4>Ecoride</h4>
-					<p>Plateforme multi-rôles avec sécurisation des flux critiques,
-						gestion des accès et logique métier protégée.</p>
-					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+					<span class="badge"><i class="fa-solid fa-flask"></i> Étude de cas</span>
+					<h4>Plateforme de Flux Critiques</h4>
+					<p>Démonstrateur fullstack simulant une logique de réservation complexe avec isolation stricte des responsabilités métier.</p>
+					<span class="project-link">Explorer la démo <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+				</a>
+
+				<a class="project-card" href="https://nft-collection-1-liart.vercel.app/" target="_blank" rel="noopener">
+					<span class="badge"><i class="fa-solid fa-microchip"></i> Lab Web3</span>
+					<h4>Pipeline d'Actifs Numériques</h4>
+					<p>Validation automatisée de métadonnées et intégration de flux asynchrones avec déploiement continu via GitHub Actions.</p>
+					<span class="project-link">Voir le lab <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
 
 				<a class="project-card" href="https://trackbuild.sites-alya.fr/" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-stopwatch"></i>Side project</span>
-					<h4>TrackBuild</h4>
-					<p>Outil de suivi et de reporting orienté métriques,
-						avec architecture JavaScript pensée pour l’évolution.</p>
-					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+					<span class="badge"><i class="fa-solid fa-chart-pie"></i> Lab Data</span>
+					<h4>Reporting & Metrics Engine</h4>
+					<p>Outil de monitoring d'activité focalisé sur l'intégrité du stockage local et la performance du rendu JavaScript.</p>
+					<span class="project-link">Tester l'outil <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
+
 			</div>
 		</section>
 

@@ -401,12 +401,12 @@
     box-shadow: 0 12px 28px rgba($dark, 0.28);
     transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease, box-shadow 0.25s ease;
 
-    &:hover {
+    /* &:hover {
         transform: translateY(-8px);
         border-color: rgba($primary, 0.45);
         background: rgba($white, 0.08);
         box-shadow: 0 18px 42px rgba($primary, 0.32), 0 10px 26px rgba($accent, 0.22);
-    }
+    } */
 
     .experience-meta {
         display: flex;
