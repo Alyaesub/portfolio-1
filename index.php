@@ -574,7 +574,7 @@ require_once "controllers/routeur.php";
 					</div>
 				</article>
 				<article class="diploma-card">
-					<img src="asset/AZ.png" alt="Logo Digital Campus" loading="lazy">
+					<img src="asset/shield-logo.jpg" alt="Logo Digital Campus" loading="lazy">
 					<div class="diploma-content">
 						<h3>Certification Cyber Sécurité</h3>
 						<span class="diploma-school">ZeroDay.cyber Academy</span>
