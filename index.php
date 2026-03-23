@@ -573,6 +573,16 @@ require_once "controllers/routeur.php";
 						<p>Formation orientée développement fullstack, architecture web, qualité logicielle et mise en production. Parcours renforcé par des projets concrets, une forte culture d'autonomie et une montée en compétence progressive sur les sujets DevSecOps.</p>
 					</div>
 				</article>
+				<article class="diploma-card">
+					<img src="asset/AZ.png" alt="Logo Digital Campus" loading="lazy">
+					<div class="diploma-content">
+						<h3>Certification Cyber Sécurité</h3>
+						<span class="diploma-school">ZeroDay.cyber Academy</span>
+						<span class="diploma-date">2026 · en cours</span>
+						<p>Formation orientée sécurité applicative et intégration DevSecOps dans les cycles de développement.
+							Travail sur les vulnérabilités web (OWASP Top 10), les environnements Linux, les scripts d’automatisation (Bash/Python) et la sécurisation des applications.</p>
+					</div>
+				</article>
 			</div>
 		</section>
 
