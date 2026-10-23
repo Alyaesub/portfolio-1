@@ -2,57 +2,55 @@
 require_once "controllers/routeur.php";
 ?>
 <!DOCTYPE html>
+
 <html lang="fr">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<!-- SEO -->
-	<title>Pascal Reynier – Développeur Full Stack & DevSecOps Freelance</title>
-	<meta name="description" content="Développeur Fullstack & DevSecOps freelance. J'aide les startups et PME à concevoir, sécuriser et mettre en production des applications web fiables avec React, Next.js, Node.js, TypeScript, Python, Docker et GitHub Actions.">
-	<meta name="author" content="Pascal Reynier">
-	<meta name="robots" content="index, follow">
+	<title>Pascal Reynier | DevSecOps, cybersécurité &amp; sécurité applicative</title>
+	<meta content="Portfolio de Pascal Reynier : DevSecOps, sécurité applicative, pentest web, Linux, Docker, CI/CD et développement d’outils de cybersécurité en Python et C." name="description" />
+	<meta content="Pascal Reynier" name="author" />
+	<meta content="index, follow" name="robots" />
 	<!-- Canonical -->
-	<link rel="canonical" href="https://pascalreynier.fr/">
+	<link href="https://pascalreynier.fr/" rel="canonical" />
 	<!-- Hreflang -->
-	<link rel="alternate" hreflang="fr" href="https://pascalreynier.fr/">
-	<link rel="alternate" hreflang="x-default" href="https://pascalreynier.fr/">
+	<link href="https://pascalreynier.fr/" hreflang="fr" rel="alternate" />
+	<link href="https://pascalreynier.fr/" hreflang="x-default" rel="alternate" />
 	<!-- Open Graph -->
-	<meta property="og:type" content="website">
-	<meta property="og:title" content="Pascal Reynier – Développeur Fullstack & DevSecOps Freelance">
-	<meta property="og:description" content="Partenaire technique des startups et PME : développement fullstack, sécurisation des flux, automatisation CI/CD et mise en production robuste.">
-	<meta property="og:url" content="https://pascalreynier.fr/">
-	<meta property="og:image" content="https://pascalreynier.fr/asset/logoPr.png">
+	<meta content="website" property="og:type" />
+	<meta content="Pascal Reynier | DevSecOps &amp; Cybersécurité" property="og:title" />
+	<meta content="DevSecOps, AppSec et pentest web : projets techniques, outils de sécurité, automatisation et applications en production." property="og:description" />
+	<meta content="https://pascalreynier.fr/" property="og:url" />
+	<meta content="https://pascalreynier.fr/asset/logoPr.png" property="og:image" />
 	<!-- Twitter Card -->
-	<meta name="twitter:card" content="summary_large_image">
-	<meta name="twitter:title" content="Pascal Reynier – Développeur Web Full Stack & DevSecOps Freelance">
-	<meta name="twitter:description" content="Développeur Fullstack & DevSecOps freelance. React, Next.js, Node.js, TypeScript, Python, Docker, CI/CD.">
-	<meta name="twitter:image" content="https://pascalreynier.fr/asset/logoPr.png">
+	<meta content="summary_large_image" name="twitter:card" />
+	<meta content="Pascal Reynier | DevSecOps &amp; Cybersécurité" name="twitter:title" />
+	<meta content="Portfolio DevSecOps, sécurité applicative et pentest : outils Python/C, Linux, Docker, CI/CD et réalisations web." name="twitter:description" />
+	<meta content="https://pascalreynier.fr/asset/logoPr.png" name="twitter:image" />
 	<!-- Performance -->
-	<link rel="preload" href="styles/css/main.css" as="style">
-	<link rel="preload" href="asset/ProfilePic.jpg" as="image">
+	<link as="style" href="styles/css/main.css" rel="preload" />
+	<link as="image" href="asset/ProfilePic.jpg" rel="preload" />
 	<!-- Favicon -->
-	<link rel="icon" href="asset/favicon.png" type="image/png">
+	<link href="asset/favicon.png" rel="icon" type="image/png" />
 	<!-- Fonts -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com" rel="preconnect" />
+	<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
 	<!-- Font Awesome -->
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-		integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" referrerpolicy="no-referrer" rel="stylesheet">
 	<!-- Main CSS -->
-	<link rel="stylesheet" href="styles/css/main.css">
+	<link href="styles/css/main.css" rel="stylesheet" />
 	<!-- Script -->
-	<script src="javascript/script.js" defer></script>
+	<script defer="" src="javascript/script.js"></script>
 	<!-- Schema.org -->
 	<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
 			"@type": "Person",
 			"name": "Pascal Reynier",
-			"jobTitle": "Développeur Web Full Stack & devsecops Freelance",
+			"jobTitle": "DevSecOps | Application Security | Pentest web",
 			"url": "https://pascalreynier.fr/",
 			"image": "https://pascalreynier.fr/asset/ProfilePic.jpg",
 			"sameAs": [
@@ -62,452 +60,319 @@ require_once "controllers/routeur.php";
 			],
 			"knowsAbout": [
 				"DevSecOps",
-				"devops",
-				"cybersecurité",
+				"Application Security",
+				"Web Penetration Testing",
+				"OWASP Top 10",
+				"Linux",
+				"Docker",
+				"GitHub Actions",
+				"CI/CD",
+				"Network Protocol Analysis",
 				"Python",
-				"React",
-				"Next.js",
+				"C",
+				"Bash",
+				"TypeScript",
 				"Node.js",
-				"Express",
-				"PHP",
-				"MySQL",
-				"Web3",
-				"Solidity"
+				"React",
+				"Next.js"
 			]
 		}
 	</script>
+	</link>
 </head>
 
 <body>
 	<header class="header-website">
-		<nav class="navbar" aria-label="Navigation principale">
+		<nav aria-label="Navigation principale" class="navbar">
 			<a class="brand" href="/">
-				<img src="asset/ProfilePic.jpg" alt="Portrait de Pascal Reynier" loading="lazy">
+				<img alt="Portrait de Pascal Reynier" loading="lazy" src="asset/ProfilePic.jpg" />
 				<div class="brand-details">
 					<span class="brand-name">Pascal Reynier</span>
 				</div>
 			</a>
-
 			<div class="menu">
-				<input type="checkbox" id="menu-toggle" class="menu-input" />
+				<input class="menu-input" id="menu-toggle" type="checkbox" />
 				<label class="menu-input-label" for="menu-toggle"><i class="fa-solid fa-bars"></i></label>
 				<div class="dropdown-menu">
 					<ul class="nav-links">
-						<li class="nav-link">
-							<a href="/accueil">Accueil <i class="fa-solid fa-arrow-right"></i></a>
-						</li>
-						<li class="nav-link">
-							<a href="/a-propos">À propos <i class="fa-solid fa-arrow-right"></i></a>
-						</li>
-						<li class="nav-link">
-							<a href="/competences">Compétences <i class="fa-solid fa-arrow-right"></i></a>
-						</li>
-						<li class="nav-link">
-							<a href="/experiences">Expériences <i class="fa-solid fa-arrow-right"></i></a>
-						</li>
-						<li class="nav-link">
-							<a href="/projets">Projets <i class="fa-solid fa-arrow-right"></i></a>
-						</li>
-						<li class="nav-link">
-							<a href="/contact">Contact <i class="fa-solid fa-arrow-right"></i></a>
-						</li>
-						<li class="nav-link">
-							<a href="/diplomes">Diplômes <i class="fa-solid fa-arrow-right"></i></a>
-						</li>
-						<li class="nav-link">
-							<a href="/blog">Veille <i class="fa-solid fa-arrow-right"></i></a>
-						</li>
+						<li class="nav-link"><a href="/accueil">Accueil <i class="fa-solid fa-arrow-right"></i></a></li>
+						<li class="nav-link"><a href="/a-propos">Approche <i class="fa-solid fa-arrow-right"></i></a></li>
+						<li class="nav-link"><a href="/competences">Compétences <i class="fa-solid fa-arrow-right"></i></a></li>
+						<li class="nav-link"><a href="/experiences">Expériences <i class="fa-solid fa-arrow-right"></i></a></li>
+						<li class="nav-link"><a href="/projets">Projets <i class="fa-solid fa-arrow-right"></i></a></li>
+						<li class="nav-link"><a href="/diplomes">Parcours <i class="fa-solid fa-arrow-right"></i></a></li>
+						<li class="nav-link"><a href="/contact">Contact <i class="fa-solid fa-arrow-right"></i></a></li>
 					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
-
 	<main>
 		<section class="section-display section-hero" id="accueil">
 			<div class="hero-intro">
 				<div class="section-heading">
-					<span class="eyebrow">Développeur Fullstack & DevSecOps</span>
-					<h1>Le partenaire technique des Startups & PME qui veulent croître sans compromis.</h1>
+					<span class="eyebrow">DevSecOps · Application Security · Pentest</span>
+					<h1>Développer, sécuriser et comprendre les systèmes.</h1>
 				</div>
-				<p class="lead">
-					Recruter une équipe complète Dev + Ops + Cyber est souvent impossible au démarrage.<br>
-					J'interviens pour <strong>combler ce vide</strong> : code propre, sécurité native et automatisation
-					des opérations pour transformer votre actif numérique en levier de croissance.
-				</p>
+				<p class="lead">Développeur spécialisé en <strong>DevSecOps et sécurité applicative</strong>, je travaille sur la sécurité du code, l'automatisation des contrôles, les environnements Linux et les tests d'intrusion web. Mon approche combine <strong>développement, infrastructure et pratique offensive en laboratoire</strong>.</p>
 				<div class="hero-actions">
-					<a href="#contact" class="btn btn-primary"><i class="fa-solid fa-comments"></i>Discutons de votre projet</a>
+					<a class="btn btn-primary" href="#projets"><i class="fa-solid fa-code"></i> Voir mes projets</a>
+					<a class="btn" href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
 				</div>
 				<div class="hero-panel__tags">
-					<span class="tag"><i class="fa-solid fa-lock"></i> Sécurité by Design</span>
-					<span class="tag"><i class="fa-solid fa-chart-line"></i> Vision Business</span>
-					<span class="tag"><i class="fa-solid fa-gears"></i> Automatisation Ops</span>
+					<span class="tag"><i class="fa-solid fa-shield-halved"></i> Sécurité applicative</span>
+					<span class="tag"><i class="fa-solid fa-terminal"></i> Pentest web</span>
+					<span class="tag"><i class="fa-solid fa-gears"></i> Automatisation</span>
 				</div>
 				<ul class="hero-points">
-					<li>Approche DevSecOps. Votre partenaire business qui met le code au service de vos besoins et vos ROI</li>
+					<li>Du code à la mise en production : concevoir des applications fiables, comprendre leur surface d'attaque et réduire les risques.</li>
 				</ul>
 				<div class="hero-badges">
-					<span class="badge"><i class="fa-solid fa-terminal"></i> Bash & Python</span>
-					<span class="badge"><i class="fa-solid fa-server"></i> Node.js & APIs</span>
-					<span class="badge"><i class="fa-solid fa-network-wired"></i> CI/CD & Docker</span>
-					<span class="badge"><i class="fa-solid fa-shield-virus"></i> OWASP & Audits</span>
+					<span class="badge"><i class="fa-brands fa-linux"></i> Linux &amp; réseaux</span>
+					<span class="badge"><i class="fa-brands fa-docker"></i> Docker &amp; CI/CD</span>
+					<span class="badge"><i class="fa-solid fa-code"></i> Python · C · Bash</span>
+					<span class="badge"><i class="fa-solid fa-bug"></i> OWASP &amp; Burp Suite</span>
 				</div>
-
 				<div class="hero-metrics">
-					<div class="hero-metric">
-						<span class="metric-value">8+</span>
-						<span class="metric-label">Projets livrés</span>
-					</div>
-					<div class="hero-metric">
-						<span class="metric-value">Fullstack</span>
-						<span class="metric-label">Front, back, déploiement</span>
-					</div>
-					<div class="hero-metric">
-						<span class="metric-value">Ops-ready</span>
-						<span class="metric-label">CI/CD · Docker · monitoring</span>
-					</div>
+					<div class="hero-metric"><span class="metric-value">AppSec</span><span class="metric-label">Sécurité du code et des API</span></div>
+					<div class="hero-metric"><span class="metric-value">DevSecOps</span><span class="metric-label">Automatisation et déploiement</span></div>
+					<div class="hero-metric"><span class="metric-value">Pentest</span><span class="metric-label">Tests web en laboratoire</span></div>
 				</div>
+			</div>
 		</section>
-
 		<section class="section-display section-services" id="a-propos">
 			<div class="section-heading">
-				<span class="eyebrow">Expertise & Solutions</span>
-				<h2>Un partenaire tech pour vos produits digitaux</h2>
-				<p>
-					Je ne me contente pas de livrer du code. J'agis comme un partenaire technique
-					pour garantir la pérennité, la sécurité et la scalabilité de votre produit dès le premier jour.
-				</p>
-				</p>
+				<span class="eyebrow">Expertises &amp; approche</span>
+				<h2>Sécurité intégrée au développement</h2>
+				<p>Trois axes complémentaires : sécuriser les applications, fiabiliser leur livraison et comprendre les vulnérabilités par la pratique.</p>
 			</div>
 			<div class="feature-grid">
 				<article class="feature-card">
-					<h3>Développement Fullstack</h3>
-					<p>Conception d'interfaces modernes et rapides où l'expérience utilisateur sert vos objectifs de conversion.</p>
+					<h3>DevSecOps &amp; automatisation</h3>
+					<p>Intégrer les contrôles et les bonnes pratiques de sécurité au cycle de développement et de déploiement.</p>
 					<ul>
-						<li>Architecture front-end scalable (React, Next.js)</li>
-						<li>Design system, responsive & accessibilité native</li>
-						<li>Composants réutilisables & optimisation des performances</li>
-						<li>Séparation claire des responsabilités</li>
+						<li><i class="fa-solid fa-code-branch"></i> Pipelines CI/CD avec GitHub Actions</li>
+						<li><i class="fa-brands fa-docker"></i> Conteneurisation et isolation avec Docker</li>
+						<li><i class="fa-solid fa-shield-halved"></i> Analyse de dépendances et contrôles automatisés</li>
+						<li><i class="fa-solid fa-terminal"></i> Scripts d'automatisation Bash et Python</li>
 					</ul>
 				</article>
 				<article class="feature-card">
-					<h3>Back-end, données & fiabilité</h3>
-					<p>Développement de backends robustes et de flux sécurisés pour protéger vos données et fiabiliser votre produit.</p>
+					<h3>Sécurité applicative &amp; AppSec</h3>
+					<p>Concevoir et analyser des applications web en portant une attention particulière aux entrées, aux accès et aux échanges de données.</p>
 					<ul>
-						<li>Node.js, architecture multi-couches sécurisée</li>
-						<li>Gestion des rôles, permissions et validation des entrées</li>
-						<li>Logs, monitoring et contrôle des erreurs</li>
-						<li>Audit de dépendances & vulnérabilités</li>
+						<li><i class="fa-solid fa-lock"></i> Validation des entrées et contrôle des accès</li>
+						<li><i class="fa-solid fa-code"></i> Revue de code et principes de sécurité by design</li>
+						<li><i class="fa-solid fa-globe"></i> Sécurisation des API et des flux HTTP</li>
+						<li><i class="fa-solid fa-list-check"></i> Référentiels OWASP et bonnes pratiques web</li>
 					</ul>
 				</article>
 				<article class="feature-card">
-					<h3>Approche DevSecOps</h3>
-					<p>
-						J'intègre la sécurité et l'automatisation dès le départ pour éviter de les traiter trop tard, quand elles coûtent plus cher.
-					</p>
+					<h3>Pentest web &amp; recherche technique</h3>
+					<p>Pratique des tests d'intrusion dans des laboratoires autorisés, avec une démarche structurée d'observation, de reproduction et de documentation.</p>
 					<ul>
-						<li>Sécurité applicative by design</li>
-						<li>CI/CD, tests, lint et contrôles automatisés</li>
-						<li>Gestion des environnements dev, staging et production</li>
-						<li>Docker, scripts Bash/Python et supervision</li>
+						<li><i class="fa-solid fa-bug"></i> Tests XSS, injections SQL et contrôles d'accès</li>
+						<li><i class="fa-solid fa-magnifying-glass"></i> Cartographie de la surface d'attaque</li>
+						<li><i class="fa-solid fa-network-wired"></i> Analyse réseau et protocolaire</li>
+						<li><i class="fa-solid fa-file-lines"></i> Reproduction des failles et rédaction de notes techniques</li>
 					</ul>
 				</article>
 			</div>
 		</section>
-
 		<section class="section-display section-skills" id="competences">
 			<div class="section-heading">
-				<span class="eyebrow">Expertise Technique</span>
-				<h2>Maîtrise technologique & Culture SecOps</h2>
-				<p>
-					Mon approche repose sur l'équilibre entre agilité de développement et rigueur opérationnelle.
-					Chaque choix technologique est guidé par des impératifs de <strong>sécurité, de fiabilité et de performance.</strong>
-				</p>
+				<span class="eyebrow">Expertise technique</span>
+				<h2>Technologies, systèmes &amp; outils</h2>
+				<p>Un socle de développement Fullstack, complété par les outils d'automatisation, les bases systèmes/réseaux et la sécurité offensive.</p>
 			</div>
-
 			<div class="skills-grid">
 				<article class="skill-card">
-					<h3>Protection & Automatisation</h3>
+					<h3>Cybersécurité &amp; pentest</h3>
 					<ul>
-						<li><i class="fa-solid fa-shield-halved"></i>Sécurité applicative & bonnes pratiques OWASP</li>
-						<li><i class="fa-solid fa-network-wired"></i>CI/CD (GitHub Actions, GitFlow)</li>
-						<li><i class="fa-solid fa-terminal"></i>Scripts Bash & Python</li>
-						<li><i class="fa-solid fa-chart-line"></i>Observabilité (Logs & Monitoring)</li>
+						<li><i class="fa-solid fa-bug"></i> OWASP Top 10, XSS, SQLi, IDOR</li>
+						<li><i class="fa-solid fa-magnifying-glass"></i> Burp Suite, DevTools et analyse HTTP</li>
+						<li><i class="fa-solid fa-flask"></i> OWASP Juice Shop, labs et CTF autorisés</li>
+						<li><i class="fa-solid fa-file-shield"></i> Analyse de vulnérabilités et documentation</li>
 					</ul>
 				</article>
-
 				<article class="skill-card">
-					<h3>Back-end & Architecture</h3>
+					<h3>DevSecOps &amp; livraison</h3>
 					<ul>
-						<li><i class="fa-brands fa-node-js"></i>Runtime Node.js & Express</li>
-						<li><i class="fa-brands fa-python"></i>Python (scripting & automatisation)</li>
-						<li><i class="fa-solid fa-database"></i>SQL (PostgreSQL, MariaDB)</li>
-						<li><i class="fa-solid fa-gears"></i>Architecture modulaire, services et séparation des responsabilités</li>
-					</ul>
+						<li><i class="fa-brands fa-github"></i> GitHub Actions et pipelines CI/CD</li>
+						<li><i class="fa-brands fa-docker"></i> Docker et gestion des environnements</li>
+						<li><i class="fa-solid fa-code-merge"></i> Git, intégration et déploiements</li>
+						<li><i class="fa-solid fa-terminal"></i> Automatisation Bash et Python</li>
 					</ul>
 				</article>
-
 				<article class="skill-card">
-					<h3>Front-end & Interface</h3>
+					<h3>Systèmes, réseaux &amp; bas niveau</h3>
 					<ul>
-						<li><i class="fa-brands fa-react"></i>React & Next.js (SSR/SSG)</li>
-						<li><i class="fa-solid fa-code"></i>TypeScript (Typage fort & Sécurité)</li>
-						<li><i class="fa-solid fa-gauge-high"></i>Optimisation des Core Web Vitals</li>
-						<li><i class="fa-solid fa-universal-access"></i>Conformité accessibilité & SEO</li>
+						<li><i class="fa-brands fa-linux"></i> Linux, CLI et administration de VPS</li>
+						<li><i class="fa-solid fa-network-wired"></i> TCP/IP, HTTP, TCP, UDP et ICMP</li>
+						<li><i class="fa-solid fa-code"></i> C et Python : outils CLI et analyse de fichiers</li>
+						<li><i class="fa-solid fa-server"></i> Nginx, HTTPS et gestion de services</li>
 					</ul>
 				</article>
-
 				<article class="skill-card">
-					<h3>Infrastructure & Ops</h3>
+					<h3>Développement Fullstack sécurisé</h3>
 					<ul>
-						<li><i class="fa-brands fa-docker"></i>Conteneurisation & Isolation</li>
-						<li><i class="fa-solid fa-server"></i>Gestion VPS & Serveurs Linux</li>
-						<li><i class="fa-solid fa-code-merge"></i>Stratégie de déploiement (Staging/Prod)</li>
-						<li><i class="fa-solid fa-file-shield"></i>Audit de dépendances & vulnérabilités</li>
+						<li><i class="fa-brands fa-js"></i> JavaScript, TypeScript, Node.js et Express</li>
+						<li><i class="fa-brands fa-react"></i> React et Next.js</li>
+						<li><i class="fa-solid fa-database"></i> SQL, PostgreSQL et MariaDB</li>
+						<li><i class="fa-solid fa-lock"></i> API REST, gestion des accès et validation</li>
 					</ul>
 				</article>
 			</div>
-
 			<div class="skill-tags">
-				<span class="tag">Code maintenable</span>
-				<span class="tag">Sécurité native</span>
-				<span class="tag">Scalabilité</span>
-				<span class="tag">Automatisation</span>
+				<span class="tag">AppSec</span><span class="tag">DevSecOps</span><span class="tag">Pentest web</span><span class="tag">Linux</span><span class="tag">Secure coding</span>
 			</div>
 		</section>
-
 		<section class="section-display section-experiences" id="experiences">
 			<div class="section-heading">
-				<span class="eyebrow">Expériences</span>
-				<h2>Projets, architecture et sécurisation</h2>
-				<p>Une sélection de projets illustrant ma capacité à concevoir, sécuriser et faire évoluer des systèmes web complets.</p>
+				<span class="eyebrow">Expériences &amp; mise en pratique</span>
+				<h2>Du développement à l'analyse de sécurité</h2>
+				<p>Des travaux concrets en sécurité applicative, outils systèmes/réseaux et mise en production. Les tests offensifs mentionnés sont réalisés dans des environnements autorisés.</p>
 			</div>
 			<div class="experience-carousel">
 				<div class="experience-carousel__track" id="experience-track">
-
 					<div class="experience-carousel__item">
 						<article class="experience-card">
-							<div class="experience-meta">
-								<span>2025</span>
-								<span class="badge">SaaS B2C (Lancement)</span>
-							</div>
-							<h3>Landing page SaaS & acquisition utilisateur</h3>
-							<p class="experience-subtitle">Conception d'une vitrine de pré-lancement orientée conversion pour Alpaguide</p>
+							<div class="experience-meta"><span>2026</span><span class="badge">Outils de cybersécurité</span></div>
+							<h3>Développement d'outils Python et C</h3>
+							<p class="experience-subtitle">Analyse de paquets, traitement de journaux et inspection système</p>
 							<ul class="experience-list">
-								<li>Mise en place de formulaires sécurisés et validation stricte des données.</li>
-								<li>Travail sur le SEO technique, la performance et la clarté du parcours utilisateur.</li>
-								<li>Architecture pensée pour préparer la suite : backend, automatisation et montée en charge.</li>
+								<li>Parsing manuel de fichiers PCAP et décodage des protocoles.</li>
+								<li>Analyse de logs et identification d'adresses IP suspectes.</li>
+								<li>Construction d'un outil CLI d'inspection système en C.</li>
 							</ul>
-							<div class="experience-tags">
-								<span class="tag">Next.js</span>
-								<span class="tag">SEO</span>
-								<span class="tag">Validation</span>
-							</div>
+							<div class="experience-tags"><span class="tag">Python</span><span class="tag">C</span><span class="tag">TCP/IP</span><span class="tag">Linux</span></div>
 						</article>
 					</div>
-
 					<div class="experience-carousel__item">
 						<article class="experience-card">
-							<div class="experience-meta">
-								<span>2025</span>
-								<span class="badge">Transformation Digitale</span>
-							</div>
-							<h3>Portail de gestion pour club sportif</h3>
-							<p class="experience-subtitle">Conception d'un back-office métier avec gestion des rôles et des données</p>
+							<div class="experience-meta"><span>2026</span><span class="badge">Laboratoires autorisés</span></div>
+							<h3>Sécurité offensive &amp; tests web</h3>
+							<p class="experience-subtitle">Mise en pratique méthodique des vulnérabilités applicatives</p>
 							<ul class="experience-list">
-								<li>Mise en place d'une architecture fullstack claire entre front, API et base de données.</li>
-								<li>Gestion des rôles et permissions pour sécuriser les actions sensibles.</li>
-								<li>Travail sur la maintenabilité, la traçabilité et l'évolution du produit.</li>
+								<li>Exploration de la surface d'attaque et analyse des échanges HTTP.</li>
+								<li>Étude pratique de failles XSS, SQLi et IDOR sur labs dédiés.</li>
+								<li>Documentation des observations et des méthodes de reproduction.</li>
 							</ul>
-							<div class="experience-tags">
-								<span class="tag">React</span>
-								<span class="tag">TypeScript</span>
-								<span class="tag">RBAC</span>
-							</div>
+							<div class="experience-tags"><span class="tag">OWASP</span><span class="tag">Burp Suite</span><span class="tag">Pentest web</span></div>
 						</article>
 					</div>
-
 					<div class="experience-carousel__item">
 						<article class="experience-card">
-							<div class="experience-meta">
-								<span>2024/2025</span>
-								<span class="badge">Architecture Fullstack</span>
-							</div>
-							<h3>Plateforme fullstack de mise en relation</h3>
-							<p class="experience-subtitle">Projet complet de réservation et gestion multi-rôles</p>
+							<div class="experience-meta"><span>2026</span><span class="badge">Application en production</span></div>
+							<h3>AlpaGuide — plateforme web</h3>
+							<p class="experience-subtitle">Landing page publique et préparation d'une application dédiée aux professionnels de montagne</p>
 							<ul class="experience-list">
-								<li>Développement d'une logique métier structurée pour les trajets, réservations et rôles utilisateurs.</li>
-								<li>Sécurisation des points d'entrée avec validation, séparation des responsabilités et contrôle des accès.</li>
-								<li>Conception d'une base solide pour faire évoluer l'application dans le temps.</li>
+								<li>Déploiement d'une landing page et de formulaires de contact/bêta.</li>
+								<li>Backend Node.js / Express et gestion des services sur VPS.</li>
+								<li>Application métier en développement, distincte de la page déjà publiée.</li>
 							</ul>
-							<div class="experience-tags">
-								<span class="tag">Node.js</span>
-								<span class="tag">Express</span>
-								<span class="tag">Fullstack</span>
-							</div>
+							<div class="experience-tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Linux</span><span class="tag">Production</span></div>
 						</article>
 					</div>
-
 					<div class="experience-carousel__item">
 						<article class="experience-card">
-							<div class="experience-meta">
-								<span>2025</span>
-								<span class="badge">R&D / Web3</span>
-							</div>
-							<h3>Plateforme web3 Fullstack</h3>
-							<p class="experience-subtitle">Framework modulaire pour déploiement d'actifs numériques</p>
+							<div class="experience-meta"><span>2025</span><span class="badge">Projet Web3</span></div>
+							<h3>Application Web3 &amp; NFT</h3>
+							<p class="experience-subtitle">Développement d'une application autour des actifs numériques et de leur déploiement</p>
 							<ul class="experience-list">
-								<li>Automatisation totale du déploiement via CI/CD (GitHub Actions).</li>
-								<li>Algorithmes de vérification de l'intégrité des métadonnées avant injection on-chain.</li>
-								<li>Architecture modulaire facilitant l'audit de code externe.</li>
+								<li>Conception et intégration de fonctionnalités web et Web3.</li>
+								<li>Traitement et vérification de métadonnées.</li>
+								<li>Automatisation du déploiement via GitHub Actions.</li>
 							</ul>
-							<div class="experience-tags">
-								<span class="tag">CI/CD</span>
-								<span class="tag">Automation</span>
-								<span class="tag">JSON Integrity</span>
-							</div>
-						</article>
-					</div>
-
-					<div class="experience-carousel__item">
-						<article class="experience-card">
-							<div class="experience-meta">
-								<span>2024</span>
-								<span class="badge">Side project</span>
-							</div>
-							<h3>TrackBuild</h3>
-							<p class="experience-subtitle">Timer multi-projets & reporting</p>
-							<ul class="experience-list">
-								<li>Application orientée métriques et suivi d’activité</li>
-								<li>Gestion fiable des données locales et des états applicatifs</li>
-								<li>Architecture JavaScript pensée pour l’évolution</li>
-								<li>Export de données et reporting</li>
-							</ul>
-							<div class="experience-tags">
-								<span class="tag">DevSecOps</span>
-								<span class="tag">Data</span>
-								<span class="tag">JavaScript</span>
-								<span class="tag">LocalStorage</span>
-							</div>
-						</article>
-					</div>
-
-					<div class="experience-carousel__item">
-						<article class="experience-card">
-							<div class="experience-meta">
-								<span>2024</span>
-								<span class="badge">Side project</span>
-							</div>
-							<h3>Messagerie privée</h3>
-							<p class="experience-subtitle">Application temps réel multi-utilisateurs</p>
-							<ul class="experience-list">
-								<li>Architecture MVC avec routing et contrôleurs dédiés</li>
-								<li>Gestion sécurisée des utilisateurs et des accès</li>
-								<li>Protection des échanges et rafraîchissement asynchrone</li>
-								<li>Déploiement maîtrisé sur environnement mutualisé</li>
-							</ul>
-							<div class="experience-tags">
-								<span class="tag">Rôles & permissions</span>
-								<span class="tag">MySQL</span>
-								<span class="tag">JavaScript</span>
-								<span class="tag">Fetch API</span>
-							</div>
+							<div class="experience-tags"><span class="tag">Web3</span><span class="tag">NFT</span><span class="tag">CI/CD</span></div>
 						</article>
 					</div>
 				</div>
-
-				<!-- Carousel controls -->
 				<div class="experience-carousel__controls">
-					<button class="experience-carousel__button" id="experience-prev" aria-label="Projet précédent">
-						<i class="fa-solid fa-chevron-left"></i>
-					</button>
+					<button aria-label="Projet précédent" class="experience-carousel__button" id="experience-prev" type="button"><i class="fa-solid fa-chevron-left"></i></button>
 					<div class="experience-carousel__dots" id="experience-dots"></div>
-					<button class="experience-carousel__button" id="experience-next" aria-label="Projet suivant">
-						<i class="fa-solid fa-chevron-right"></i>
-					</button>
+					<button aria-label="Projet suivant" class="experience-carousel__button" id="experience-next" type="button"><i class="fa-solid fa-chevron-right"></i></button>
 				</div>
 			</div>
 		</section>
-
 		<section class="section-display section-projects" id="projets">
 			<div class="section-heading">
-				<span class="eyebrow">Démonstrateurs</span>
-				<h2>Réalisations & Preuves de Concept</h2>
-				<p>Une immersion dans mon approche technique : architecture propre, sécurité native et déploiement maîtrisé.</p>
+				<span class="eyebrow">Projets sélectionnés</span>
+				<h2>Cybersécurité, outils &amp; applications</h2>
+				<p>Une sélection volontairement resserrée : outils techniques développés en C/Python et projets web conservés pour leur intérêt architectural. Chaque nouvelle réalisation pourra être ajoutée dans cette grille.</p>
 			</div>
-
 			<div class="projects-grid">
-
-				<a class="project-card" href="https://alpaguide.fr/" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-check-double"></i> Production </span>
-					<h4>Alpaguide</h4>
-					<p>Landing page de pré-lancement pensée pour la conversion, le SEO et la collecte de leads avec une base technique propre et sécurisée.</p>
+				<!-- OUTILS CYBER : remplacer les liens GitHub génériques par les URLs précises des dépôts quand souhaité. -->
+				<a class="project-card" href="https://github.com/Alyaesub" rel="noopener noreferrer" target="_blank">
+					<span class="badge"><i class="fa-solid fa-network-wired"></i> Analyse réseau · Python</span>
+					<h4>PCAP Analyzer</h4>
+					<p>Parseur de fichiers PCAP sans bibliothèque réseau dédiée : lecture des en-têtes Ethernet, IPv4, TCP, UDP et ICMP, et affichage structuré des paquets.</p>
+					<span class="project-link">Consulter GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+				</a>
+				<a class="project-card" href="https://github.com/Alyaesub" rel="noopener noreferrer" target="_blank">
+					<span class="badge"><i class="fa-solid fa-file-lines"></i> Analyse de logs · Python</span>
+					<h4>LogGuard</h4>
+					<p>Outil CLI d'analyse de journaux : extraction d'IP, comptage des échecs, détection de seuils suspects et synthèse des événements.</p>
+					<span class="project-link">Consulter GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+				</a>
+				<a class="project-card" href="https://github.com/Alyaesub" rel="noopener noreferrer" target="_blank">
+					<span class="badge"><i class="fa-solid fa-terminal"></i> Inspection système · C</span>
+					<h4>SecInspect</h4>
+					<p>Outil CLI d'inspection Linux/macOS en développement : informations système, gestion des options et architecture modulaire pour de futurs contrôles de sécurité.</p>
+					<span class="project-link">Consulter GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+				</a>
+				<a class="project-card" href="https://github.com/Alyaesub" rel="noopener noreferrer" target="_blank">
+					<span class="badge"><i class="fa-solid fa-key"></i> Cryptographie</span>
+					<h4>Rainbow Table</h4>
+					<p>Projet consacré au fonctionnement des tables précalculées et des recherches d'empreintes ; étude des limites de mots de passe et de hachages faibles dans un cadre pédagogique.</p>
+					<span class="project-link">Consulter GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+				</a>
+				<a class="project-card" href="https://alpaguide.fr/" rel="noopener noreferrer" target="_blank">
+					<span class="badge"><i class="fa-solid fa-check-double"></i> En production · App à venir</span>
+					<h4>AlpaGuide</h4>
+					<p>Landing page en production pour une future plateforme dédiée aux professionnels de montagne. Backend et formulaires fonctionnels ; application en développement.</p>
+					<span class="project-link">Voir le site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+				</a>
+				<a class="project-card" href="https://nft-collection-1-liart.vercel.app/" rel="noopener noreferrer" target="_blank">
+					<span class="badge"><i class="fa-solid fa-microchip"></i> Application Web3</span>
+					<h4>Projet Web3 &amp; NFT</h4>
+					<p>Application liée aux actifs numériques et aux NFT, avec gestion des métadonnées et automatisation de déploiement. Une réalisation Fullstack complémentaire aux projets cyber.</p>
 					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
-
-				<a class="project-card" href="https://xn--fcprovenal-v6a.fr/" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-check-double"></i> Production</span>
-					<h4>Portail Métier & Dashboard</h4>
-					<p>Application de gestion avec authentification, rôles, permissions et structure fullstack pensée pour durer.</p>
-					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-				</a>
-
-				<a class="project-card" href="http://ecoride.sites-alya.fr/" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-flask"></i> Étude de cas</span>
-					<h4>Plateforme de mise en relation</h4>
-					<p>Démonstrateur fullstack simulant une logique de réservation complexe avec isolation stricte des responsabilités métier.</p>
-					<span class="project-link">Explorer la démo <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-				</a>
-
-				<a class="project-card" href="https://nft-collection-1-liart.vercel.app/" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-microchip"></i> Lab Web3</span>
-					<h4>Pipeline d'Actifs Numériques</h4>
-					<p>Validation automatisée de métadonnées et intégration de flux asynchrones avec déploiement continu via GitHub Actions.</p>
-					<span class="project-link">Voir le lab <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-				</a>
-
-				<a class="project-card" href="https://trackbuild.sites-alya.fr/" target="_blank" rel="noopener">
-					<span class="badge"><i class="fa-solid fa-chart-pie"></i> Lab Data</span>
-					<h4>TrackBuild</h4>
-					<p>Outil de suivi d'activité et de reporting, centré sur la clarté des données, la performance et la logique front-end.</p>
-					<span class="project-link">Tester l'outil <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-				</a>
-
 			</div>
 		</section>
-
 		<section class="section-display section-contact" id="contact">
 			<div class="section-heading">
-				<span class="eyebrow">Contact</span>
-				<h2>Parlons de votre produit</h2>
-				<p>Vous lancez un MVP, vous refondez une plateforme ou vous voulez fiabiliser une stack existante ? Je peux vous aider à cadrer, construire et sécuriser la partie technique.</p>
+				<span class="eyebrow">Contact &amp; collaboration</span>
+				<h2>Parlons sécurité, infrastructure ou développement</h2>
+				<p>Une mission DevSecOps, un besoin en sécurité applicative ou un projet technique ? Vous pouvez me contacter directement ou consulter mes réalisations sur GitHub.</p>
 			</div>
 			<div class="contact-panel">
 				<div class="contact-grid">
 					<div class="contact-card">
 						<h3>LinkedIn</h3>
-						<p>Restons connectés et discutez de vos besoins directement via LinkedIn.</p>
+						<p>Échanger sur la cybersécurité, les projets techniques et les opportunités professionnelles.</p>
 						<div class="contact-links">
-							<a target="_blank" href="https://www.linkedin.com/in/pascal-reynier-75a11b326/" rel="noopener">
-								<img src="asset/linkedin.svg" alt="Logo LinkedIn" loading="lazy">
+							<a href="https://www.linkedin.com/in/pascal-reynier-75a11b326/" rel="noopener" target="\_blank">
+								<img alt="Logo LinkedIn" loading="lazy" src="asset/linkedin.svg" />
 							</a>
 						</div>
 					</div>
 					<div class="contact-card">
 						<h3>Malt</h3>
-						<p>Mission freelance encadrée, devis rapide et contrat sécurisé via Malt.</p>
+						<p>Pour les missions freelance en développement et sécurité applicative.</p>
 						<div class="contact-links">
-							<a target="_blank" href="https://www.malt.fr/profile/pascalreynier" rel="noopener">
-								<img src="asset/Malt_logo_pink.svg" alt="Logo Malt" loading="lazy">
+							<a href="https://www.malt.fr/profile/pascalreynier" rel="noopener" target="\_blank">
+								<img alt="Logo Malt" loading="lazy" src="asset/Malt_logo_pink.svg" />
 							</a>
 						</div>
 					</div>
 					<div class="contact-card">
 						<h3>GitHub</h3>
-						<p>Consultez mon code, mes expérimentations et contributions open source.</p>
+						<p>Dépôts techniques, outils Python/C et travaux de développement.</p>
 						<div class="contact-links">
-							<a target="_blank" href="https://github.com/Alyaesub" rel="noopener">
-								<img src="asset/github.svg" alt="Logo GitHub" loading="lazy">
+							<a href="https://github.com/Alyaesub" rel="noopener" target="\_blank">
+								<img alt="Logo GitHub" loading="lazy" src="asset/github.svg" />
 							</a>
 						</div>
 					</div>
@@ -519,53 +384,55 @@ require_once "controllers/routeur.php";
 								<h3>Disponibilité</h3>
 								<div class="tag-list">
 									<span class="tag">Remote / Hybrid</span>
-									<span class="tag">Français & Anglais</span>
+									<span class="tag">Français &amp; Anglais</span>
 									<span class="tag">Timezones EU / US EST</span>
 								</div>
 							</div>
 						</div>
-						<form id="contact-form" action="/Functions/mailHelper.php" method="POST">
+						<form action="/Functions/mailHelper.php" id="contact-form" method="POST">
 							<!-- Champ honeypot  -->
 							<div style="display:none">
-								<input type="text" name="website" tabindex="-1" autocomplete="off">
+								<input autocomplete="off" name="website" tabindex="-1" type="text" />
 							</div>
 							<div class="form-grid">
 								<div class="form-field">
 									<label for="fullname">Nom complet</label>
-									<input type="text" id="fullname" name="fullname" required placeholder="Nom Prénom" />
+									<input id="fullname" name="fullname" placeholder="Nom Prénom" required="" type="text">
+									</input>
 								</div>
 								<div class="form-field">
 									<label for="email">Votre e-mail</label>
-									<input type="email" id="email" name="email" required placeholder="email@entreprise.com" />
+									<input id="email" name="email" placeholder="email@entreprise.com" required="" type="email" />
 								</div>
 								<div class="form-field">
 									<label for="company">Société</label>
-									<input type="text" id="company" name="company" placeholder="Nom de l'entreprise" />
+									<input id="company" name="company" placeholder="Nom de l'entreprise" type="text" />
 								</div>
 							</div>
 							<div class="form-field">
 								<label for="message">Contexte du projet</label>
-								<textarea id="message" name="message" rows="4" required placeholder="Budget, délais, objectifs..."></textarea>
+								<textarea id="message" name="message" placeholder="Budget, délais, objectifs..." required="" rows="4"></textarea>
 							</div>
 							<button class="btn btn-primary" type="submit">
 								<i class="fa-solid fa-paper-plane"></i>
+
 								Envoyer
+
 							</button>
 						</form>
 					</article>
 				</div>
 			</div>
 		</section>
-
 		<section class="section-display section-diplomas" id="diplomes">
 			<div class="section-heading">
-				<span class="eyebrow">Formation</span>
-				<h2>Diplômes & parcours certifiants</h2>
-				<p>Un parcours tourné vers la création de produits concrets et durables, avec une attention particulière à la qualité du code et à l’impact.</p>
+				<span class="eyebrow">Formation &amp; progression</span>
+				<h2>Formation technique</h2>
+				<p>Un socle de développement d’applications et un approfondissement continu en DevSecOps, cybersécurité et pentest.</p>
 			</div>
 			<div class="diploma-grid">
 				<article class="diploma-card">
-					<img src="asset/digital-campus.png" alt="Logo Digital Campus" loading="lazy">
+					<img alt="Logo Digital Campus" loading="lazy" src="asset/digital-campus.png" />
 					<div class="diploma-content">
 						<h3>Développeur d'applications web et mobiles</h3>
 						<span class="diploma-school">Digital Campus</span>
@@ -574,102 +441,74 @@ require_once "controllers/routeur.php";
 					</div>
 				</article>
 				<article class="diploma-card">
-					<img src="asset/shield-logo.jpg" alt="Logo Digital Campus" loading="lazy">
+					<img alt="Logo Digital Campus" loading="lazy" src="asset/shield-logo.jpg" />
 					<div class="diploma-content">
 						<h3>Certification Cyber Sécurité</h3>
 						<span class="diploma-school">ZeroDay.cyber Academy</span>
 						<span class="diploma-date">2026 · en cours</span>
 						<p>Formation orientée sécurité applicative et intégration DevSecOps dans les cycles de développement.
+
 							Travail sur les vulnérabilités web (OWASP Top 10), les environnements Linux, les scripts d’automatisation (Bash/Python) et la sécurisation des applications.</p>
 					</div>
 				</article>
 			</div>
 		</section>
-
 		<section class="section-display section-archives" id="archives">
 			<div class="section-heading">
-				<span class="eyebrow">Archives</span>
-				<h2>Sandbox & premiers projets</h2>
-				<p>
-					Un espace dédié regroupant mes anciens projets, expérimentations et prototypes.
-					Parfait pour explorer mon parcours, mes progrès techniques et mes premières approches front/back.
-				</p>
+				<span class="eyebrow">Archives techniques</span>
+				<h2>Sandbox</h2>
+				<p>Mes anciens exercices, prototypes et premières réalisations sont regroupés dans un espace distinct pour garder ce portfolio centré sur mes travaux récents.</p>
 			</div>
 			<div class="resource-grid">
 				<!-- Carte Sandbox principale -->
-				<a class="resource-card" href="https://sites-alya.fr/" target="_blank" rel="noopener">
-					<h4>Sandbox – Projets & Démos</h4>
-					<p>
-						Accédez à toutes mes anciennes réalisations : mini-apps, jeux, tests techniques,
-						interfaces PHP, JavaScript vanilla, et autres expérimentations.
-					</p>
+				<a class="resource-card" href="https://sites-alya.fr/" rel="noopener" target="\_blank">
+					<h4>Sandbox – Projets &amp; Démos</h4>
+					<p>Projets de formation et expérimentations antérieures, accessibles séparément du portfolio professionnel.</p>
 					<div class="experience-tags">
 						<span class="tag">Apprentissage</span>
 						<span class="tag">Autodidacte</span>
 						<span class="tag">Formation</span>
 					</div>
 					<span class="resource-link">
+
 						Explorer le Sandbox <i class="fa-solid fa-arrow-up-right-from-square"></i>
 					</span>
 				</a>
 			</div>
 		</section>
 
-		<section class="section-display section-blog" id="blog">
-			<div class="section-heading">
-				<span class="eyebrow">Veille</span>
-				<h2>Ressources que je consulte régulièrement</h2>
-				<p>Se maintenir à jour est essentiel : voici quelques lectures incontournables pour rester au contact des tendances tech.</p>
-			</div>
-			<div class="resource-grid">
-				<a class="resource-card" href="https://www.journalduhacker.net/" target="_blank" rel="noopener">
-					<h4>🧑‍💻 Le Journal du Hacker</h4>
-					<p>Version francophone de Hacker News : dev, sécurité, web, open source. Parfait pour une veille quotidienne.</p>
-					<span class="resource-link">Lire maintenant <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-				</a>
-				<a class="resource-card" href="https://www.blogdumoderateur.com/tech/" target="_blank" rel="noopener">
-					<h4>🧠 Blog du Modérateur – Tech</h4>
-					<p>Tendances, outils, productivité, retours d’expérience. Une veille transversale sur l’écosystème numérique.</p>
-					<span class="resource-link">Explorer <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-				</a>
-			</div>
-		</section>
 	</main>
-
 	<footer>
 		<div class="credits">
 			<span>© 2026 Pascal Reynier · Tous droits réservés</span>
 		</div>
 	</footer>
-
 	<div id="loader">
 		<div class="loader"></div>
 	</div>
-
-	<a id="gototop" href="#">
+	<a href="#" id="gototop">
 		<picture>
-			<source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_fe0f/512.webp" type="image/webp">
-			<img src="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_fe0f/512.gif" alt="Remonter en haut de la page" loading="lazy" width="32" height="32">
+			<source srcset="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_fe0f/512.webp" type="image/webp" />
+			<img alt="Remonter en haut de la page" height="32" loading="lazy" src="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_fe0f/512.gif" width="32" />
 		</picture>
 	</a>
-
-	<div class="theme-switcher" aria-live="polite">
-		<button class="theme-switcher__toggle" type="button" aria-label="Ouvrir le sélecteur de thème">
+	<div aria-live="polite" class="theme-switcher">
+		<button aria-label="Ouvrir le sélecteur de thème" class="theme-switcher__toggle" type="button">
 			<i class="fa-solid fa-swatchbook"></i>
 		</button>
-		<div class="theme-switcher__panel" role="dialog" aria-label="Choisir un thème">
+		<div aria-label="Choisir un thème" class="theme-switcher__panel" role="dialog">
 			<div class="theme-switcher__header">
 				<span class="theme-switcher__title">Thème</span>
-				<button class="theme-switcher__close" type="button" aria-label="Fermer">
+				<button aria-label="Fermer" class="theme-switcher__close" type="button">
 					<i class="fa-solid fa-xmark"></i>
 				</button>
 			</div>
 			<div class="theme-switcher__options">
-				<button class="theme-option" role="button" data-theme="dark" type="button">
+				<button class="theme-option" data-theme="dark" role="button" type="button">
 					<span class="theme-dot theme-dot--dark"></span>
 					<span>Principal</span>
 				</button>
-				<button class="theme-option" role="button" data-theme="light" type="button">
+				<button class="theme-option" data-theme="light" role="button" type="button">
 					<span class="theme-dot theme-dot--light"></span>
 					<span>Clair</span>
 				</button>
