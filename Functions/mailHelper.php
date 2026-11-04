@@ -63,22 +63,28 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
   ]);
 }
 
+//config mailling pour vps
+$smtpUser = getenv('SMTP_USER') ?: '';
+$smtpPass = getenv('SMTP_PASS') ?: '';
+$smtpHost = getenv('SMTP_HOST') ?: '';
+$smtpPort = (int) (getenv('SMTP_PORT') ?: 587);
+
 try {
-  $env = parse_ini_file(__DIR__ . '/../.env');
-  if (!$env) {
+  if ($smtpUser === '' || $smtpPass === '') {
     $respond(500, [
       'status' => 'error',
-      'message' => 'Impossible de charger le fichier .env'
+      'message' => 'Configuration SMTP manquante.'
     ]);
   }
   $mail = new PHPMailer(true);
+
   $mail->isSMTP();
-  $mail->Host = 'mail.pascalreynier.fr';
+  $mail->Host = $smtpHost;
   $mail->SMTPAuth = true;
-  $mail->Username = $env['SMTP_USER'];
-  $mail->Password = $env['SMTP_PASS'];
+  $mail->Username = $smtpUser;
+  $mail->Password = $smtpPass;
   $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-  $mail->Port = 587;
+  $mail->Port = $smtpPort;
 
   // Expéditeur
   $mail->setFrom('contact@pascalreynier.fr', 'Portfolio - Formulaire');
@@ -105,11 +111,13 @@ try {
   $mail->send();
   $respond(200, [
     'status' => 'success',
-    'message' => 'Message envoyé avec succès 🎉',
+    'message' => 'Message envoyé avec succès.',
   ]);
 } catch (Exception $e) {
+  error_log($e->getMessage());
+
   $respond(500, [
     'status' => 'error',
-    'message' => "Erreur lors de l'envoi : {$mail->ErrorInfo}",
+    'message' => "Impossible d'envoyer le message."
   ]);
 }
