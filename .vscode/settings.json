@@ -9,4 +9,5 @@
     "liveSassCompile.settings.generateMap": true,
     "window.autoDetectColorScheme": false,
     "liveServer.settings.port": 5502,
+    "postman.settings.dotenv-detection-notification-visibility": false,
 }
