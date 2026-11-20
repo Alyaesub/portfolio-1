@@ -1,0 +1,73 @@
+name: Deploy Portfolio
+
+on:
+    push:
+        branches: [main]
+    workflow_dispatch: # permet aussi un lancement manuel
+
+env:
+    IMAGE: ghcr.io/alyaesub/portfolio
+
+jobs:
+    # ---------- 1) BUILD + PUSH de l'image sur GHCR ----------
+    build-and-push:
+        runs-on: ubuntu-latest
+        permissions:
+            contents: read
+            packages: write # autorise le push vers GHCR
+        steps:
+            - name: Checkout du code
+              uses: actions/checkout@v4
+
+            - name: Login GHCR
+              uses: docker/login-action@v3
+              with:
+                  registry: ghcr.io
+                  username: ${{ github.actor }}
+                  password: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Build & push
+              uses: docker/build-push-action@v6
+              with:
+                  context: .
+                  push: true
+                  tags: |
+                      ${{ env.IMAGE }}:latest
+                      ${{ env.IMAGE }}:${{ github.sha }}
+
+    # ---------- 2) DÉPLOIEMENT sur le VPS ----------
+    deploy:
+        needs: build-and-push # ne tourne que si le build a réussi
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout du code
+              uses: actions/checkout@v4
+
+            - name: Envoi du compose.yaml sur le VPS
+              uses: appleboy/scp-action@v0.1.7
+              with:
+                  host: ${{ secrets.VPS_HOST }}
+                  username: ${{ secrets.VPS_USER }}
+                  port: ${{ secrets.VPS_PORT }}
+                  key: ${{ secrets.VPS_SSH_KEY }}
+                  source: compose.yaml
+                  target: /srv/projects/portfolio
+
+            - name: Pull + redémarrage sur le VPS
+              uses: appleboy/ssh-action@v1.2.0
+              with:
+                  host: ${{ secrets.VPS_HOST }}
+                  username: ${{ secrets.VPS_USER }}
+                  port: ${{ secrets.VPS_PORT }}
+                  key: ${{ secrets.VPS_SSH_KEY }}
+                  envs: GHCR_TOKEN,GHCR_USER
+                  script: |
+                      cd /srv/projects/portfolio
+                      echo "$GHCR_TOKEN" | docker login ghcr.io -u "$GHCR_USER" --password-stdin
+                      docker compose pull
+                      docker compose up -d
+                      docker logout ghcr.io
+                      docker image prune -f
+              env:
+                  GHCR_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GHCR_USER: ${{ github.actor }}
