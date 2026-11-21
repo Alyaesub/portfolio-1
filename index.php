@@ -9,7 +9,7 @@ require_once "controllers/routeur.php";
 	<meta charset="utf-8" />
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<!-- SEO -->
-	<title>Pascal Reynier | DevSecOps, cybersécurité &amp; sécurité applicative</title>
+	<title>Pascal Reynier | DevSecOps</title>
 	<meta content="Portfolio de Pascal Reynier : DevSecOps, sécurité applicative, pentest web, Linux, Docker, CI/CD et développement d’outils de cybersécurité en Python et C." name="description" />
 	<meta content="Pascal Reynier" name="author" />
 	<meta content="index, follow" name="robots" />
@@ -99,7 +99,8 @@ require_once "controllers/routeur.php";
 						<li class="nav-link"><a href="/a-propos">Approche <i class="fa-solid fa-arrow-right"></i></a></li>
 						<li class="nav-link"><a href="/competences">Compétences <i class="fa-solid fa-arrow-right"></i></a></li>
 						<li class="nav-link"><a href="/experiences">Expériences <i class="fa-solid fa-arrow-right"></i></a></li>
-						<li class="nav-link"><a href="/projets">Projets <i class="fa-solid fa-arrow-right"></i></a></li>
+						<li class="nav-link"><a href="/projets">Travaux <i class="fa-solid fa-arrow-right"></i></a></li>
+						<li class="nav-link"><a href="#offres">Offres <i class="fa-solid fa-arrow-right"></i></a></li>
 						<li class="nav-link"><a href="/diplomes">Parcours <i class="fa-solid fa-arrow-right"></i></a></li>
 						<li class="nav-link"><a href="/contact">Contact <i class="fa-solid fa-arrow-right"></i></a></li>
 					</ul>
@@ -111,17 +112,17 @@ require_once "controllers/routeur.php";
 		<section class="section-display section-hero" id="accueil">
 			<div class="hero-intro">
 				<div class="section-heading">
-					<span class="eyebrow">DevSecOps · Application Security · Pentest</span>
-					<h1>Développer, sécuriser et comprendre les systèmes.</h1>
+					<span class="eyebrow">DevSecOps · Sécurité applicative · Pentest web</span>
+					<h1>Je développe, sécurise et teste vos applications web.</h1>
 				</div>
-				<p class="lead">Développeur spécialisé en <strong>DevSecOps et sécurité applicative</strong>, je travaille sur la sécurité du code, l'automatisation des contrôles, les environnements Linux et les tests d'intrusion web. Mon approche combine <strong>développement, infrastructure et pratique offensive en laboratoire</strong>.</p>
+				<p class="lead">Développeur passé au <strong>DevSecOps et à la sécurité applicative</strong>. Je lis votre code, je corrige les failles et je teste vos applications comme le ferait un attaquant, pour réduire vos risques concrètement.</p>
 				<div class="hero-actions">
-					<a class="btn btn-primary" href="#projets"><i class="fa-solid fa-code"></i> Voir mes projets</a>
-					<a class="btn" href="#contact"><i class="fa-solid fa-envelope"></i> Contact</a>
+					<a class="btn btn-primary" href="#offres"><i class="fa-solid fa-shield-halved"></i> Voir mes offres</a>
+					<a class="btn" href="#contact"><i class="fa-solid fa-envelope"></i> Me contacter</a>
 				</div>
 				<div class="hero-panel__tags">
+					<span class="tag"><i class="fa-solid fa-bug"></i> Pentest web</span>
 					<span class="tag"><i class="fa-solid fa-shield-halved"></i> Sécurité applicative</span>
-					<span class="tag"><i class="fa-solid fa-terminal"></i> Pentest web</span>
 					<span class="tag"><i class="fa-solid fa-gears"></i> Automatisation</span>
 				</div>
 				<ul class="hero-points">
@@ -134,9 +135,9 @@ require_once "controllers/routeur.php";
 					<span class="badge"><i class="fa-solid fa-bug"></i> OWASP &amp; Burp Suite</span>
 				</div>
 				<div class="hero-metrics">
+					<div class="hero-metric"><span class="metric-value">Pentest</span><span class="metric-label">Tests web &amp; sécurité offensive</span></div>
 					<div class="hero-metric"><span class="metric-value">AppSec</span><span class="metric-label">Sécurité du code et des API</span></div>
 					<div class="hero-metric"><span class="metric-value">DevSecOps</span><span class="metric-label">Automatisation et déploiement</span></div>
-					<div class="hero-metric"><span class="metric-value">Pentest</span><span class="metric-label">Tests web en laboratoire</span></div>
 				</div>
 			</div>
 		</section>
@@ -144,37 +145,34 @@ require_once "controllers/routeur.php";
 			<div class="section-heading">
 				<span class="eyebrow">Expertises &amp; approche</span>
 				<h2>Sécurité intégrée au développement</h2>
-				<p>Trois axes complémentaires : sécuriser les applications, fiabiliser leur livraison et comprendre les vulnérabilités par la pratique.</p>
+				<p>Trois axes complémentaires : tester les applications, sécuriser le code et fiabiliser la livraison.</p>
 			</div>
 			<div class="feature-grid">
 				<article class="feature-card">
+					<h3>Pentest web &amp; sécurité offensive</h3>
+					<p>Chercher les failles avant les attaquants, dans un cadre autorisé et documenté.</p>
+					<ul>
+						<li><i class="fa-solid fa-bug"></i> XSS, injections SQL, IDOR, contrôles d'accès</li>
+						<li><i class="fa-solid fa-magnifying-glass"></i> Cartographie de la surface d'attaque</li>
+						<li><i class="fa-solid fa-file-lines"></i> Reproduction des failles et rapport clair</li>
+					</ul>
+				</article>
+				<article class="feature-card">
+					<h3>Sécurité applicative (AppSec)</h3>
+					<p>Concevoir et relire des applications web en pensant aux entrées, aux accès et aux données.</p>
+					<ul>
+						<li><i class="fa-solid fa-code"></i> Revue de code et sécurité by design</li>
+						<li><i class="fa-solid fa-lock"></i> Validation des entrées et contrôle des accès</li>
+						<li><i class="fa-solid fa-list-check"></i> Référentiel OWASP Top 10</li>
+					</ul>
+				</article>
+				<article class="feature-card">
 					<h3>DevSecOps &amp; automatisation</h3>
-					<p>Intégrer les contrôles et les bonnes pratiques de sécurité au cycle de développement et de déploiement.</p>
+					<p>Intégrer les contrôles de sécurité au cycle de développement et de déploiement.</p>
 					<ul>
 						<li><i class="fa-solid fa-code-branch"></i> Pipelines CI/CD avec GitHub Actions</li>
-						<li><i class="fa-brands fa-docker"></i> Conteneurisation et isolation avec Docker</li>
-						<li><i class="fa-solid fa-shield-halved"></i> Analyse de dépendances et contrôles automatisés</li>
-						<li><i class="fa-solid fa-terminal"></i> Scripts d'automatisation Bash et Python</li>
-					</ul>
-				</article>
-				<article class="feature-card">
-					<h3>Sécurité applicative &amp; AppSec</h3>
-					<p>Concevoir et analyser des applications web en portant une attention particulière aux entrées, aux accès et aux échanges de données.</p>
-					<ul>
-						<li><i class="fa-solid fa-lock"></i> Validation des entrées et contrôle des accès</li>
-						<li><i class="fa-solid fa-code"></i> Revue de code et principes de sécurité by design</li>
-						<li><i class="fa-solid fa-globe"></i> Sécurisation des API et des flux HTTP</li>
-						<li><i class="fa-solid fa-list-check"></i> Référentiels OWASP et bonnes pratiques web</li>
-					</ul>
-				</article>
-				<article class="feature-card">
-					<h3>Pentest web &amp; recherche technique</h3>
-					<p>Pratique des tests d'intrusion dans des laboratoires autorisés, avec une démarche structurée d'observation, de reproduction et de documentation.</p>
-					<ul>
-						<li><i class="fa-solid fa-bug"></i> Tests XSS, injections SQL et contrôles d'accès</li>
-						<li><i class="fa-solid fa-magnifying-glass"></i> Cartographie de la surface d'attaque</li>
-						<li><i class="fa-solid fa-network-wired"></i> Analyse réseau et protocolaire</li>
-						<li><i class="fa-solid fa-file-lines"></i> Reproduction des failles et rédaction de notes techniques</li>
+						<li><i class="fa-brands fa-docker"></i> Conteneurisation et isolation Docker</li>
+						<li><i class="fa-solid fa-shield-halved"></i> Analyse de dépendances (Semgrep, Trivy)</li>
 					</ul>
 				</article>
 			</div>
@@ -183,7 +181,7 @@ require_once "controllers/routeur.php";
 			<div class="section-heading">
 				<span class="eyebrow">Expertise technique</span>
 				<h2>Technologies, systèmes &amp; outils</h2>
-				<p>Un socle de développement Fullstack, complété par les outils d'automatisation, les bases systèmes/réseaux et la sécurité offensive.</p>
+				<p>Un socle de développement fullstack, complété par l'automatisation, les bases systèmes/réseaux et la sécurité offensive.</p>
 			</div>
 			<div class="skills-grid">
 				<article class="skill-card">
@@ -191,7 +189,6 @@ require_once "controllers/routeur.php";
 					<ul>
 						<li><i class="fa-solid fa-bug"></i> OWASP Top 10, XSS, SQLi, IDOR</li>
 						<li><i class="fa-solid fa-magnifying-glass"></i> Burp Suite, DevTools et analyse HTTP</li>
-						<li><i class="fa-solid fa-flask"></i> OWASP Juice Shop, labs et CTF autorisés</li>
 						<li><i class="fa-solid fa-file-shield"></i> Analyse de vulnérabilités et documentation</li>
 					</ul>
 				</article>
@@ -200,106 +197,92 @@ require_once "controllers/routeur.php";
 					<ul>
 						<li><i class="fa-brands fa-github"></i> GitHub Actions et pipelines CI/CD</li>
 						<li><i class="fa-brands fa-docker"></i> Docker et gestion des environnements</li>
-						<li><i class="fa-solid fa-code-merge"></i> Git, intégration et déploiements</li>
 						<li><i class="fa-solid fa-terminal"></i> Automatisation Bash et Python</li>
 					</ul>
 				</article>
 				<article class="skill-card">
 					<h3>Systèmes, réseaux &amp; bas niveau</h3>
 					<ul>
-						<li><i class="fa-brands fa-linux"></i> Linux, CLI et administration de VPS</li>
-						<li><i class="fa-solid fa-network-wired"></i> TCP/IP, HTTP, TCP, UDP et ICMP</li>
-						<li><i class="fa-solid fa-code"></i> C et Python : outils CLI et analyse de fichiers</li>
+						<li><i class="fa-brands fa-linux"></i> Linux, CLI et administration</li>
+						<li><i class="fa-solid fa-network-wired"></i> TCP/IP, HTTP, UDP et ICMP</li>
 						<li><i class="fa-solid fa-server"></i> Nginx, HTTPS et gestion de services</li>
 					</ul>
 				</article>
 				<article class="skill-card">
-					<h3>Développement Fullstack sécurisé</h3>
+					<h3>Développement fullstack</h3>
 					<ul>
-						<li><i class="fa-brands fa-js"></i> JavaScript, TypeScript, Node.js et Express</li>
+						<li><i class="fa-brands fa-js"></i> JavaScript, TypeScript, Node.js</li>
 						<li><i class="fa-brands fa-react"></i> React et Next.js</li>
 						<li><i class="fa-solid fa-database"></i> SQL, PostgreSQL et MariaDB</li>
-						<li><i class="fa-solid fa-lock"></i> API REST, gestion des accès et validation</li>
 					</ul>
 				</article>
 			</div>
 			<div class="skill-tags">
-				<span class="tag">AppSec</span><span class="tag">DevSecOps</span><span class="tag">Pentest web</span><span class="tag">Linux</span><span class="tag">Secure coding</span>
+				<span class="tag">Pentest web</span><span class="tag">AppSec</span><span class="tag">DevSecOps</span><span class="tag">Linux</span><span class="tag">Secure coding</span>
 			</div>
 		</section>
 		<section class="section-display section-experiences" id="experiences">
 			<div class="section-heading">
-				<span class="eyebrow">Expériences &amp; mise en pratique</span>
-				<h2>Du développement à l'analyse de sécurité</h2>
-				<p>Des travaux concrets en sécurité applicative, outils systèmes/réseaux et mise en production. Les tests offensifs mentionnés sont réalisés dans des environnements autorisés.</p>
+				<span class="eyebrow">Expériences</span>
+				<h2>Des réalisations concrètes</h2>
+				<p>Des applications et des outils en conditions réelles, du développement à la mise en production.</p>
 			</div>
 			<div class="experience-carousel">
 				<div class="experience-carousel__track" id="experience-track">
 					<div class="experience-carousel__item">
 						<article class="experience-card">
-							<div class="experience-meta"><span>2026</span><span class="badge">Outils de cybersécurité</span></div>
-							<h3>Développement d'outils Python et C</h3>
-							<p class="experience-subtitle">Analyse de paquets, traitement de journaux et inspection système</p>
+							<div class="experience-meta"><span>2025</span><span class="badge">Entreprise · Production</span></div>
+							<h3>CRM Lynoria</h3>
+							<p class="experience-subtitle">Outil métier de gestion, utilisé en entreprise</p>
 							<ul class="experience-list">
-								<li>Parsing manuel de fichiers PCAP et décodage des protocoles.</li>
-								<li>Analyse de logs et identification d'adresses IP suspectes.</li>
-								<li>Construction d'un outil CLI d'inspection système en C.</li>
+								<li>Développement d'un CRM métier utilisé au quotidien.</li>
+								<li>Gestion des données clients et des processus internes.</li>
+								<li>Développement Fullstack.</li>
+								<li>Sécurisation du code.</li>
 							</ul>
-							<div class="experience-tags"><span class="tag">Python</span><span class="tag">C</span><span class="tag">TCP/IP</span><span class="tag">Linux</span></div>
+							<div class="experience-tags"><span class="tag">DevSecOps</span><span class="tag">Express</span><span class="tag">TypeScript</span><span class="tag">Fullstack</span></div>
 						</article>
 					</div>
 					<div class="experience-carousel__item">
 						<article class="experience-card">
-							<div class="experience-meta"><span>2026</span><span class="badge">Laboratoires autorisés</span></div>
-							<h3>Sécurité offensive &amp; tests web</h3>
-							<p class="experience-subtitle">Mise en pratique méthodique des vulnérabilités applicatives</p>
+							<div class="experience-meta"><span>2025</span><span class="badge">Site web</span></div>
+							<h3>Site FC Provence</h3>
+							<p class="experience-subtitle">Site web réalisé pour FC Provence</p>
 							<ul class="experience-list">
-								<li>Exploration de la surface d'attaque et analyse des échanges HTTP.</li>
-								<li>Étude pratique de failles XSS, SQLi et IDOR sur labs dédiés.</li>
-								<li>Documentation des observations et des méthodes de reproduction.</li>
+								<li>Conception et mise en ligne du site.</li>
+								<li>centralisation des informations, événements et opérations administratives.</li>
+								<li>API REST et gestion des données.</li>
+								<li>Déploiement avec Docker, Nginx et HTTPS.</li>
 							</ul>
-							<div class="experience-tags"><span class="tag">OWASP</span><span class="tag">Burp Suite</span><span class="tag">Pentest web</span></div>
+							<div class="experience-tags"><span class="tag">DevSecOps</span><span class="tag">API REST</span><span class="tag">Fullstack</span></div>
 						</article>
 					</div>
 					<div class="experience-carousel__item">
 						<article class="experience-card">
 							<div class="experience-meta"><span>2026</span><span class="badge">Application en production</span></div>
-							<h3>AlpaGuide — plateforme web</h3>
-							<p class="experience-subtitle">Landing page publique et préparation d'une application dédiée aux professionnels de montagne</p>
+							<h3>AlpaGuide</h3>
+							<p class="experience-subtitle">Plateforme web pour les professionnels de montagne</p>
 							<ul class="experience-list">
-								<li>Déploiement d'une landing page et de formulaires de contact/bêta.</li>
-								<li>Backend Node.js / Express et gestion des services sur VPS.</li>
-								<li>Application métier en développement, distincte de la page déjà publiée.</li>
+								<li>Landing page publique en production, formulaires contact / bêta.</li>
+								<li>Backend Node.js / Express déployé sur VPS Linux.</li>
+								<li>Application métier en cours de développement.</li>
 							</ul>
-							<div class="experience-tags"><span class="tag">Node.js</span><span class="tag">Express</span><span class="tag">Linux</span><span class="tag">Production</span></div>
-						</article>
-					</div>
-					<div class="experience-carousel__item">
-						<article class="experience-card">
-							<div class="experience-meta"><span>2025</span><span class="badge">Projet Web3</span></div>
-							<h3>Application Web3 &amp; NFT</h3>
-							<p class="experience-subtitle">Développement d'une application autour des actifs numériques et de leur déploiement</p>
-							<ul class="experience-list">
-								<li>Conception et intégration de fonctionnalités web et Web3.</li>
-								<li>Traitement et vérification de métadonnées.</li>
-								<li>Automatisation du déploiement via GitHub Actions.</li>
-							</ul>
-							<div class="experience-tags"><span class="tag">Web3</span><span class="tag">NFT</span><span class="tag">CI/CD</span></div>
+							<div class="experience-tags"><span class="tag">DevSecOps</span><span class="tag">Next.js</span><span class="tag">TypeScript</span><span class="tag">Production</span></div>
 						</article>
 					</div>
 				</div>
 				<div class="experience-carousel__controls">
-					<button aria-label="Projet précédent" class="experience-carousel__button" id="experience-prev" type="button"><i class="fa-solid fa-chevron-left"></i></button>
+					<button aria-label="Expérience précédente" class="experience-carousel__button" id="experience-prev" type="button"><i class="fa-solid fa-chevron-left"></i></button>
 					<div class="experience-carousel__dots" id="experience-dots"></div>
-					<button aria-label="Projet suivant" class="experience-carousel__button" id="experience-next" type="button"><i class="fa-solid fa-chevron-right"></i></button>
+					<button aria-label="Expérience suivante" class="experience-carousel__button" id="experience-next" type="button"><i class="fa-solid fa-chevron-right"></i></button>
 				</div>
 			</div>
 		</section>
 		<section class="section-display section-projects" id="projets">
 			<div class="section-heading">
-				<span class="eyebrow">Projets sélectionnés</span>
-				<h2>Cybersécurité, outils &amp; applications</h2>
-				<p>Une sélection volontairement resserrée : outils techniques développés en C/Python et projets web conservés pour leur intérêt architectural. Chaque nouvelle réalisation pourra être ajoutée dans cette grille.</p>
+				<span class="eyebrow">Travaux</span>
+				<h2>Outils &amp; projets cyber</h2>
+				<p>Ce que je construis en autonomie : des outils de cybersécurité en Python et C, et des projets web. Chaque nouvelle réalisation s'ajoute ici.</p>
 			</div>
 			<div class="projects-grid">
 				<!-- OUTILS CYBER : remplacer les liens GitHub génériques par les URLs précises des dépôts quand souhaité. -->
@@ -327,18 +310,108 @@ require_once "controllers/routeur.php";
 					<p>Projet consacré au fonctionnement des tables précalculées et des recherches d'empreintes ; étude des limites de mots de passe et de hachages faibles dans un cadre pédagogique.</p>
 					<span class="project-link">Consulter GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
-				<a class="project-card" href="https://alpaguide.fr/" rel="noopener noreferrer" target="_blank">
-					<span class="badge"><i class="fa-solid fa-check-double"></i> En production · App à venir</span>
-					<h4>AlpaGuide</h4>
-					<p>Landing page en production pour une future plateforme dédiée aux professionnels de montagne. Backend et formulaires fonctionnels ; application en développement.</p>
-					<span class="project-link">Voir le site <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
-				</a>
 				<a class="project-card" href="https://nft-collection-1-liart.vercel.app/" rel="noopener noreferrer" target="_blank">
 					<span class="badge"><i class="fa-solid fa-microchip"></i> Application Web3</span>
 					<h4>Projet Web3 &amp; NFT</h4>
 					<p>Application liée aux actifs numériques et aux NFT, avec gestion des métadonnées et automatisation de déploiement. Une réalisation Fullstack complémentaire aux projets cyber.</p>
 					<span class="project-link">Voir le projet <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
+			</div>
+		</section>
+		<section class="section-display section-offers" id="offres">
+			<div class="section-heading">
+				<span class="eyebrow">Offres &amp; prestations</span>
+				<h2>Sécuriser votre application web</h2>
+				<p>Un double regard développeur + sécurité : je lis le code, je ne me contente pas de lancer un scanner. Du premier diagnostic au suivi dans la durée.</p>
+			</div>
+			<div class="feature-grid">
+				<article class="feature-card">
+					<div class="experience-meta"><span class="badge">Offre de lancement</span><span class="badge">90 €</span></div>
+					<h3>Quick Check</h3>
+					<p>Premier diagnostic de sécurité, vu de l'extérieur, sans accès au code. Rapport clair d'une page avec vos 3 priorités, livré sous 48 h.</p>
+					<ul>
+						<li><i class="fa-solid fa-lock"></i> HTTPS, certificat et cookies</li>
+						<li><i class="fa-solid fa-shield-halved"></i> En-têtes de sécurité</li>
+						<li><i class="fa-solid fa-triangle-exclamation"></i> Fuites d'information et librairies obsolètes</li>
+					</ul>
+				</article>
+				<article class="feature-card">
+					<div class="experience-meta"><span class="badge">Flash</span><span class="badge">~1 jour</span></div>
+					<h3>Audit Flash</h3>
+					<p>Un premier regard outillé avant d'aller plus loin, idéal au lancement d'un projet ou d'un MVP.</p>
+					<ul>
+						<li><i class="fa-solid fa-bolt"></i> Scan outillé (Semgrep, Trivy) et OWASP Top 10 en surface</li>
+						<li><i class="fa-solid fa-list-ol"></i> Rapport synthétique, failles classées par criticité</li>
+						<li><i class="fa-solid fa-video"></i> Restitution de 20-30 min en visio</li>
+					</ul>
+				</article>
+				<article class="feature-card">
+					<div class="experience-meta"><span class="badge">Cœur de l'offre</span><span class="badge">~1 semaine</span></div>
+					<h3>Audit Essentiel</h3>
+					<p>Pour une application en production, avec de vrais utilisateurs et des données à protéger.</p>
+					<ul>
+						<li><i class="fa-solid fa-code"></i> Revue manuelle du code et des zones à risque</li>
+						<li><i class="fa-solid fa-database"></i> Tests injections SQL, contrôle d'accès et authentification</li>
+						<li><i class="fa-solid fa-file-lines"></i> Rapport détaillé : faille, reproduction, correctif</li>
+						<li><i class="fa-solid fa-list-check"></i> Restitution en visio pour prioriser ensemble</li>
+					</ul>
+				</article>
+				<article class="feature-card">
+					<div class="experience-meta"><span class="badge">Complet</span><span class="badge">~2 semaines</span></div>
+					<h3>Audit Complet</h3>
+					<p>Pour des données sensibles (paiement, données personnelles) ou un audit avant un gros client.</p>
+					<ul>
+						<li><i class="fa-solid fa-layer-group"></i> Tout l'Audit Essentiel inclus</li>
+						<li><i class="fa-solid fa-bug"></i> Tests d'intrusion ciblés sur les points sensibles</li>
+						<li><i class="fa-solid fa-screwdriver-wrench"></i> Accompagnement aux correctifs</li>
+						<li><i class="fa-solid fa-rotate-right"></i> Contre-vérification après vos corrections (sous 30 j)</li>
+					</ul>
+				</article>
+			</div>
+			<div class="skill-tags">
+				<a class="btn btn-primary" href="https://tally.so/r/0V8jx0" target="_blank"><i class="fbtn btn-primary"></i> Faites votre propre test en moins de 2 minutes</a>
+			</div>
+			<div class="section-heading">
+				<span class="eyebrow">Suivi &amp; accompagnement</span>
+				<h2>Garder la sécurité sous contrôle, dans la durée</h2>
+				<p>Une fois l'application auditée, rester serein sans recruter un profil sécurité à temps plein.</p>
+			</div>
+			<div class="skills-grid">
+				<article class="skill-card">
+					<h3>Référent sécurité (mini-RSSI)</h3>
+					<ul>
+						<li><i class="fa-solid fa-user-shield"></i> Votre interlocuteur sécurité à temps partagé</li>
+						<li><i class="fa-solid fa-code-merge"></i> Revue des changements sensibles avant la prod</li>
+						<li><i class="fa-solid fa-bell"></i> Veille continue et point mensuel</li>
+					</ul>
+				</article>
+				<article class="skill-card">
+					<h3>Veille &amp; correctifs</h3>
+					<ul>
+						<li><i class="fa-solid fa-bell"></i> Alerte sur les vulnérabilités (CVE) qui vous concernent</li>
+						<li><i class="fa-solid fa-wrench"></i> Application des correctifs simples</li>
+						<li><i class="fa-solid fa-ban"></i> Sans bruit, sans engagement</li>
+					</ul>
+				</article>
+				<article class="skill-card">
+					<h3>Re-scan trimestriel</h3>
+					<ul>
+						<li><i class="fa-solid fa-rotate"></i> L'audit rejoué tous les 3 mois</li>
+						<li><i class="fa-solid fa-code-compare"></i> Capte les régressions et nouvelles failles</li>
+						<li><i class="fa-solid fa-file-lines"></i> Rapport différentiel</li>
+					</ul>
+				</article>
+				<article class="skill-card">
+					<h3>Revue de config</h3>
+					<ul>
+						<li><i class="fa-solid fa-server"></i> Durcissement Nginx, Docker et serveur</li>
+						<li><i class="fa-solid fa-lock"></i> TLS, en-têtes, secrets, ports exposés</li>
+						<li><i class="fa-solid fa-clipboard-check"></i> Extraits de config prêts à coller</li>
+					</ul>
+				</article>
+			</div>
+			<div class="hero-actions">
+				<a class="btn btn-primary" href="#contact"><i class="fa-solid fa-envelope"></i> Demander un devis</a>
 			</div>
 		</section>
 		<section class="section-display section-contact" id="contact">
@@ -445,9 +518,8 @@ require_once "controllers/routeur.php";
 					<div class="diploma-content">
 						<h3>Certification Cyber Sécurité</h3>
 						<span class="diploma-school">ZeroDay.cyber Academy</span>
-						<span class="diploma-date">2026 · en cours</span>
+						<span class="diploma-date">2026 · 2027</span>
 						<p>Formation orientée sécurité applicative et intégration DevSecOps dans les cycles de développement.
-
 							Travail sur les vulnérabilités web (OWASP Top 10), les environnements Linux, les scripts d’automatisation (Bash/Python) et la sécurisation des applications.</p>
 					</div>
 				</article>
