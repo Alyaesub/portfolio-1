@@ -9,7 +9,7 @@ require_once "controllers/routeur.php";
 	<meta charset="utf-8" />
 	<meta content="width=device-width, initial-scale=1.0" name="viewport" />
 	<!-- SEO -->
-	<title>Pascal Reynier | DevSecOps, cybersécurité &amp; sécurité applicative</title>
+	<title>Pascal Reynier | DevSecOps</title>
 	<meta content="Portfolio de Pascal Reynier : DevSecOps, sécurité applicative, pentest web, Linux, Docker, CI/CD et développement d’outils de cybersécurité en Python et C." name="description" />
 	<meta content="Pascal Reynier" name="author" />
 	<meta content="index, follow" name="robots" />
@@ -203,7 +203,7 @@ require_once "controllers/routeur.php";
 				<article class="skill-card">
 					<h3>Systèmes, réseaux &amp; bas niveau</h3>
 					<ul>
-						<li><i class="fa-brands fa-linux"></i> Linux, CLI et administration de VPS</li>
+						<li><i class="fa-brands fa-linux"></i> Linux, CLI et administration</li>
 						<li><i class="fa-solid fa-network-wired"></i> TCP/IP, HTTP, UDP et ICMP</li>
 						<li><i class="fa-solid fa-server"></i> Nginx, HTTPS et gestion de services</li>
 					</ul>
