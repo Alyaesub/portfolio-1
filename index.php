@@ -117,8 +117,8 @@ require_once "controllers/routeur.php";
 				</div>
 				<p class="lead">Développeur passé au <strong>DevSecOps et à la sécurité applicative</strong>. Je lis votre code, je corrige les failles et je teste vos applications comme le ferait un attaquant, pour réduire vos risques concrètement.</p>
 				<div class="hero-actions">
-					<a class="btn btn-primary" href="#offres"><i class="fa-solid fa-shield-halved"></i> Voir mes offres</a>
-					<a class="btn" href="#contact"><i class="fa-solid fa-envelope"></i> Me contacter</a>
+					<a class="btn btn-primary" href="https://tally.so/r/0V8jx0"><i class="fa-solid fa-shield-halved"></i>Testez votre site en 2 min</a>
+					<a class="btn " href="#offres"><i class="fa-solid fa-shield-halved"></i> Voir mes offres</a>
 				</div>
 				<div class="hero-panel__tags">
 					<span class="tag"><i class="fa-solid fa-bug"></i> Pentest web</span>
@@ -369,7 +369,7 @@ require_once "controllers/routeur.php";
 				</article>
 			</div>
 			<div class="skill-tags">
-				<a class="btn btn-primary" href="https://tally.so/r/0V8jx0" target="_blank"><i class="fbtn btn-primary"></i> Faites votre propre test en moins de 2 minutes</a>
+				<a class="btn btn-primary" href="https://tally.so/r/0V8jx0" target="_blank"><i class="fbtn btn-primary"></i>Votre site testé en 2 min</a>
 			</div>
 			<div class="section-heading">
 				<span class="eyebrow">Suivi &amp; accompagnement</span>
