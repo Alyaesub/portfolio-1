@@ -99,9 +99,9 @@ require_once "controllers/routeur.php";
 						<li class="nav-link"><a href="/a-propos">Approche <i class="fa-solid fa-arrow-right"></i></a></li>
 						<li class="nav-link"><a href="/competences">Compétences <i class="fa-solid fa-arrow-right"></i></a></li>
 						<li class="nav-link"><a href="/experiences">Expériences <i class="fa-solid fa-arrow-right"></i></a></li>
-						<li class="nav-link"><a href="/projets">Travaux <i class="fa-solid fa-arrow-right"></i></a></li>
-						<li class="nav-link"><a href="#offres">Offres <i class="fa-solid fa-arrow-right"></i></a></li>
-						<li class="nav-link"><a href="/diplomes">Parcours <i class="fa-solid fa-arrow-right"></i></a></li>
+						<li class="nav-link"><a href="/travaux">Travaux <i class="fa-solid fa-arrow-right"></i></a></li>
+						<li class="nav-link"><a href="/offres">Offres <i class="fa-solid fa-arrow-right"></i></a></li>
+						<li class="nav-link"><a href="/parcours">Parcours <i class="fa-solid fa-arrow-right"></i></a></li>
 						<li class="nav-link"><a href="/contact">Contact <i class="fa-solid fa-arrow-right"></i></a></li>
 					</ul>
 				</div>
@@ -278,7 +278,7 @@ require_once "controllers/routeur.php";
 				</div>
 			</div>
 		</section>
-		<section class="section-display section-projects" id="projets">
+		<section class="section-display section-projects" id="travaux">
 			<div class="section-heading">
 				<span class="eyebrow">Travaux</span>
 				<h2>Outils &amp; projets cyber</h2>
@@ -497,7 +497,7 @@ require_once "controllers/routeur.php";
 				</div>
 			</div>
 		</section>
-		<section class="section-display section-diplomas" id="diplomes">
+		<section class="section-display section-diplomas" id="parcours">
 			<div class="section-heading">
 				<span class="eyebrow">Formation &amp; progression</span>
 				<h2>Formation technique</h2>
