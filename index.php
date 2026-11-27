@@ -286,25 +286,25 @@ require_once "controllers/routeur.php";
 			</div>
 			<div class="projects-grid">
 				<!-- OUTILS CYBER : remplacer les liens GitHub génériques par les URLs précises des dépôts quand souhaité. -->
-				<a class="project-card" href="https://github.com/Alyaesub" rel="noopener noreferrer" target="_blank">
+				<a class="project-card" href="https://github.com/Alyaesub/pcap_analyzer" rel="noopener noreferrer" target="_blank">
 					<span class="badge"><i class="fa-solid fa-network-wired"></i> Analyse réseau · Python</span>
 					<h4>PCAP Analyzer</h4>
 					<p>Parseur de fichiers PCAP sans bibliothèque réseau dédiée : lecture des en-têtes Ethernet, IPv4, TCP, UDP et ICMP, et affichage structuré des paquets.</p>
 					<span class="project-link">Consulter GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
-				<a class="project-card" href="https://github.com/Alyaesub" rel="noopener noreferrer" target="_blank">
+				<a class="project-card" href="https://github.com/Alyaesub/logGuard" rel="noopener noreferrer" target="_blank">
 					<span class="badge"><i class="fa-solid fa-file-lines"></i> Analyse de logs · Python</span>
 					<h4>LogGuard</h4>
 					<p>Outil CLI d'analyse de journaux : extraction d'IP, comptage des échecs, détection de seuils suspects et synthèse des événements.</p>
 					<span class="project-link">Consulter GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
-				<a class="project-card" href="https://github.com/Alyaesub" rel="noopener noreferrer" target="_blank">
+				<a class="project-card" href="https://github.com/Alyaesub/secInspect" rel="noopener noreferrer" target="_blank">
 					<span class="badge"><i class="fa-solid fa-terminal"></i> Inspection système · C</span>
 					<h4>SecInspect</h4>
 					<p>Outil CLI d'inspection Linux/macOS en développement : informations système, gestion des options et architecture modulaire pour de futurs contrôles de sécurité.</p>
 					<span class="project-link">Consulter GitHub <i class="fa-solid fa-arrow-up-right-from-square"></i></span>
 				</a>
-				<a class="project-card" href="https://github.com/Alyaesub" rel="noopener noreferrer" target="_blank">
+				<a class="project-card" href="https://github.com/Alyaesub/rainbow" rel="noopener noreferrer" target="_blank">
 					<span class="badge"><i class="fa-solid fa-key"></i> Cryptographie</span>
 					<h4>Rainbow Table</h4>
 					<p>Projet consacré au fonctionnement des tables précalculées et des recherches d'empreintes ; étude des limites de mots de passe et de hachages faibles dans un cadre pédagogique.</p>
@@ -509,7 +509,6 @@ require_once "controllers/routeur.php";
 					<div class="diploma-content">
 						<h3>Développeur d'applications web et mobiles</h3>
 						<span class="diploma-school">Digital Campus</span>
-						<span class="diploma-date">2024 – 2026 · Diplôme obtenu</span>
 						<p>Formation orientée développement fullstack, architecture web, qualité logicielle et mise en production. Parcours renforcé par des projets concrets, une forte culture d'autonomie et une montée en compétence progressive sur les sujets DevSecOps.</p>
 					</div>
 				</article>
@@ -518,7 +517,6 @@ require_once "controllers/routeur.php";
 					<div class="diploma-content">
 						<h3>Certification Cyber Sécurité</h3>
 						<span class="diploma-school">ZeroDay.cyber Academy</span>
-						<span class="diploma-date">2026 · 2027</span>
 						<p>Formation orientée sécurité applicative et intégration DevSecOps dans les cycles de développement.
 							Travail sur les vulnérabilités web (OWASP Top 10), les environnements Linux, les scripts d’automatisation (Bash/Python) et la sécurisation des applications.</p>
 					</div>
