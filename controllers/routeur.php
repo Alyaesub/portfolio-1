@@ -5,11 +5,11 @@ $sections = [
   'accueil',
   'a-propos',
   'competences',
-  'diplomes',
   'experiences',
-  'projets',
+  'travaux',
+  'offres',
+  'parcours',
   'contact',
-  'blog'
 ];
 
 if (!in_array($page, $sections)) {
